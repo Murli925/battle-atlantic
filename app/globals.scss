@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --background-color: #ffffff;
+  --primary-bg-color:#ffffff;
+  --secondary-bg-color:#437EB221;
+  --foreground-color: #171717;
+
+  --primary-color: #122A40;
+  --primary-hover: #0c2236;
+
+  --secondary-color: #2C577C;
+  --tertiary-color: #437EB2;
+
+  --accent-color: #BE9942;
+}
+
+
+body {
+
+  background: var(--background-color);
+  color: var(--foreground-color);
+  font-family: "Barlow", sans-serif;
+  font-size: 17px !important;
+
+
+  .text-color-primary{
+    color: var(--primary-color);
+  }
+  
+header{
+
+  background-color: var(--background-color);
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+
+
+  nav a{
+    font-size: 16px;
+  }
+
+
+}
+
+/* Base Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* ================= PRIMARY ================= */
+.btn-primary {
+  background: var(--secondary-color);
+  color: #fff;
+
+  &:hover {
+    background: var(--primary-hover);
+  }
+}
+
+/* ================= SECONDARY ================= */
+.btn-secondary {
+  background: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary-color);
+
+  &:hover {
+    background: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+/* ================= ACCENT (Optional but Recommended) ================= */
+.btn-accent {
+  background: var(--accent-color);
+  color: #000;
+
+  &:hover {
+    background: var(--tertiary-color); // manually adjusted darker tone
+    color: #fff;
+  }
+}
+
+}
+
