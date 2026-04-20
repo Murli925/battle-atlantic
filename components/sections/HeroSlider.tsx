@@ -6,9 +6,9 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "./HeroSlider.module.scss"
 
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+// import "swiper/css"
+// import "swiper/css/navigation"
+// import "swiper/css/pagination"
 
 export default function HeroSlider() {
   return (
@@ -36,18 +36,19 @@ export default function HeroSlider() {
 
 <div className={styles.overlay}>
   <div className={styles.content}>
-    <h1>Battle of the Atlantic Virtual Memorial</h1>
+    <h1>Bell Island, Newfoundland and Labrador — 1942</h1>
     <p>
-      Honoring the longest continuous military campaign of World War II
+      Unlike land warfare, naval combat leaves few visible traces. Ships sink offshore, crews are lost, and families are often left without graves or places to remember. The Battle of the Atlantic—the longest campaign of the Second World War—remains one of the least visible, yet most consequential chapters in Canada’s history.</p>
+<p>This project will make that invisible battlefield visible—through archaeology, marine science, and digital reconstruction.
     </p>
 
-    <div className={styles.buttons}>
-      <Link href="/project" className="btn btn-primary">
-        Explore Project
-      </Link>
 
+    <div className={styles.buttons}>
       <Link href="/support-us" className="btn btn-accent">
-        Support Us
+        Support the Expedition
+      </Link>
+      <Link href="/project" className="btn btn-primary">
+        Explore the Memorial
       </Link>
     </div>
   </div>
@@ -67,18 +68,18 @@ export default function HeroSlider() {
 
 <div className={styles.overlay}>
   <div className={styles.content}>
-    <h1>Battle of the Atlantic Virtual Memorial</h1>
+    <h1>Bell Island, Newfoundland and Labrador — 1942</h1>
     <p>
-      Honoring the longest continuous military campaign of World War II
+      Unlike land warfare, naval combat leaves few visible traces. Ships sink offshore, crews are lost, and families are often left without graves or places to remember. The Battle of the Atlantic—the longest campaign of the Second World War—remains one of the least visible, yet most consequential chapters in Canada’s history.</p>
+<p>This project will make that invisible battlefield visible—through archaeology, marine science, and digital reconstruction.
     </p>
 
     <div className={styles.buttons}>
-      <Link href="/project" className="btn btn-primary">
-        Explore Project
-      </Link>
-
       <Link href="/support-us" className="btn btn-accent">
-        Support Us
+        Support the Expedition
+      </Link>
+      <Link href="/project" className="btn btn-primary">
+        Explore the Memorial
       </Link>
     </div>
   </div>

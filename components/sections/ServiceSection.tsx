@@ -3,27 +3,32 @@
 import GenericCarousel from "@/components/GenericCarousel"
 import Card from "@/components/Card"
 import styles from "./ServiceSection.module.scss"
+import { link } from "fs"
 
 const services = [
   {
     title: "Submarine Exploration",
     description: "Explore underwater missions.",
-    image: "/images/banner-1.jpg"
+    image: "/images/banner-1.jpg",
+    link:"https://www.google.com/"
   },
     {
     title: "Submarine Exploration",
     description: "Explore underwater missions.",
-    image: "/images/banner-1.jpg"
+    image: "/images/banner-1.jpg",
+    link:"https://www.google.com/"
   },
     {
     title: "Submarine Exploration",
     description: "Explore underwater missions.",
-    image: "/images/banner-1.jpg"
+    image: "/images/banner-1.jpg",
+    link:"https://www.google.com/"
   },
   {
     title: "Naval History",
     description: "Learn about WWII battles.",
-    image: "/images/banner-2.jpg"
+    image: "/images/banner-2.jpg",
+    link:"https://www.google.com/"
   }
 ]
 
@@ -45,6 +50,7 @@ export default function ServicesSection() {
               title={item.title}
               description={item.description}
               image={item.image}
+              link={item.link}
             />
           )}
         />

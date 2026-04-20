@@ -11,6 +11,12 @@
 .card:hover {
   transform: translateY(-5px);
 }
+.card:hover .btnWrapper{
+  background-color: #122a40;
+  	border-radius: 30px;
+	width: 45px;
+	height: 45px;
+}
 
 .imageWrapper {
   position: relative;
@@ -20,10 +26,13 @@
 
 .content {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: var(--primary-color);
   }
 
@@ -31,4 +40,14 @@
     font-size: 14px;
     color: var(--foreground-color);
   }
+  .btnWrapper a{
+	background-color: #122a404d;
+	border-radius: 30px;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
 }
