@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar"
 import AOSInit from "@/components/AOSInit"
 import Footer from "@/components/Footer"
-import { Barlow, Source_Serif_4 } from "next/font/google"
+import Slider from "@/components/sections/HeroSlider"
+import { Barlow, Source_Serif_4, Great_Vibes } from "next/font/google"
 
 import "./globals.scss"
-import Slider from "@/components/sections/HeroSlider"
+
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -15,6 +16,7 @@ const sourceserif4 = Source_Serif_4({
   subsets: ["latin"],
   weight: ["400", "600", "700"]
 })
+
 
 export const metadata = {
   title: "Battle of the Atlantic Virtual Memorial",
@@ -36,6 +38,7 @@ export default function RootLayout({
 
         <main className="mx-auto">
           {children}
+
         </main>
 
         <Footer />

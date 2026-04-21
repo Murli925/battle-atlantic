@@ -83,6 +83,7 @@
   font-size: 48px;
   margin-bottom: 16px;
   max-width: 800px;
+  line-height: 1.2em;
 }
 
 .overlay p {
@@ -153,4 +154,7 @@ max-width: 80%;
   opacity: 1;
   transform: translateY(0);
   transition: all 0.8s ease 0.4s; /* delay */
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+	background: #c99c32;
 }

@@ -36,12 +36,12 @@ export default function ContentSection({
     >
 
       {/* Text */}
-      <div className="flex-1 order-2 md:order-1">
-        <div className="max-w-full md:max-w-[500px] mx-auto md:mx-0">
+      <div className="flex-1 order-2 md:order-1 my-auto">
+        <div className="max-w-full md:mx-0">
 
           <h2 className={styles.heading}>{title}</h2>
 
-          <p className={styles.description}>{description}</p>
+          <div className={styles.description}>{description}</div>
 
           {buttonText && (
             <Link
@@ -57,7 +57,7 @@ export default function ContentSection({
 
       {/* Image */}
       <div className="flex-1 w-full order-1 md:order-2">
-        <div className="relative w-full h-[250px] md:h-[400px]">
+        <div className="relative w-full h-[250px] md:h-[500px]">
           <Image
             src={image}
             alt={title}
