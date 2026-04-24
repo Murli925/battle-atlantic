@@ -9,10 +9,11 @@
   --primary-color: #122A40;
   --primary-hover: #0c2236;
 
-  --secondary-color: #2C577C;
-  --tertiary-color: #437EB2;
+  --secondary-color: #0e5fa7;
+  --tertiary-color: #0e5fa7;
 
   --accent-color: #BE9942;
+  --text-white: #ffffff;
 }
 html {
   font-size: 17px;
@@ -50,14 +51,13 @@ header{
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 24px;
+  padding: 12px 26px;
   font-size: 14px;
   font-weight: 500;
   border-radius: 0px;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-
   border: none;
   transition: all 0.3s ease;
 }
@@ -99,6 +99,7 @@ header{
 h1, h2, h3, h4{
   line-height: 1.2em;
   font-weight: 500;
+
 }
 
 /* ======    Checklist icons style ===========*/ 
@@ -107,10 +108,8 @@ h1, h2, h3, h4{
   padding: 0;
   margin: 0;
 }
-
-.check-list li {
+.check-list > li, .check-list > li li {
   display: flex;
-  align-items: flex-start;
   gap: 10px;
   margin-bottom: 12px;
 }
@@ -118,5 +117,32 @@ h1, h2, h3, h4{
 .check-list li svg {
   color: var(--accent-color);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 4px;
+}
+
+.check-list li li svg {
+  color: var(--accent-color);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.ci-content-column{
+	background: #ffffff1f;
+	border: 1px solid #ffffff4a;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+	background: #fff;
+}
+
+@media all and (min-width:992px){
+  h2.heading{
+    font-size:32px !important;
+      margin-bottom: 15px;
+  }
+}
+@media all and (max-width:991px){
+  h2.heading{
+      margin-bottom: 15px;
+    font-size:26px !important;
+  }
 }

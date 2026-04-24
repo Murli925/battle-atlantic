@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar"
 import AOSInit from "@/components/AOSInit"
 import Footer from "@/components/Footer"
-import Slider from "@/components/sections/HeroSlider"
+
 import { Barlow, Source_Serif_4, Great_Vibes } from "next/font/google"
 
 import "./globals.scss"
@@ -34,7 +34,7 @@ export default function RootLayout({
       <body>
         <AOSInit/>
         <Navbar/>
-        <Slider/>
+        
 
         <main className="mx-auto">
           {children}

@@ -1,12 +1,64 @@
+import Slider from "@/components/sections/HeroSlider"
 import ContentSection from "@/components/sections/ContentSection"
 import ServicesSection from "@/components/sections/ServiceSection"
 import QuoteSection from "@/components/sections/QuoteSection"
 import CheckList from "@/components/CheckList"
+import CenterImageSection from "@/components/sections/CenterImageSection"
+import CTASection from "@/components/sections/CTASection"
 
 export default function Home() {
+
+const slides = [
+    {
+      image: "/images/banner-1-1.jpg",
+      alt: "Battle of the Atlantic",
+      title: "Canada’s Battle of the Atlantic Virtual Memorial",
+      subtitle: "Bell Island, Newfoundland and Labrador — 1942",
+      description: [
+        "Unlike land warfare, naval combat leaves few visible traces. Ships sink offshore, crews are lost, and families are often left without graves or places to remember. The Battle of the Atlantic—the longest campaign of the Second World War—remains one of the least visible, yet most consequential chapters in Canada’s history.",
+        "This project will make that invisible battlefield visible—through archaeology, marine science, and digital reconstruction.",
+      ],
+      buttons: [
+        {
+          label: "Support the Expedition",
+          href: "/support-us",
+          className: "btn btn-accent",
+        },
+        {
+          label: "Explore the Memorial",
+          href: "/project",
+          className: "btn btn-primary",
+        },
+      ],
+    },
+    {
+      image: "/images/banner-1.jpg",
+      alt: "Memorial Wreck Site",
+      title: "Canada’s Battle of the Atlantic Virtual Memorial",
+      subtitle: "Bell Island, Newfoundland and Labrador — 1942",
+      description: [
+        "Unlike land warfare, naval combat leaves few visible traces. Ships sink offshore, crews are lost, and families are often left without graves or places to remember. The Battle of the Atlantic—the longest campaign of the Second World War—remains one of the least visible, yet most consequential chapters in Canada’s history.",
+        "This project will make that invisible battlefield visible—through archaeology, marine science, and digital reconstruction.",
+      ],
+      buttons: [
+        {
+          label: "Support the Expedition",
+          href: "/support-us",
+          className: "btn btn-accent",
+        },
+        {
+          label: "Explore the Memorial",
+          href: "/project",
+          className: "btn btn-primary",
+        },
+      ],
+    },
+  ]
+
+
   return (
     <>
-
+<Slider slides={slides}/>
 <QuoteSection/>
 <ContentSection
   title="An Invisible Battlefield"
@@ -23,11 +75,11 @@ export default function Home() {
   <p className='mb-2'>Bell Island preserves a unique concentration of wartime features linked within a single geographic setting:</p>
   <CheckList
   items={[
-    "Four Second World War shipwrecks in Conception Bay",
-    "The remains of Scotia Pier",
-    "A preserved coastal artillery battery",
-    "The Seamen&rsquo;s Cemetery at Lance Cove",
-    "Flooded iron ore mine workings"
+    { text: "Four Second World War shipwrecks in Conception Bay" },
+    { text: "The remains of Scotia Pier" },
+    { text: "A preserved coastal artillery battery" },
+    { text: "The Seamen&rsquo;s Cemetery at Lance Cove" },
+    { text: "Flooded iron ore mine workings" },
   ]}
 />
 
@@ -39,36 +91,69 @@ export default function Home() {
   buttonVariant="secondary"
 />
 
-<ContentSection
-  title="A Memorial Built Through Science and Exploration"
-  description={<>
-  
-  <ul>
-<li><strong>Underwater archaeology &mdash;</strong> high-resolution 3D documentation</li>
-<li><strong>Digital Terrain Model (DTM) &mdash;</strong> integrated seabed, shoreline, and land mapping</li>
-<li><strong>Marine science &mdash;</strong> biological and ecological baseline studies</li>
-<li><strong>Graduate student training &mdash;</strong> field and research participation</li>
-<li><strong>Public interpretation and heritage tourism &mdash;</strong> accessible digital and on-site engagement</li>
-</ul>
-<p>This work builds on the HMCS Canada Expedition, which produced a complete three-dimensional photogrammetric model of Canada&rsquo;s first purpose-built warship.</p>
-  
-  </>}
-  image="/images/banner-1-1.jpg"
-  buttonText="Support Us"
-  buttonLink="/support-us"
-  buttonVariant="accent"
+<CenterImageSection
   className="bg-[var(--primary-color)] text-white"
+
+  image="/images/GhostBowReneeJILL8747l.jpg"
+  imageAlt="Historic submarine"
+
+  left={{
+    title: "Newfoundland and the War at Sea",
+    description:
+      "Bell Island’s iron ore was essential to Allied steel production, making it a strategic target within the North Atlantic war. What appears to be a local anchorage was, in reality, part of a global system linking North America to Britain through convoy routes, naval bases, and industrial supply chains.",
+    buttonText: "Learn More",
+    buttonLink: "/project",
+    buttonVariant: "primary"
+  }}
+
+  right={{
+    title: "From Seafloor to Digital Memorial",
+    description:"This project creates an integrated three-dimensional landscape linking wrecks, shoreline, and industrial infrastructure into a single, coherent virtual environment—transforming Bell Island from a series of isolated sites into a unified historical battlefield.",
+    buttonText: "Support Us",
+    buttonLink: "/support-us",
+    buttonVariant: "accent"
+  }}
 />
+
 <ContentSection
-  title="Support the Memorial"
-  description="Help preserve naval history and honor those who served."
+  title="Expedition Partners and Collaborators"
+  description={<>
+
+  <CheckList
+  items={[
+    "Marine Institute, Memorial University of Newfoundland (MI–MUN)",
+    "Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL)",
+    "VOYIS Imaging",
+    "Royal Canadian Geographical Society (RCGS)",
+    "HMCS Canada Expedition Dive Team"
+  ]}
+/>
+  <p className='mb-2'>The expedition has received grant support from the Royal Canadian Geographical Society and is further advanced through significant in-kind contributions from academic and technical partners.</p>
+  <p className='mb-2'>Additional support from private donors, foundations, government programs, and corporate partners will enable the full realization of the Virtual Memorial.</p>
+  </>}
   image="/images/banner-2.jpg"
   reverse
   buttonText="Support Us"
   buttonLink="/support-us"
   buttonVariant="secondary"
-  className="bg-[var(--secondary-bg-color)]"
 />
+
+<CTASection
+        title="Support the Virtual Memorial"
+        backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
+        buttons={[
+          {
+            text: "Support the Expedition",
+            link: "/support-us",
+            variant: "primary"
+          },
+          {
+            text: "Contact Us About Partnership Opportunities",
+            link: "/contact",
+            variant: "accent"
+          }
+        ]}
+      />
 </>
   )
 }

@@ -30,16 +30,16 @@ export default function ContentSection({
   <div className="max-w-7xl mx-auto px-5" data-aos="fade-up">
 
     <div
-      className={`flex gap-4 md:gap-12 flex-col md:flex-row ${
+      className={`flex gap-4 md:gap-12 flex-col md:flex-row items-stretch ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
 
       {/* Text */}
-      <div className="flex-1 order-2 md:order-1 my-auto">
+      <div className="flex-1 order-2 md:order-1 my-4">
         <div className="max-w-full md:mx-0">
 
-          <h2 className={styles.heading}>{title}</h2>
+          <h2 className={`md:text-3xl heading`}>{title}</h2>
 
           <div className={styles.description}>{description}</div>
 
@@ -56,8 +56,8 @@ export default function ContentSection({
       </div>
 
       {/* Image */}
-      <div className="flex-1 w-full order-1 md:order-2">
-        <div className="relative w-full h-[250px] md:h-[500px]">
+      <div className="flex-1 w-full order-1 md:order-2 flex">
+        <div className="relative w-full min-h-[250px] md:min-h-full">
           <Image
             src={image}
             alt={title}
