@@ -120,12 +120,13 @@ const slides = [
   description={<>
 
   <CheckList
+
   items={[
-    "Marine Institute, Memorial University of Newfoundland (MI–MUN)",
-    "Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL)",
-    "VOYIS Imaging",
-    "Royal Canadian Geographical Society (RCGS)",
-    "HMCS Canada Expedition Dive Team"
+    { text: "Marine Institute, Memorial University of Newfoundland (MI–MUN)" },
+    { text: "Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL)" },
+    { text: "VOYIS Imaging" },
+    { text: "Royal Canadian Geographical Society (RCGS)" },
+    { text: "HMCS Canada Expedition Dive Team" }
   ]}
 />
   <p className='mb-2'>The expedition has received grant support from the Royal Canadian Geographical Society and is further advanced through significant in-kind contributions from academic and technical partners.</p>

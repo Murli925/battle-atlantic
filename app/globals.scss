@@ -4,9 +4,10 @@
   --background-color: #ffffff;
   --primary-bg-color:#ffffff;
   --secondary-bg-color:#437EB221;
-  --foreground-color: #171717;
+  --foreground-color: #383838;
 
   --primary-color: #122A40;
+  --primary-color-70-alpha: #122a40ce;
   --primary-hover: #0c2236;
 
   --secondary-color: #0e5fa7;
@@ -113,7 +114,9 @@ h1, h2, h3, h4{
   gap: 10px;
   margin-bottom: 12px;
 }
-
+.check-list > li li:last-child{
+  margin-bottom: 0px !important;
+}
 .check-list li svg {
   color: var(--accent-color);
   flex-shrink: 0;
@@ -145,4 +148,7 @@ h1, h2, h3, h4{
       margin-bottom: 15px;
     font-size:26px !important;
   }
+}
+strong{
+  font-weight: 600;
 }

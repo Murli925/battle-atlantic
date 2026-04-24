@@ -23,7 +23,7 @@ export default function CTASection({
 }: Props) {
   return (
     <section
-      className={`relative py-16 md:py-24 bg-cover bg-center ${className}`}
+      className={`relative py-30 md:py-30 bg-cover bg-center ${className}`}
       style={{
         backgroundImage: `url('${backgroundImage}')`
       }}
