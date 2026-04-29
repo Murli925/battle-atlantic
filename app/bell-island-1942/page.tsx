@@ -1,56 +1,22 @@
 import HeroSlider from "@/components/sections/HeroSlider"
 import ContentSection from "@/components/sections/ContentSection"
-import ServicesSection from "@/components/sections/ServiceSection"
-import QuoteSection from "@/components/sections/QuoteSection"
 import CheckList from "@/components/CheckList"
 import CenterImageSection from "@/components/sections/CenterImageSection"
 import CTASection from "@/components/sections/CTASection"
+import InnerBanner from "@/components/sections/Inner-banner"
 
 export default function Bell_island_1942() {
-
-const slides = [
-    {
-      image: "/images/banner-1-1.jpg",
-      alt: "The Bell Island Attacks, 1942",
-      title: "The Bell Island Attacks, 1942",
-      buttons: [
-        {
-          label: "Support the Expedition",
-          href: "/support-us",
-          className: "btn btn-accent",
-        },
-        {
-          label: "Explore the Memorial",
-          href: "/project",
-          className: "btn btn-primary",
-        },
-      ],
-    },
-        {
-      image: "/images/banner-1-1.jpg",
-      alt: "The Bell Island Attacks, 1942",
-      title: "The Bell Island Attacks, 1942",
-      buttons: [
-        {
-          label: "Support the Expedition",
-          href: "/support-us",
-          className: "btn btn-accent",
-        },
-        {
-          label: "Explore the Memorial",
-          href: "/project",
-          className: "btn btn-primary",
-        },
-      ],
-    }
-    
-  ]
 
 
   return (
     <>
 {/* --------------------------------------------  Section 1 -------------------------------------------- */}
-<HeroSlider slides={slides}/>
+<InnerBanner
+subtitle="Bell Island 1942"
+        title="Bell Island 1942"
+        image="/images/BlastHole-Strathcona.jpg"
+        imageAlt="Bell Island Harbour"
+      />
 {/* --------------------------------------------  Section 2 -------------------------------------------- */}
 <ContentSection
   title="Bell Island in the Atlantic Wartime System"

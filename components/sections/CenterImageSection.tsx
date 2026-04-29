@@ -92,7 +92,7 @@ export default function CenterImageSection({
           {/* Center Image */}
           {showImage && (
             <div className="flex-1">
-              <div className="relative w-full h-[280px] md:h-[400px]">
+              <div className="relative w-full h-[280px] md:h-full">
                 <Image
                   src={image}
                   alt={imageAlt}

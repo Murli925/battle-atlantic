@@ -8,6 +8,8 @@
 
   --primary-color: #122A40;
   --primary-color-70-alpha: #122a40ce;
+  --primary-color-80-alpha: #122a40ce;
+  --primary-color-90-alpha: #122a40ce;
   --primary-hover: #0c2236;
 
   --secondary-color: #0e5fa7;
@@ -138,17 +140,46 @@ h1, h2, h3, h4{
 }
 
 @media all and (min-width:992px){
+  h1.heading{
+    font-size:48px !important;
+  }
   h2.heading{
     font-size:32px !important;
       margin-bottom: 15px;
   }
+    h3.heading{
+    font-size:26px !important;
+      margin-bottom: 15px;
+  }
 }
 @media all and (max-width:991px){
+  h1.heading{
+    font-size:32px !important;
+  }
   h2.heading{
       margin-bottom: 15px;
     font-size:26px !important;
   }
+    h3.heading{
+    font-size:22px !important;
+      margin-bottom: 15px;
+  }
+  
 }
 strong{
   font-weight: 600;
+}
+.subtitle{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.subtitle::after {
+	content: "";
+	width: 100px;
+	height: 1px;
+	display: inline-block;
+	position: relative;
+	background: #fff;
+	margin-left: 10px;
+	margin-bottom: 5px;
 }
