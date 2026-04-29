@@ -169,9 +169,10 @@ h1, h2, h3, h4{
 strong{
   font-weight: 600;
 }
-.subtitle{
-  font-size: 18px;
-  margin-bottom: 10px;
+.subtitle {
+	margin-bottom: 10px;
+	font-size: 18px;
+	display: block;
 }
 .subtitle::after {
 	content: "";
@@ -182,4 +183,10 @@ strong{
 	background: #fff;
 	margin-left: 10px;
 	margin-bottom: 5px;
+}
+:is(.swiper-button-next, .swiper-button-prev) {
+	background: #0f2a44b3;
+	padding: 15px;
+	color: #fff !important;
+	border-radius: 30px !important;
 }

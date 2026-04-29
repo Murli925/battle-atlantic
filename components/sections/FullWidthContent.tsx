@@ -38,7 +38,7 @@ export default function FullWidthContent({
               )}
 
               {block.description && (
-                <div className={styles.description}>
+                <div className={`!mb-0 ${styles.description}`}>
                   {block.description}
                 </div>
               )}
