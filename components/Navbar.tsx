@@ -14,10 +14,8 @@ const navLinks = [
   { name: "Our Team", href: "/our-team" },
   { name: "Virtual Memorial", href: "/virtual-memorial" },
   { name: "Sponsors", href: "/sponsors" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Submarine Warfare", href: "/submarine-warfare" },
-  { name: "Contact", href: "/contact" },
-  { name: "Support Us", href: "/support-us" }
+  { name: "The Global Naval War", href: "/the-global-naval-war" },
+  { name: "Donations", href: "/donations" }
 ]
 
 export default function Navbar() {
