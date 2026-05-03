@@ -6,87 +6,88 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "./HeroSlider.module.scss"
 
-// import "swiper/css"
-// import "swiper/css/navigation"
-// import "swiper/css/pagination"
+type Slide = {
+  image: string
+  alt?: string
+  title?: string
+  subtitle?: string
+  description?: React.ReactNode
+  buttons?: {
+    text: string
+    link: string
+    variant?: "primary" | "secondary" | "accent"
+  }[]
+}
 
-export default function HeroSlider() {
+type Props = {
+  slides: Slide[]
+  autoplayDelay?: number
+  showNavigation?: boolean
+  showPagination?: boolean
+  className?: string
+}
+
+export default function HeroSlider({
+  slides,
+  autoplayDelay = 4500,
+  showNavigation = true,
+  showPagination = true,
+  className = ""
+}: Props) {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${className}`}>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        navigation
-        pagination={{ clickable: true }}
+        navigation={showNavigation}
+        pagination={showPagination ? { clickable: true } : false}
         loop={true}
-        autoplay={{ delay: 4500, disableOnInteraction: false }}
+        autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
         speed={1200}
       >
 
-        {/* Slide 1 */}
-        <SwiperSlide>
-          <div className={styles.slide}>
-            <Image
-              src="/images/banner-1-1.jpg"
-              alt="Battle of the Atlantic"
-              fill
-              priority
-              className={styles.image}
-            />
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className={styles.slide}>
+              
+              <Image
+                src={slide.image}
+                alt={slide.alt || "Slide Image"}
+                fill
+                priority={index === 0}
+                className={styles.image}
+              />
 
-<div className={styles.overlay}>
-  <div className={styles.content}>
-    <h1>Canada’s Battle of the Atlantic Virtual Memorial</h1>
-    <h2 className="mb-2">Bell Island, Newfoundland and Labrador — 1942</h2>
-    <p>
-      Unlike land warfare, naval combat leaves few visible traces. Ships sink offshore, crews are lost, and families are often left without graves or places to remember. The Battle of the Atlantic—the longest campaign of the Second World War—remains one of the least visible, yet most consequential chapters in Canada’s history.</p>
-<p>This project will make that invisible battlefield visible—through archaeology, marine science, and digital reconstruction.
-    </p>
+              <div className={styles.overlay}>
+                <div className={styles.content}>
 
+                  {slide.title && <h1>{slide.title}</h1>}
+                  {slide.subtitle && (
+                    <h2 className="mb-2">{slide.subtitle}</h2>
+                  )}
 
-    <div className={styles.buttons}>
-      <Link href="/support-us" className="btn btn-accent">
-        Support the Expedition
-      </Link>
-      <Link href="/project" className="btn btn-primary">
-        Explore the Memorial
-      </Link>
-    </div>
-  </div>
-</div>
-          </div>
-        </SwiperSlide>
+                  {slide.description && <div>{slide.description}</div>}
 
-        {/* Slide 2 */}
-        <SwiperSlide>
-          <div className={styles.slide}>
-            <Image
-              src="/images/banner-1.jpg"
-              alt="Submarine Warfare"
-              fill
-              className={styles.image}
-            />
+                  {slide.buttons && (
+                    <div className={styles.buttons}>
+                      {slide.buttons.map((btn, i) => (
+                        <Link
+                          key={i}
+                          href={btn.link}
+                          className={`btn btn-${btn.variant || "primary"}`}
+                        >
+                          {btn.text}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
 
-<div className={styles.overlay}>
-  <div className={styles.content}>
-    <h1>Bell Island, Newfoundland and Labrador — 1942</h1>
-    <p>
-      Unlike land warfare, naval combat leaves few visible traces. Ships sink offshore, crews are lost, and families are often left without graves or places to remember. The Battle of the Atlantic—the longest campaign of the Second World War—remains one of the least visible, yet most consequential chapters in Canada’s history.</p>
-<p>This project will make that invisible battlefield visible—through archaeology, marine science, and digital reconstruction.
-    </p>
+                </div>
+              </div>
 
-    <div className={styles.buttons}>
-      <Link href="/support-us" className="btn btn-accent">
-        Support the Expedition
-      </Link>
-      <Link href="/project" className="btn btn-primary">
-        Explore the Memorial
-      </Link>
-    </div>
-  </div>
-</div>
-          </div>
-        </SwiperSlide>
+            </div>
+          </SwiperSlide>
+        ))}
 
       </Swiper>
 

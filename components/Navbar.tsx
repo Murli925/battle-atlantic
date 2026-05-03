@@ -14,7 +14,7 @@ const navLinks = [
   { name: "Our Team", href: "/our-team" },
   { name: "Virtual Memorial", href: "/virtual-memorial" },
   { name: "Sponsors", href: "/sponsors" },
-  { name: "The Global Naval War", href: "/the-global-naval-war" },
+  // { name: "The Global Naval War", href: "/the-global-naval-war" },
   { name: "Donations", href: "/donations" }
 ]
 

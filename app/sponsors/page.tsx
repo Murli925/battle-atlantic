@@ -2,9 +2,9 @@ import Image from "next/image"
 import ContentSection from "@/components/sections/ContentSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
-import FullWidthContent from "@/components/sections/FullWidthContent"
 import CheckList from "@/components/CheckList"
 import CarouselSection from "@/components/CarouselSection"
+import LogoGallery from "@/components/Logogallery"
 
 export default function Sponsors() {
 
@@ -13,7 +13,7 @@ export default function Sponsors() {
     <>
 <InnerBanner
 subtitle="Sponsors"
-  title="Our Team"
+  title="Extending the Expedition Through In-Kind Support"
   image="/images/diver-on-gun-deck.jpg"
   className="object-position-top"
   imageAlt="Bell Island Expedition Team"
@@ -49,7 +49,7 @@ subtitle="Sponsors"
 /> 
     </>
   }
-  image="/images/banner-2.jpg"
+
 
 />
 
@@ -89,45 +89,49 @@ subtitle="Sponsors"
 
   description={
     <>
-      <p className="mt-2">
+      <p className="my-2">
         The expedition has received initial support from private and institutional donors and may also receive contributions from individuals, government agencies, corporations, and foundations. Contributions at all levels support field operations, imaging technology, expedition logistics, student participation, and the development of the Virtual Memorial. Donors may be acknowledged, with permission, through expedition materials, publications, and presentations.
       </p>
+      <LogoGallery
+  // className="bg-[var(--secondary-bg-color)]"
+  groups={[
+    {
+      title: "",
+      items: [
+        { image: "/images/RCGS-logo.jpg" }
+      ]
+    },
+    {
+      title: "Media Partners",
+      items: [
+        { image: "/images/Can Geo logo.jpg" }
+      ]
+    },
+    {
+      title: "Museum Collaborations",
+      items: [
+        {
+          image: "/images/Canadian-Naval-Memorial-Trust.jpg",
+          link: "https://www.cnmt.ca/"
+        },
+        {
+          image: "/images/MMA-logo.jpg",
+          link: "https://www.cnmt.ca/"
+        }
+      ]
+    }
+  ]}
+/>
     </>
   }
   image="/images/banner-2.jpg"
+ buttonText="Support Us"
+buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
+buttonVariant="primary"
+
 />
 
-<ContentSection
-  title="Flag Expeditions"
-  description={
-    <>
-      <Image src={"/images/RCGS-logo.jpg"} width={300} height={100} className="mt-4" alt="In Kind Contributions chart" />
 
-      <h3 className="mt-3 heading">
-Media Partners
-</h3>
-<Image src={"/images/Can Geo logo.jpg"} width={300} height={100} className="mt-4" alt="Media Partners" />
-
-      <h3 className="mt-3 heading">
-Museum Collaborations
-</h3>
-<a href="https://www.cnmt.ca/" target="_blank"><Image src={"/images/Canadian-Naval-Memorial-Trust.jpg"} width={300} height={100} className="mt-4" alt="Media Partners" /></a>
-
-<a href="https://www.cnmt.ca/" target="_blank"><Image src={"/images/MMA-logo.jpg"} width={300} height={100} className="mt-4" alt="MMA logo" /></a>
-
-      <p className="mt-4">
-Donate here:
-      </p>
-
-    </>
-  }
-  image="/images/banner-2.jpg"
-  reverse
-  className="bg-[var(--secondary-bg-color)]"
-  buttonText="Donate Now"
-  buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
-  buttonVariant="primary"
-/>
 
 
 

@@ -41,7 +41,7 @@ export default function Donations() {
         wartime landscape.
       </p>
 
-      <p className="mt-2 font-semibold">
+      <p className="mt-2 mb-2 font-semibold">
         Support the Expedition
       </p>
     </>
@@ -124,14 +124,14 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
       <CheckList
         items={[
-          { text: <>vessel operations in Conception Bay</> },
-          { text: <>underwater imaging and survey technology</> },
-          { text: <>high-resolution data acquisition of the wrecks and surrounding landscape</> },
-          { text: <>aerial and terrestrial mapping of shoreline and infrastructure</> },
-          { text: <>expedition logistics and field operations</> },
-          { text: <>student training and academic participation</> },
-          { text: <>development of the Bell Island Virtual Memorial platform</> },
-          { text: <>public education, outreach and heritage tourism</> }
+          { text: <>Vessel operations in Conception Bay</> },
+          { text: <>Underwater imaging and survey technology</> },
+          { text: <>High-resolution data acquisition of the wrecks and surrounding landscape</> },
+          { text: <>Aerial and terrestrial mapping of shoreline and infrastructure</> },
+          { text: <>Expedition logistics and field operations</> },
+          { text: <>Student training and academic participation</> },
+          { text: <>Development of the Bell Island Virtual Memorial platform</> },
+          { text: <>Public education, outreach and heritage tourism</> }
         ]}
       />
     </>
@@ -167,9 +167,9 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
       <CheckList
         items={[
-          { text: <>environmental conditions and marine life associated with the wrecks</> },
-          { text: <>structural condition and integrity of each vessel</> },
-          { text: <>site formation processes and long-term preservation trends</> }
+          { text: <>Environmental conditions and marine life associated with the wrecks</> },
+          { text: <>Structural condition and integrity of each vessel</> },
+          { text: <>Site formation processes and long-term preservation trends</> }
         ]}
       />
 
@@ -284,7 +284,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
 
         <h4 className="heading"><b>Joseph Frey</b></h4>
-        <p className="mt-2">
+        <p className="mt-2 mb-4">
         Expedition Lead and Project Director
         <br />
         Battle of the Atlantic Virtual Memorial — Bell Island and the North
@@ -336,37 +336,30 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
         deterioration.
       </p>
 
-      <p className="mt-2 font-semibold">
-        Support the Expedition
-      </p>
     </>
   }
   image="/images/banner-2.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
-  buttonText="Donate Now"
-  buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
-  buttonVariant="primary"
+  // buttonText="Donate Now"
+  // buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
+  // buttonVariant="primary"
 />
 
 
 
-{/* <CTASection
+<CTASection
   title="Support the Bell Island Expedition 2027"
   backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
   buttons={[
     {
       text: "Support the Expedition",
-      link: "/support-us",
+      link: "https://secure.qgiv.com/for/bellislandexpedition/",
       variant: "primary"
-    },
-    {
-      text: "Contact Us About Partnership Opportunities",
-      link: "/contact",
-      variant: "accent"
+
     }
   ]}
-/> */}
+/>
 </>
   )
 }

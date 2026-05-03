@@ -19,9 +19,9 @@ export default function QuoteSection() {
         <div className="max-w-full md:max-w-[1000px] mx-auto text-center">
 <Quote className='text-white mx-auto mb-5' size={40} style={{ color: "var(--accent-color)" }} />
           <h2 className={`${ephesis.className} md:text-4xl text-2xl text-center mb-5 text-white tracking-wider`} >The Battle of the Atlantic was the dominating factor all through the war. Never for one moment could we forget that everything happening elsewhere, on land, at sea, or in the air depended ultimately on its outcome.</h2>
-          <p className="text-xl text-center text-white">Winston Churchill</p>
+          <p className="text-xl text-center text-white mb-4">Winston Churchill</p>
 
-
+<small className={`text-[var(--text-white)] mt-4 d-block`}>The only defended industrial harbour in North America attacked by German U-boats during the Second World War</small>
 
     </div>
 

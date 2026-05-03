@@ -11,7 +11,7 @@ export default function Our_Team() {
 <InnerBanner
 subtitle="Our Team"
   title="Our Team"
-  image="/images/banner-team.jpg"
+  image="/images/Header-U=576-u576_sonar.jpg"
   imageAlt="Bell Island Expedition Team"
 />
 
@@ -45,7 +45,7 @@ subtitle="Our Team"
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/HMCS-Canada_Starboard.jpg"
 />
 
 <ContentSection
@@ -83,20 +83,15 @@ subtitle="Our Team"
       </p>
 
       <p className="mt-2">
-        A Fellow and senior leader within the Royal Canadian Geographical
-        Society, he brings together academic institutions, technology partners,
-        and field teams to deliver integrated scientific and historical
-        outcomes.
+        He is a Fellow and senior leader of the Royal Canadian Geographical Society, where he serves as Vice-President and Chair of the College of Fellows, and is a former Vice-President and Director of The Explorers Club. His career brings together academic institutions, government agencies, technology partners, and expedition teams to deliver integrated scientific and historical outcomes.
       </p>
 
       <p className="mt-2">
-        For the Bell Island expedition, he is responsible for overall project
-        direction, the integration of historical and scientific research, and
-        the coordination of field operations and partner contributions.
+        For the Bell Island Expedition, Frey is responsible for overall project direction, the integration of historical and scientific research, and the coordination of field operations and partner contributions. The project reflects a broader effort to develop new methods for documenting and interpreting maritime battlefields through large-scale digital terrain modelling and public-facing virtual reconstruction.
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/Joseph-Frey.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -108,6 +103,7 @@ className="bg-[var(--primary-color)]"
     {
     blockClassName: "bg-[var(--background-color)] p-5",
       title: "Marine Institute, Memorial University of Newfoundland",
+      image: "/images/marine-institute.jpg",
       description: (
         <>
           <h3 className="heading mt-2">
@@ -140,6 +136,7 @@ className="bg-[var(--primary-color)]"
     {
     blockClassName: "bg-[var(--background-color)] p-5",
       title: "Shipwreck Preservation Society of Newfoundland and Labrador",
+      image: "/images/ms2.jpg",
       description: (
         <>
           <h3 className="heading mt-2">
@@ -170,6 +167,7 @@ className="bg-[var(--primary-color)]"
     {
         blockClassName: "bg-[var(--background-color)] p-5",
       title: "VOYIS",
+      image: "/images/voyis.jpg",
       description: (
         <>
           <h3 className="heading mt-2">
@@ -199,6 +197,7 @@ className="bg-[var(--primary-color)]"
         {
     blockClassName: "bg-[var(--background-color)] p-5",
       title: "Royal Canadian Geographical Society (RCGS)",
+      image: "/images/Can Geo logo.jpg",
       description: (
         <>
 <h3 className="heading mt-2">Expedition Partner</h3>
@@ -257,7 +256,7 @@ className="bg-[var(--primary-color)]"
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/RCGS Expedition Flag.jpg"
   reverse
 />
 
@@ -294,7 +293,7 @@ className="bg-[var(--primary-color)]"
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/VOYIS-tethered.jpg"
   className="bg-[var(--secondary-bg-color)]"
 />
 

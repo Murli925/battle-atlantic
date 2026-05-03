@@ -12,7 +12,7 @@ export default function Expedition_Objectives() {
 
           <InnerBanner
           subtitle="Expedition Objectives"
-        title="Expedition Objectives"
+        title="Documenting and Interpreting the Bell Island Battlefield"
         image="/images/BlastHole-Strathcona.jpg"
         imageAlt="Bell Island Harbour"
       />
@@ -20,9 +20,9 @@ export default function Expedition_Objectives() {
 {/* --------------------------------------------  Section 2 -------------------------------------------- */}
 <ContentSection
   title="Expedition Objectives"
-  description={<><p className="mb-2">The Bell Island Battle of the Atlantic Expedition is designed to document, interpret, and make accessible one of the most intact Second World War naval battle landscapes in North America.</p> <p>The project brings together underwater archaeology, marine science—including marine biology and ecological study—advanced imaging technologies, and historical research to produce a comprehensive digital record of the 1942 attacks and their wider operational and geographic context within the Battle of the Atlantic, while also commemorating those who made the ultimate sacrifice and supporting the responsible development of heritage tourism and public interpretation associated with the Battle of the Atlantic in Newfoundland and Labrador.</p>
+  description={<><p className="mb-2">The Bell Island Battle of the Atlantic Expedition is designed to document, interpret, and make accessible one of the most intact Second World War naval battle landscapes in North America.</p> <p>The project brings together underwater archaeology, marine science—including marine biology and environmental study—advanced imaging technologies, and historical research to produce a comprehensive digital record of the 1942 attacks and their wider operational and geographic context within the Battle of the Atlantic, while also supporting responsible heritage interpretation and long-term scientific study in Newfoundland and Labrador.</p>
 </>}
-  image="/images/GhostBowReneeJILL8747l.jpg"
+  image="/images/2jqiAjcdx4VHPgzUc26l2QBRu49F19CGWFqAlXQt6Z6plR_xuHhWWgR5eemALygVk8M2V_44vYK3zBy3ZFdPq-ijSiNj6U4xg6uxafaLeEYJjlp5fT6gK-fTvOzQaUVFLK2ZWByjdJcK1VNo8NROjhIH0sxSdRdgODmvIE7EUdgudQinrrQwZHpbgoIIXSs9.jpg"
   buttonText="Learn More"
   buttonLink="/project"
   buttonVariant="primary"
@@ -103,7 +103,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
     </>
   }
   
-  image="/images/banner-2.jpg"
+  image="/images/Creating-a-DTM.png"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -112,7 +112,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
 
 {/* --------------------------------------------  Section 4 -------------------------------------------- */}
 <ContentSection
-  title="Underwater Archaeological Documentation"
+  title="Underwater Archaeological Documentation and Site Condition Assessment"
   description={<>
 <p>
   The expedition will conduct systematic, non-intrusive archaeological
@@ -130,53 +130,16 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
   ]}
 />
 
-<p className="mt-2">
-  All work will be conducted in accordance with established underwater cultural
-  heritage protocols, ensuring that the sites are documented but not disturbed.
-</p>
-
-<p className="mt-2">
-  The expedition is undertaken in consultation with the Shipwreck Preservation
-  Society of Newfoundland and Labrador, which plays an important role in the
-  stewardship and protection of underwater cultural heritage in the province.
-</p>
-
-<p className="mt-2">
-  This collaboration ensures that all documentation is conducted in accordance
-  with established heritage practices and reflects the interests of the local
-  and diving communities.
-</p>
+<p className="mt-2">In addition to documentation, the expedition will establish a baseline record of the physical condition of each vessel. This will provide a reference for future monitoring of structural change, material degradation, and site evolution over time.</p>
+<p className="mt-2">All work will be conducted in accordance with established underwater cultural heritage protocols, ensuring that the sites are documented but not disturbed.</p>
+<p className="mt-2">The expedition is undertaken in consultation with the Shipwreck Preservation Society of Newfoundland and Labrador, ensuring alignment with provincial heritage practices and community interests.</p>
 
   </>}
-  image="/images/banner-2.jpg"
-  // buttonText="Support Us"
-  // buttonLink="/support-us"
-  // buttonVariant="secondary"
+
+  image="/images/1b24e84f974e42068251f5928464e540.jpeg"
 />
 {/* --------------------------------------------  Section 5 -------------------------------------------- */}
-{/* <CenterImageSection
-  className="bg-[var(--primary-color)] text-white"
 
-  image="/images/GhostBowReneeJILL8747l.jpg"
-  imageAlt="Historic submarine"
-centertitle="Allied Vessels Sunk at Bell Island"
-  left={{
-    title: "Newfoundland and the War at Sea",
-    description:
-      "Bell Island’s iron ore was essential to Allied steel production, making it a strategic target within the North Atlantic war. What appears to be a local anchorage was, in reality, part of a global system linking North America to Britain through convoy routes, naval bases, and industrial supply chains.",
-    buttonText: "Learn More",
-    buttonLink: "/project",
-    buttonVariant: "primary"
-  }}
-
-  right={{
-    title: "From Seafloor to Digital Memorial",
-    description:"This project creates an integrated three-dimensional landscape linking wrecks, shoreline, and industrial infrastructure into a single, coherent virtual environment—transforming Bell Island from a series of isolated sites into a unified historical battlefield.",
-    buttonText: "Support Us",
-    buttonLink: "/support-us",
-    buttonVariant: "accent"
-  }}
-/> */}
 {/* --------------------------------------------  Section 6 -------------------------------------------- */}
 
 <ContentSection
@@ -195,25 +158,23 @@ centertitle="Allied Vessels Sunk at Bell Island"
   items={[
     { text: <>Species presence and biodiversity associated with each wreck</> },
     { text: <>Structural habitat complexity and ecological variation between sites</> },
-    { text: <>Indicators of environmental change, including water temperature and biological shifts</> }
+    { text: <>Environmental indicators, including water temperature and biological distribution</> }
   ]}
 />
 
 <p className="mt-2">
-  This work will establish a baseline dataset for long-term environmental
-  monitoring, contributing to a broader understanding of marine ecosystems and
-  environmental change in Newfoundland waters.
+  This work will establish a baseline dataset for long-term environmental monitoring, supporting future research into ecological change and the interaction between marine environments and submerged cultural heritage.
 </p>
     </>
   }
   
-  image="/images/banner-2.jpg"
+      images={[
+"/images/cold water coral by  PLM torpedo Hole JILL.jpg",
+    "/images/Cold Water coral on deck Gun Strathcona.jpg"
+  ]}
     reverse
   className="bg-[var(--secondary-bg-color)]"
 
-  // buttonText="Support Us"
-  // buttonLink="/support-us"
-  // buttonVariant="secondary"
 />
 {/* --------------------------------------------  Section 7 -------------------------------------------- */}
 
@@ -222,8 +183,7 @@ centertitle="Allied Vessels Sunk at Bell Island"
   description={
     <>
       <p className="mt-2">
-        A key objective of the expedition is to evaluate and refine advanced
-        marine imaging technologies in a complex, cold-water environment.
+        A key objective of the expedition is to evaluate and refine advanced marine imaging technologies in a complex, cold-water North Atlantic environment.
       </p>
 
       <p className="mt-2 mb-2">This includes:</p>
@@ -237,14 +197,11 @@ centertitle="Allied Vessels Sunk at Bell Island"
       />
 
       <p className="mt-2">
-        Particular emphasis will be placed on comparing diver-acquired datasets
-        with those generated by remotely operated and autonomous systems,
-        informing future best practices in underwater documentation and digital
-        reconstruction.
+       Particular emphasis will be placed on comparing diver-acquired datasets with those generated by remotely operated systems, informing best practices in underwater documentation and digital reconstruction.
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/Joe-Hoyt-photographing-U-576.jpg"
 
 />
 
@@ -270,13 +227,11 @@ centertitle="Allied Vessels Sunk at Bell Island"
       />
 
       <p className="mt-2">
-        This approach treats Bell Island not simply as a collection of wrecks,
-        but as a complete wartime system in which industry, geography, and naval
-        conflict intersect.
+        This approach treats Bell Island not as a collection of isolated sites, but as a complete wartime system in which industry, geography, and naval conflict intersect.
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/Bell_Island_Newfoundland.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -296,33 +251,19 @@ centertitle="Allied Vessels Sunk at Bell Island"
 
       <CheckList
         items={[
-          { text: <>An interactive 3D digital model accessible online</> },
-          { text: <>Visualizations suitable for museum and educational use</> },
-          { text: <>Interpretive materials linking the Bell Island site to the wider Battle of the Atlantic</> },
-          { text: <>On-site interpretive potential, including QR-linked digital access points</> }
+          { text: <>An interactive three-dimensional digital model accessible online</> },
+          { text: <>Visualizations for museum and educational use</> },
+          { text: <>Interpretive materials linking Bell Island to the wider Battle of the Atlantic</> },
+          { text: <>On-site interpretive potential, including QR-linked access points</> }
         ]}
       />
 
       <p className="mt-2">
-        In addition to digital access, the project supports the responsible
-        development of heritage tourism associated with the Battle of the
-        Atlantic in Newfoundland and Labrador.
-      </p>
-
-      <p className="mt-2">
-        By linking Bell Island to key wartime sites across the province—
-        including St. John’s Harbour and the Crow’s Nest Officers’ Club, Signal
-        Hill, Cape Spear, the naval and air base at Argentia, and the
-        transatlantic aviation hub at Gander—as well as to smaller coastal
-        communities such as Fogo Island, Twillingate, and Bonavista, where
-        radar, weather, and coastal defence installations formed part of the
-        wider North Atlantic operational network, the expedition contributes to
-        a distributed, place-based visitor experience grounded in historical
-        interpretation, education, and community engagement.
+        The project supports the responsible development of heritage tourism in Newfoundland and Labrador by connecting Bell Island to related wartime sites across the province, including St. John’s Harbour, Signal Hill, Cape Spear, Argentia, and Gander, as well as smaller communities associated with radar, weather, and coastal defence operations.
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/U-576-sonar.jpg"
 
 />
 
@@ -347,12 +288,11 @@ centertitle="Allied Vessels Sunk at Bell Island"
       />
 
       <p className="mt-2">
-        The project is intended not only as documentation, but as a training
-        platform for the next generation of marine scientists and archaeologists.
+       The project serves as both a documentation initiative and a training platform for the next generation of marine scientists and archaeologists.
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/IMG_5379.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -382,17 +322,9 @@ centertitle="Allied Vessels Sunk at Bell Island"
         ]}
       />
 
-      <p className="mt-2">
-        Unlike land battlefields, where physical markers often remain, the naval
-        war is largely invisible.
-      </p>
-
-      <p className="mt-2">
-        This project seeks to make that history visible again.
-      </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/IMG_7857.jpg"
 
 />
 
@@ -404,30 +336,15 @@ centertitle="Allied Vessels Sunk at Bell Island"
   description={
     <>
       <p className="mt-2">
-        The Bell Island Battle of the Atlantic Expedition 2027 is not a single
-        survey, but the foundation of a long-term effort to document,
-        understand, and interpret Canada’s wartime heritage in its full
-        geographic context, from the seabed to the coastal and terrestrial
-        landscape.
+The Bell Island Expedition 2027 represents the foundation of a long-term effort to document, understand, and interpret Canada’s wartime heritage in its full geographic context—from seabed to shoreline to inland infrastructure.
       </p>
 
       <p className="mt-2">
-        Through the integration of archaeology, marine science, and advanced
-        imaging technologies, the project will transform a largely unseen
-        battlefield into a fully accessible and enduring digital record, while
-        supporting ongoing research, education, and public engagement.
-      </p>
-
-      <p className="mt-2">
-        Building on the approaches developed during NOAA’s Battle of the
-        Atlantic Expedition 2016 and the HMCS Canada Expedition 2025, the Bell
-        Island Expedition 2027 extends this model to a larger and more complex
-        environment, linking science, history, and commemoration within the
-        broader North Atlantic context.
+Building on approaches developed during NOAA’s 2016 Battle of the Atlantic expedition and the HMCS Canada Expedition 2025, this project extends integrated documentation methods to a larger and more complex battlefield environment, linking scientific research, historical interpretation, and commemoration within the broader North Atlantic system.
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/IMG_7881.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -435,7 +352,7 @@ centertitle="Allied Vessels Sunk at Bell Island"
 
 
 
-<ContentSection
+{/* <ContentSection
   title="Technology and Methodology"
   description={
     <>
@@ -660,7 +577,7 @@ experience in real-world marine environments.
   image="/images/banner-2.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
-/>
+/> */}
 
 {/* --------------------------------------------  Section 8 -------------------------------------------- */}
 

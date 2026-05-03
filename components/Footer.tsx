@@ -1,7 +1,10 @@
+import Image from "next/image"
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
 
+    <footer className="bg-gray-900 text-gray-300">
+    <Image src={`/images/Bell-Island-Battle-of-the-Atlantic-Expedition-Banner.jpg`} className="w-full" width="1920" height="300"alt="" />
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-6 py-14">
 
         <div>

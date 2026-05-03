@@ -1,9 +1,10 @@
-import HeroSlider from "@/components/sections/HeroSlider"
 import ContentSection from "@/components/sections/ContentSection"
 import CheckList from "@/components/CheckList"
 import CenterImageSection from "@/components/sections/CenterImageSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
+import Accordion from "@/components/AccordionSection"
+import Gallery from "@/components/GallerySection"
 
 export default function Bell_island_1942() {
 
@@ -20,36 +21,31 @@ subtitle="Bell Island 1942"
 {/* --------------------------------------------  Section 2 -------------------------------------------- */}
 <ContentSection
   title="Bell Island in the Atlantic Wartime System"
-  description={<><p className="mb-2">Bell Island formed part of a vast and interconnected wartime maritime system. Ships anchored in Conception Bay in 1942 were not operating in isolation. They would be joining convoys with other ships, some of which may have begun their voyages in the Caribbean, carrying oil loaded in Trinidad and the refineries of Aruba and Cura&ccedil;ao&mdash;among Britain&rsquo;s most important wartime fuel sources&mdash;north along the eastern seaboard of the United States.</p>
-<p className="mb-2">From Caribbean, American, Canadian, and Newfoundland ports&mdash;including Port of Spain, Aruba and Cura&ccedil;ao, Guant&aacute;namo, Philadelphia, New York, Boston, Halifax, Sydney, and St. John&rsquo;s&mdash;ships moved through an interconnected convoy system linking North America to Britain. Halifax served as the primary convoy assembly port, Sydney as a secondary assembly port for slower convoys, and St. John&rsquo;s as the base of the Newfoundland Escort Force, functioning as a critical escort transition and staging port for mid-ocean convoy operations.</p>
-<p>What appears to be a local Newfoundland anchorage was, in reality, part of a global wartime network. The ships lying at anchor at Bell Island were part of that system&mdash;and therefore part of the war.</p></>}
+  description={<>
+  <p>In 1942, Bell Island, Newfoundland&mdash;then a separate Dominion under British administration&mdash;was a critical iron-ore loading centre supplying steel production for both Canada and Britain. The Wabana mining complex, extending beneath the seabed of Conception Bay, was at that time the largest subsea iron ore operation in the world, producing high-grade ore essential for wartime shipbuilding, armaments, and industrial production.</p>
+<p className="mt-2">The strategic importance of Bell Island was well understood&mdash;on both sides of the Atlantic.</p>
+<p className="mt-2">Prior to the First World War, Germany had been one of the principal consumers of Bell Island ore. From the mid-1930s until the outbreak of war in 1939, it had become the mine&rsquo;s single largest customer. As a result, the geography, shipping patterns, and industrial significance of Bell Island were familiar to German planners. When war came, this knowledge became operationally relevant.</p>
+<p className="mt-2">Despite its importance, Bell Island was not defended as a front-line battlefield. The anchorage inside Conception Bay was considered relatively secure due to its distance from the open Atlantic and the perceived difficulty submarines would face in penetrating the bay. However, this assumption masked a critical vulnerability: the island&rsquo;s fixed coastal artillery&mdash;positioned at Cemetery Hill&mdash;was designed to defend against surface warships, not submerged threats. Anti-submarine defences were limited, and harbour protection measures such as anti-torpedo nets were not yet in place.</p>
+<p className="mt-2">Bell Island was, in effect, a vital industrial node operating within a global convoy system&mdash;but without the defensive depth that system required.</p>
+  </>}
   image="/images/GhostBowReneeJILL8747l.jpg"
   buttonText="Learn More"
   buttonLink="/project"
   buttonVariant="primary"
-imageHeight="650px"
-  imageHeightMobile="320px"
+
 />
-{/* --------------------------------------------  Section 3 -------------------------------------------- */}
-{/* <ServicesSection/> */}
-{/* --------------------------------------------  Section 4 -------------------------------------------- */}
+
+
 <ContentSection
   title="The 1942 Attacks"
   description={<>
   <p className="mb-2">In 1942, Bell Island, Newfoundland&mdash;then a separate Dominion under British administration&mdash;was a critical iron-ore loading centre supplying steel production for Canada and Britain. At the time, its Wabana mining complex included what was then the world&rsquo;s largest subsea iron ore mine.</p>
 <p className="mb-2">Ironically, prior to the First World War Germany had been one of its largest clients, and from the mid-1930s until 1939 it was the mine&rsquo;s single largest customer&mdash;making Bell Island familiar to German naval planners. Yet the island&rsquo;s sheltered anchorage inside Conception Bay was regarded as relatively secure from submarine attack, even though the adequacy of its defences was a matter of concern. Its coastal artillery, intended to defend against surface warships, was ineffective against submarines.</p>
 <p>On 5 September and 2 November 1942, German submarines U-513 and U-518 penetrated Conception Bay and torpedoed Allied vessels lying at anchor or engaged in loading operations off Bell Island. Four vessels were sunk, dozens of sailors were killed, and Bell Island became the site of the only confirmed sinkings of Allied shipping inside a defended industrial harbour along the east coast of either Canada or the United States during the Second World War.</p>
-  {/* <CheckList
-  items={[
-    "Four Second World War shipwrecks in Conception Bay",
-    "The remains of Scotia Pier",
-    "A preserved coastal artillery battery",
-    "The Seamen&rsquo;s Cemetery at Lance Cove",
-    "Flooded iron ore mine workings"
-  ]}
-/> */}
 
-  </>}
+  </>
+
+  }
   image="/images/banner-2.jpg"
   reverse
   buttonText="Support Us"
@@ -57,30 +53,190 @@ imageHeight="650px"
   buttonVariant="secondary"
   className="bg-[var(--secondary-bg-color)]"
 />
-{/* --------------------------------------------  Section 5 -------------------------------------------- */}
-{/* <CenterImageSection
+
+
+
+<Accordion
   className="bg-[var(--primary-color)] text-white"
+  blocks={[
+    {
+      blockClassName: "bg-[var(--background-color)] text-black",
+      title: "5 September 1942 — U-boat U-513 Attack",
+      description: (
+        <>
+          <p className="mt-2">
+            On 5 September 1942, the German submarine U-513—a long-range Type
+            IXC U-boat under the command of Korvettenkapitän Rolf Rüggeberg—
+            entered Conception Bay. Navigating through narrow approaches,
+            shoals, and tidal currents, the submarine penetrated deep into the
+            bay and approached the anchorage off Bell Island.
+          </p>
 
-  image="/images/GhostBowReneeJILL8747l.jpg"
-  imageAlt="Historic submarine"
-centertitle="Allied Vessels Sunk at Bell Island"
-  left={{
-    title: "Newfoundland and the War at Sea",
-    description:
-      "Bell Island’s iron ore was essential to Allied steel production, making it a strategic target within the North Atlantic war. What appears to be a local anchorage was, in reality, part of a global system linking North America to Britain through convoy routes, naval bases, and industrial supply chains.",
-    buttonText: "Learn More",
-    buttonLink: "/project",
-    buttonVariant: "primary"
-  }}
+          <p className="mt-2">
+            There, several ore carriers lay at anchor or were engaged in loading operations.
+          </p>
 
-  right={{
-    title: "From Seafloor to Digital Memorial",
-    description:"This project creates an integrated three-dimensional landscape linking wrecks, shoreline, and industrial infrastructure into a single, coherent virtual environment—transforming Bell Island from a series of isolated sites into a unified historical battlefield.",
-    buttonText: "Support Us",
-    buttonLink: "/support-us",
-    buttonVariant: "accent"
-  }}
-/> */}
+          <p className="mt-2">
+            At approximately 11:00 a.m., U-513 fired torpedoes into the anchored ships.
+            The British vessel Saganaga was struck first. The explosion was catastrophic:
+            the ship sank in well under a minute, giving the crew almost no time to respond.
+            Twenty-nine men were killed.
+          </p>
+
+          <p className="mt-2">
+            Nearby, the Canadian vessel Lord Strathcona had already begun taking evasive
+            action after witnessing the destruction of Saganaga. Her crew abandoned ship
+            before she was struck. When the torpedo hit, the vessel sank rapidly—but
+            remarkably, there were no fatalities.
+          </p>
+
+          <p className="mt-2">
+            The attack occurred within sight of shore. Residents of Bell Island witnessed
+            the explosions, the sinking ships, and the aftermath as survivors struggled
+            in the water. Local vessels and civilians participated in rescue efforts,
+            bringing survivors ashore.
+          </p>
+
+          <p className="mt-2 font-semibold">
+            This was no longer a distant ocean war.
+          </p>
+        </>
+      )
+    },
+
+    {
+      blockClassName: "bg-[var(--background-color)] text-black",
+      title: "2 November 1942 — U-boat U-518 Attack",
+      description: (
+        <>
+          <p className="mt-2">
+            Nearly two months later, on 2 November 1942, a second German
+            submarine—U-518, also a Type IXC boat under the command of
+            Oberleutnant zur See Friedrich-Wilhelm Wissmann—repeated the feat.
+          </p>
+
+          <p className="mt-2">
+            Once again, a U-boat penetrated Conception Bay and reached the Bell Island anchorage.
+          </p>
+
+          <p className="mt-2">
+            Operating under cover of darkness and exploiting the same defensive
+            weaknesses, U-518 launched torpedo attacks against vessels at anchor.
+            The Canadian ore carrier Rose Castle was struck and sank within minutes,
+            with the loss of twenty-four crew members.
+          </p>
+
+          <p className="mt-2">
+            Shortly thereafter, the vessel PLM-27—a Free French ship operating
+            under British wartime control—was also torpedoed. Lacking defensive
+            armament and with a smaller crew, she sank quickly. Twelve men were killed.
+          </p>
+
+          <p className="mt-2">
+            As in the September attack, survivors were rescued by a combination
+            of Royal Canadian Navy patrol craft—particularly Fairmile motor launches—
+            and local civilian vessels. Many reached shore directly.
+          </p>
+        </>
+      )
+    },
+
+    {
+      blockClassName: "bg-[var(--background-color)] text-black",
+      title: "Operational Significance",
+      description: (
+        <>
+          <p className="mt-2">
+            The success of both attacks reflected a combination of German operational
+            audacity and Allied defensive limitations.
+          </p>
+
+          <p className="mt-2">
+            To reach Bell Island, the submarines had to navigate confined coastal
+            waters in large ocean-going boats designed primarily for open Atlantic
+            operations.
+          </p>
+
+          <p className="mt-2">
+            Within the harbour environment, attack conditions were equally complex.
+            Targets were stationary but often closely spaced among piers, loading
+            structures, and other vessels.
+          </p>
+
+          <p className="mt-2">
+            That both U-513 and U-518 succeeded underscores both the skill of their
+            commanders and the absence of effective anti-submarine defences at Bell
+            Island in 1942.
+          </p>
+        </>
+      )
+    },
+
+    {
+      blockClassName: "bg-[var(--background-color)] text-black",
+      title: "A Defended Harbour Breached",
+      description: (
+        <>
+          <CheckList
+            items={[
+              { text: <>Four ore carriers were sunk (Saganaga, Lord Strathcona, Rose Castle, PLM-27)</> },
+              { text: <>Approximately 65 sailors were killed (with some sources citing slightly higher totals)</> },
+              { text: <>Critical industrial shipping was disrupted</> },
+              { text: <>A major North Atlantic war zone was extended directly into a coastal harbour</> }
+            ]}
+          />
+
+          <p className="mt-2">
+            Bell Island thus became the site of the only confirmed sinkings of
+            Allied shipping within a defended industrial harbour along the east
+            coast of either Canada or the United States during the Second World War.
+          </p>
+        </>
+      )
+    },
+
+    {
+      blockClassName: "bg-[var(--background-color)] text-black",
+      title: "From Industrial Site to Naval Battlefield",
+      description: (
+        <>
+          <p className="mt-2">
+            What makes Bell Island historically unique is not simply that ships
+            were sunk—but where they were sunk.
+          </p>
+
+          <p className="mt-2 mb-2">The attacks occurred:</p>
+
+          <CheckList
+            items={[
+              { text: <>Within a functioning industrial harbour</> },
+              { text: <>In close proximity to shore</> },
+              { text: <>In full view of civilian populations</> },
+              { text: <>Within a defined and geographically concentrated area</> }
+            ]}
+          />
+
+          <p className="mt-2">
+            The result is a rare form of naval battlefield—one that exists
+            simultaneously across seabed, shoreline, industrial landscape and
+            community memory.
+          </p>
+
+          <p className="mt-2">
+            What had been an industrial anchorage became, in two brief and
+            violent episodes, part of the Battle of the Atlantic itself.
+          </p>
+        </>
+      )
+    }
+  ]}
+/>
+{/* --------------------------------------------  Section 3 -------------------------------------------- */}
+{/* <ServicesSection/> */}
+{/* --------------------------------------------  Section 4 -------------------------------------------- */}
+
+{/* --------------------------------------------  Section 5 -------------------------------------------- */}
+
 {/* --------------------------------------------  Section 6 -------------------------------------------- */}
 
 <ContentSection
@@ -117,7 +273,7 @@ items={[
     </>
   }
   
-  image="/images/banner-2.jpg"
+  image="/images/SS-SAGANAGA.jpg"
   
   // buttonText="Support Us"
   // buttonLink="/support-us"
@@ -157,7 +313,7 @@ items={[
     </>
   }
   
-  image="/images/banner-2.jpg"
+  image="/images/lord_strathcona.jpeg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
   // buttonText="Support Us"
@@ -193,7 +349,7 @@ items={[
     </>
   }
   
-  image="/images/banner-2.jpg"
+  image="/images/Rose_Castle.webp"
   
   // buttonText="Support Us"
   // buttonLink="/support-us"
@@ -228,7 +384,7 @@ items={[
     </>
   }
   
-  image="/images/banner-2.jpg"
+  image="/images/PLM-27.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
   // buttonText="Support Us"
@@ -258,7 +414,7 @@ items={[
     </>
   }
   
-  image="/images/banner-2.jpg"
+  image="/images/Lance_Cove_Cemetary.jpg"
 
   buttonText="Support Us"
   buttonLink="/support-us"
@@ -308,7 +464,7 @@ items={[
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/Ruggeburg_display_at_Bell_Island_Museum.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
   // buttonText="Support Us"
@@ -364,7 +520,7 @@ items={[
     </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/U-518-at-sea.jpg"
   
 />
 
@@ -372,12 +528,13 @@ items={[
 
 
 <CenterImageSection
-  className="bg-[var(--primary-color)] text-white"
+  backgroundImage="/images/banner-2.jpg"
+className="bg-[var(--primary-color-70-alpha)] text-white"
 
-  image=""
+  image="/images/U-505.jpg"
   imageAlt="Historic submarine"
   left={{
-    title: "Platform Selection: Type VII vs. Type IXC",
+    title: "U-Boat Platform Selection: Type VII vs. Type IXC",
     description:
       "Although the Type VII was the most numerous and widely used U-boat of the German Kriegsmarine, the long distance to Newfoundland and the need for sustained operations deep inside Conception Bay made the longer-ranged Type IXC the only practical platform for the Bell Island attacks. (For comparison: a typical Type VII U-boat had a surfaced range of ~6,500–8,500 nautical miles, carried 11–14 torpedoes, and had significantly less fuel endurance, whereas the Type IXC had a surfaced range of ~13,450 nautical miles and carried up to 22 torpedoes.)",
     buttonText: "Learn More",
@@ -385,13 +542,64 @@ items={[
     buttonVariant: "primary"
   }}
 
-  right={{
-    title: "Operational Challenges Faced by the German Submarine Commanders",
-    description:"Executing attacks inside Conception Bay imposed exceptional navigational and tactical risks. Bell Island lay deep within a semi-enclosed bay, compelling large Type IXC boats to negotiate narrow approaches, shoals, tidal streams, and limited turning room. The danger of grounding was acute for long-hulled submarines operating close to shore. Approaches had to avoid fixed coastal artillery, observation posts, and harbour surveillance, often at periscope depth amid piers, moored vessels, and industrial infrastructure. Firing solutions were constrained, and withdrawal after torpedo release required precise ship-handling along predictable exit routes. The success of both attacks underscores the operational audacity and piloting skill demanded of the commanders—and the limitations of Bell Island’s coastal defences in 1942.",
-    buttonText: "Support Us",
-    buttonLink: "/support-us",
-    buttonVariant: "accent"
-  }}
+right={{
+  title: "Security Improvements After the Attacks",
+  description: (
+    <>
+      <p className="my-2">
+        The September and November 1942 sinkings prompted significant
+        improvements to Bell Island’s security and harbour protection:
+      </p>
+      <CheckList
+        items={[
+          {
+            text: (
+              <>
+                Increased Royal Canadian Navy patrols throughout Conception Bay,
+                supported by regional Royal Canadian Air Force maritime patrols
+              </>
+            )
+          },
+          {
+            text: (
+              <>
+                Regular deployment of Fairmile motor launches for anti-submarine surveillance
+              </>
+            )
+          },
+          {
+            text: (
+              <>
+                Improved harbour control, reporting procedures, and coordination between naval and air forces
+              </>
+            )
+          },
+          {
+            text: (
+              <>
+                Installation of anti-torpedo netting (boom defences) at loading areas in 1943
+              </>
+            )
+          },
+          {
+            text: (
+              <>
+                Expanded coastal observation and harbour defence measures—including the use of searchlights for night-time surveillance—were introduced or strengthened following the attacks
+              </>
+            )
+          }
+        ]}
+      />
+
+      <p className="mt-2">
+        No further submarine attacks occurred at Bell Island after November 1942.
+      </p>
+    </>
+  ),
+  buttonText: "Support Us",
+  buttonLink: "/support-us",
+  buttonVariant: "accent"
+}}
 />
 
 
@@ -402,88 +610,10 @@ items={[
   description={
     <>
       <h3 className="heading text-2xl my-5">
-        Coastal Artillery and Fixed Defences
+        The Wrecks Today — A Defined Battlefield
       </h3>
 
-      <p>
-        At the time of the attacks, Bell Island was defended by fixed coastal
-        artillery positions, including the Cemetery Hill battery, intended
-        primarily to counter surface threats. These guns were not designed to
-        detect or engage submerged submarines and were not brought into action
-        during either attack.
-      </p>
 
-      <p className="mt-4">
-        Bell Island’s coastal artillery reflected pre-war assumptions about
-        naval threats rather than the war’s emergent realities of submarine
-        warfare.
-      </p>
-
-      <h3 className="heading text-2xl my-5">
-        Rescue Operations
-      </h3>
-
-      <CheckList
-        items={[
-          { text: <>Boats from nearby anchored merchant vessels</> },
-          { text: <>A Canadian customs launch</> },
-          { text: <>Royal Canadian Navy Fairmile motor launches</> },
-          { text: <>Bell Island civilians who assisted survivors reaching shore</> }
-        ]}
-      />
-
-      <p className="mt-4">
-        The proximity of the anchorage to land enabled rapid civilian and
-        maritime response, saving many lives.
-      </p>
-    </>
-  }
-  image="/images/banner-2.jpg"
-  reverse
-/>
-
-
-
-<ContentSection
-  title="Security Improvements After the Attacks"
-  description={
-    <>
-      <p>
-        The September and November 1942 sinkings prompted significant
-        improvements to Bell Island’s security and harbour protection:
-      </p>
-
-      <CheckList
-        items={[
-          { text: "Increased Royal Canadian Navy patrols throughout Conception Bay" },
-          { text: "Regular deployment of Fairmile motor launches for anti-submarine surveillance" },
-          { text: "Improved harbour control, reporting procedures, and coordination with air and naval forces" },
-          { text: "Installation of anti-torpedo netting (boom defences) at loading areas in 1943" },
-          { text: "Expanded coastal observation and early-warning measures" },
-          { text: "Installation of searchlights as part of the harbour defence system" }
-        ]}
-      />
-
-      <p className="mt-4">
-        No further submarine attacks occurred at Bell Island after November 1942.
-      </p>
-    </>
-  }
-  image="/images/banner-2.jpg"
-  className="bg-[var(--secondary-bg-color)]"
-/>
-
-
-
-
-
-<CenterImageSection
-backgroundImage="/images/banner-2.jpg"
-className="bg-[var(--primary-color-70-alpha)] text-white"
-  left={{
-    title: "The Wrecks Today — A Defined Battlefield",
-    description: (
-      <>
         <p>
           The four ships sunk at Bell Island lie within a relatively compact area
           of Conception Bay, forming a coherent underwater landscape.
@@ -537,17 +667,19 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
           time, the wrecks have become part of the marine environment while
           preserving the physical evidence of the attacks.
         </p>
-      </>
-    )
-  }}
-  // image="/images/banner-2.jpg"
-  // imageAlt="Bell Island shipwreck battlefield"
+    </>
+  }
+  image="/images/Saganaga-Anchor.jpg"
+  reverse
+/>
 
-  right={{
-    title: "Why Bell Island Matters",
-    description: (
-      <>
-        <p>The Battle of the Atlantic was fought across an ocean.</p>
+
+
+<ContentSection
+  title="Why Bell Island Matters"
+  description={
+    <>
+      <p>The Battle of the Atlantic was fought across an ocean.</p>
 
         <p className="mt-4">
           Ships were sunk far from land. Crews were lost without witnesses. For
@@ -580,9 +712,10 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
           seabed and the shoreline together as a single, integrated
           three-dimensional landscape.
         </p>
-      </>
-    )
-  }}
+    </>
+  }
+  image="/images/MSS-4-wrecks-named-multibeam.jpg"
+  className="bg-[var(--secondary-bg-color)]"
 />
 
 
@@ -593,11 +726,67 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
     <>
 <p>The Bell Island attacks brought the Battle of the Atlantic directly to Newfoundland&rsquo;s shores. The four Allied vessels, the surviving coastal defences, the remnants of Scotia Pier, the Lance Cove cemetery, and the iron ore mine together form one of the most intact and geographically concentrated Second World War naval battlefields in eastern North America.</p>
 <p className="mt-3">Across the ocean, thousands of ships were sunk far from land. Crews were lost without witnesses. For many, there were no marked graves. Sailors of the Royal Canadian Navy, the Royal Navy, the United States Navy, and the Merchant Navies of many nations&mdash;and those of Germany and Italy&mdash;died in waters where no memorial could be built and no cemetery established.</p>
-<p className="mt-3">More than 4,000 Canadians of the Royal Canadian Navy and Canadian Merchant Navy were lost during the Battle of the Atlantic. As Newfoundland was not yet part of Canada during the war, its losses are recorded separately: approximately 150 to 200 members of the Newfoundland Royal Naval Reserve were killed, along with several hundred Newfoundland seamen serving in the Merchant Navy and Allied merchant fleets, many of them in the Atlantic.</p>
+<Gallery
+  items={[
+    {
+      src: "/images/Burning_ship.jpg",
+      alt: "Wreck Site"
+    },
+    {
+      src: "/images/HMCS_Penetang.webp",
+      alt: "Underwater Survey"
+    },
+    {
+      src: "/images/Second_Torpedoed ship.jpg",
+      alt: "Bell Island"
+    }
+  ]}
+/>
+<p className="mt-3">More than 4,600 Canadians of the Royal Canadian Navy, Royal Canadian Air Force, and Canadian Merchant Navy were lost during the Battle of the Atlantic. As Newfoundland was not yet part of Canada during the war, its losses are recorded separately. Approximately 150 to 200 members of the Newfoundland Royal Naval Reserve were killed, along with several hundred Newfoundland seamen serving in the Merchant Navy and Allied merchant fleets, many of them in the Atlantic.</p>
 <p className="mt-3">The Royal Navy suffered more than 50,000 fatalities during the Second World War, a significant proportion of them in Atlantic convoy operations, while the British Merchant Navy lost more than 30,000 seamen, the majority in the Battle of the Atlantic. The United States Merchant Marine suffered approximately 9,500 fatalities during the war, most of them in the Atlantic, while an estimated 5,000 to 6,000 United States Navy personnel were killed in Atlantic convoy escort, anti-submarine, and coastal defence operations.</p>
+<Gallery
+  items={[
+    {
+      src: "/images/RCAF-on-patrol.jpg",
+      alt: "Wreck Site"
+    },
+    {
+      src: "/images/RCAF-sub-killers.jpg",
+      alt: "Underwater Survey"
+    },
+    {
+      src: "/images/RCAF-flying-over-convoy.jpg",
+      alt: "Bell Island"
+    }
+  ]}
+/>
 <p className="mt-3">Air power was also central to the Atlantic war. Aircraft of the Royal Air Force, the Royal Canadian Air Force, and the United States Navy and Army Air Forces flew long-range patrols over the North Atlantic, often in extreme weather and at the limits of their range. Many crews were lost in operations far from land, their aircraft disappearing into the sea they were tasked to defend. German and Italian air forces also sustained losses in maritime patrol, reconnaissance, and anti-shipping operations across the Atlantic theatre.</p>
 <p className="mt-3">The Battle of the Atlantic was a multinational effort. Sailors, airmen, and merchant seamen from across the Allied world&mdash;including those from Britain, Canada, Newfoundland, the United States, Norway, and other occupied and allied nations&mdash;served in convoy escort, merchant shipping, and maritime air operations. Many were lost at sea or in the air, often far from their home countries and without marked graves.</p>
+<Gallery
+  items={[
+    {
+      src: "/images/U-boat-sinking.jpg",
+      alt: "U boat sinking"
+    },
+    {
+      src: "/images/RCN-dropping-depth-charges.jpg",
+      alt: "RCN dropping depth charges"
+    },
+    {
+      src: "/images/U-576-First-photograph-of-U-576.jpg",
+      alt: "U-576 First photograph of U-576"
+    }
+  ]}
+/>
 <p className="mt-3">On the opposing side, more than 30,000 German submariners died at sea&mdash;while thousands of additional German naval personnel and merchant sailors, as well as approximately 2,900 Italian naval and merchant personnel, were also lost, most with no grave but the ocean.</p>
+<Gallery
+  items={[
+    {
+      src: "/images/Submarine & Allied shipping losses.jpg",
+      alt: "Submarine & Allied shipping losses"
+    }
+  ]}
+/>
 <p className="mt-3">At Bell Island, the dead were brought ashore and buried. The attacks were seen from land. Survivors were rescued by civilians. The ships remain within reach.</p>
 <p className="mt-3">What is dispersed across an ocean can, here, be understood in one place.</p>
 <p className="mt-3">The purpose of this project is not to replace existing memorials, but to extend their meaning&mdash;to use 3D photogrammetry and Digital Terrain Mapping (DTM) to make visible a wider Atlantic landscape of loss, service, and sacrifice, much of which lies beyond sight beneath the sea.</p>

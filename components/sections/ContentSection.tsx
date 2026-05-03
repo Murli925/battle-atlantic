@@ -6,6 +6,8 @@ type Props = {
   title?: string
   description?: React.ReactNode
   image?: string
+  images?: string[]
+  video?: string 
   reverse?: boolean
 
   buttonText?: string
@@ -18,6 +20,8 @@ export default function ContentSection({
   title,
   description,
   image,
+  images,
+  video,
   reverse = false,
   buttonText,
   buttonLink = "#",
@@ -27,8 +31,10 @@ export default function ContentSection({
   const showText =
     title || description || buttonText
 
-  const showImage =
-    image && image.trim() !== ""
+const showMedia =
+  (images && images.length > 0) ||
+  (image && image.trim() !== "") ||
+  (video && video.trim() !== "")
 
   return (
     <section className={`py-10 ${className} md:py-20`}>
@@ -70,18 +76,51 @@ export default function ContentSection({
           )}
 
           {/* Image Section */}
-          {showImage && (
-            <div className="flex-1 w-full order-1 md:order-2 flex">
-              <div className="relative w-full min-h-[250px] md:min-h-full">
-                <Image
-                  src={image}
-                  alt={title || "Section image"}
-                  fill
-                  className={styles.image}
-                />
-              </div>
+          {showMedia && (
+  <div className="flex-1 w-full order-1 md:order-2 flex">
+    <div className="relative w-full min-h-[250px] md:min-h-full overflow-hidden">
+
+      {/* 🎥 VIDEO */}
+      {video ? (
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      ) : images && images.length === 2 ? (
+
+        /* 🖼️ TWO IMAGE GRID */
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full">
+          {images.map((img, i) => (
+            <div key={i} className="relative w-full h-full min-h-[250px]">
+              <Image
+                src={img}
+                alt={`image-${i}`}
+                fill
+                className="object-cover"
+              />
             </div>
-          )}
+          ))}
+        </div>
+
+      ) : (
+
+        /* 🖼️ SINGLE IMAGE */
+
+        <Image
+          src={image!}
+          alt={title || "Section image"}
+          fill
+          className={styles.image}
+        />
+      )}
+
+    </div>
+  </div>
+)}
 
         </div>
       </div>

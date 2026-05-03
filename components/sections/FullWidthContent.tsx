@@ -1,8 +1,10 @@
 import Link from "next/link"
 import styles from "./ContentSection.module.scss"
+import Image from "next/image"
 
 type Block = {
   title?: string
+  image?: string
   description?: React.ReactNode
   buttonText?: string
   buttonLink?: string
@@ -36,6 +38,17 @@ export default function FullWidthContent({
                   {block.title}
                 </h2>
               )}
+
+                  {block.image && (
+      <div className="relative w-100 h-[100px] my-4 rounded-xl overflow-hidden">
+        <Image
+          src={block.image}
+          alt={block.title || "Block image"}
+          fill
+          className="object-contain object-left"
+        />
+      </div>
+    )}
 
               {block.description && (
                 <div className={`!mb-0 ${styles.description}`}>

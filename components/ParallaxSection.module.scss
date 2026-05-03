@@ -1,0 +1,50 @@
+.parallax {
+  position: relative;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Parallax effect */
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: flex-end; /* bottom content */
+}
+
+@media all and (min-width:992px) {
+    .parallax {
+  height: 90vh;
+    }
+}
+@media all and (max-width:991px) {
+    .parallax {
+  height: 40vh;
+    background-attachment: unset;
+    }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  /* subtle gradient from bottom (like you wanted earlier) */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 25%,
+    rgba(0, 0, 0, 0.1) 40%,
+    transparent 60%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+  color: white;
+}
