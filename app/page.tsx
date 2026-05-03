@@ -70,7 +70,7 @@ export default function Home() {
 />
 <QuoteSection/>
 
-<ParallaxSection image="./images/battle-of-atlantic-p1-03.jpg">
+<ParallaxSection image="./images/planned-convoy-routes.jpg">
 
 </ParallaxSection>
 
@@ -98,7 +98,7 @@ export default function Home() {
 />
 
   </>}
-  image="/images/battle-of-atlantic-p1-06.jpg"
+  image="/images/Industrial-dock-and-gantry-in-grayscale.jpg"
   reverse
   buttonText="Support Us"
   buttonTarget="_blank"
@@ -163,13 +163,13 @@ export default function Home() {
             text: "Support the Expedition",
             link: "https://secure.qgiv.com/for/bellislandexpedition/",
             variant: "primary",
-            linkTarget:"_blank"
+            buttonTarget:"_blank"
           },
           {
             text: "Contact Us About Partnership Opportunities",
             link: "/sponsors",
             variant: "accent",
-            linkTarget:""
+            buttonTarget:""
           }
         ]}
       />

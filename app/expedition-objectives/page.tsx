@@ -12,7 +12,7 @@ export default function Expedition_Objectives() {
           <InnerBanner
           subtitle="Expedition Objectives"
         title="Documenting and Interpreting the Bell Island Battlefield"
-        image="/images/BlastHole-Strathcona.jpg"
+        image="/images/expedition-objective-1.jpg"
         imageAlt="Bell Island Harbour"
       />
 {/* --------------------------------------------  Section 1 -------------------------------------------- */}
@@ -23,7 +23,7 @@ export default function Expedition_Objectives() {
 </>}
   image="/images/2jqiAjcdx4VHPgzUc26l2QBRu49F19CGWFqAlXQt6Z6plR_xuHhWWgR5eemALygVk8M2V_44vYK3zBy3ZFdPq-ijSiNj6U4xg6uxafaLeEYJjlp5fT6gK-fTvOzQaUVFLK2ZWByjdJcK1VNo8NROjhIH0sxSdRdgODmvIE7EUdgudQinrrQwZHpbgoIIXSs9.jpg"
   buttonText="Learn More"
-  buttonLink="/project"
+  buttonLink="/virtual-memorial"
   buttonVariant="primary"
 />
 {/* --------------------------------------------  Section 3 -------------------------------------------- */}
@@ -346,237 +346,8 @@ Building on approaches developed during NOAA’s 2016 Battle of the Atlantic exp
   image="/images/IMG_7881.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
+
 />
-
-
-
-
-{/* <ContentSection
-  title="Technology and Methodology"
-  description={
-    <>
-        <h3 className="mt-2 heading">What is Photogrammetry?</h3>
-
-      <p className="mt-2">
-        Photogrammetry is a technique that uses large numbers of overlapping
-        photographs to extract precise measurements and generate detailed
-        three-dimensional models of objects or environments. While traditionally
-        used in aerial surveying, architecture, and engineering, advances in
-        digital imaging and computing have made photogrammetry an essential tool
-        in archaeology—particularly for documenting underwater sites.
-      </p>
-
-      <p className="mt-2">
-        In marine archaeology, photogrammetry enables the non-invasive recording
-        of submerged cultural heritage, including shipwrecks and associated
-        structures. By creating accurate digital replicas, researchers can
-        analyze structural details, monitor changes over time, and share results
-        widely without disturbing fragile underwater environments.
-      </p>
-
-      <p className="mt-2">
-        Underwater photogrammetry is conducted using waterproof cameras and
-        high-intensity lighting systems. Divers or remotely operated vehicles
-        capture hundreds or thousands of overlapping images from multiple
-        angles. Specialized software then identifies common reference points and
-        reconstructs the site in three-dimensional space, producing a
-        high-resolution digital model.
-      </p>
-
-      <p className="mt-2">
-        These models allow archaeologists, marine scientists, and the public to
-        explore underwater heritage sites virtually. They can be examined
-        on-screen, rendered as physical models, or integrated into immersive
-        virtual environments, significantly expanding access to sites that are
-        otherwise difficult or impossible to visit.
-      </p>
-    </>
-  }
-  image="/images/banner-2.jpg"
-/>
-
-<ContentSection
-  title="Application to the Bell Island Expedition 2027"
-  description={
-    <>
-      <p className="mt-2">
-        The Bell Island Expedition will apply photogrammetry at a significantly
-        larger scale than previous work. All four wrecks will be documented
-        using a combination of diver-based imaging and remotely operated vehicle
-        (ROV) systems, integrated with acoustic positioning and geospatial data
-        to support the creation of a unified Digital Terrain Model (DTM).
-      </p>
-
-      <p className="mt-2">
-        In a comparative study, one wreck—PLM-27—will be surveyed using both
-        diver-based photogrammetry and ROV-based imaging systems. This dual
-        approach will allow direct comparison between human-operated and
-        remotely operated survey methods in cold-water North Atlantic
-        conditions, contributing to the refinement of best practices in
-        underwater documentation.
-      </p>
-    </>
-  }
-  image="/images/banner-2.jpg"
-  reverse
-  className="bg-[var(--secondary-bg-color)]"
-/>
-
-
-
-<CenterImageSection
-  className="bg-[var(--primary-color)] text-white"
-  image=""
-  imageAlt="Survey technology"
-
-  left={{
-    title: "VOYIS Imaging and Survey Technology",
-    description: (
-      <>
-        <p>
-          A central component of the expedition is the use of advanced
-          underwater imaging systems developed by VOYIS, a Canadian firm
-          specializing in subsea optical and survey technologies.
-        </p>
-
-        <p className="mt-4">
-          VOYIS systems integrate high-resolution imaging with precise spatial
-          referencing, enabling efficient and repeatable documentation of
-          complex underwater environments. These systems are designed for
-          deployment on remotely operated platforms and are well suited to
-          large-scale survey operations such as those planned for Bell Island.
-        </p>
-
-        <p className="mt-4">
-          VOYIS systems have been deployed in offshore energy, marine research,
-          and defence applications, providing a proven platform for
-          high-resolution subsea mapping in challenging environments.
-        </p>
-
-        <p className="mt-4">
-          VOYIS imaging software—developed under the company’s earlier name,
-          2G Robotics—was used to support photogrammetric documentation of the
-          German submarine U-576 and the freighter Bluefields during NOAA’s
-          Battle of the Atlantic Expedition 2016.
-        </p>
-      </>
-    )
-  }}
-
-  right={{
-    title: "Memorial University’s Marine Institute",
-    description: (
-      <>
-        <p>
-          The expedition is conducted in partnership with the Memorial
-          University of Newfoundland Marine Institute, which provides vessel
-          support, remotely operated vehicle (ROV) systems, USBL positioning,
-          and technical personnel.
-        </p>
-
-        <p className="mt-4">
-          These capabilities enable integrated subsea survey operations and
-          support the acquisition of high-resolution geospatial data required
-          for the project’s Digital Terrain Model.
-        </p>
-
-        <p className="mt-4">
-          The Marine Institute will also provide a licensed drone operator to
-          acquire aerial imagery of the Bell Island landscape, which will be
-          integrated with subsea and terrestrial datasets to produce a unified
-          Digital Terrain Model.
-        </p>
-
-        <p className="mt-4">
-          This combination of vessel-based operations, aerial survey, and
-          geospatial integration reflects the Institute’s role as a leading
-          centre for applied ocean technology.
-        </p>
-
-        <p className="mt-4">
-          The Marine Institute also contributes an academic and educational
-          dimension to the expedition, with students participating directly in
-          field operations and survey workflows. This integration of research,
-          training, and applied technology reflects the Institute’s mandate and provides hands-on
-experience in real-world marine environments.
-        </p>
-      </>
-    )
-  }}
-/>
-
-
-<ContentSection
-  title="Experience from the HMCS Canada Expedition"
-  description={
-    <>
-      <p className="mt-2">
-        On the HMCS Canada Expedition 2025, photogrammetry served both
-        archaeological and ecological purposes. The expedition produced a
-        complete three-dimensional model of the wreck while also supporting
-        ecological assessments, including habitat mapping and species
-        monitoring.
-      </p>
-
-      <p className="mt-2">
-        This integrated approach—combining marine archaeology with marine
-        biology and environmental observation—forms the methodological
-        foundation for the Bell Island Expedition and will be extended to a
-        larger and more complex battlefield environment.
-      </p>
-    </>
-  }
-  image="/images/banner-2.jpg"
-/>
-
-
-<ContentSection
-  title="Technology Developed for the Expedition: Photogrammetry Dive Sled"
-  description={
-    <>
-      <p className="mt-2">
-        To address the challenges of deep-water photogrammetry at approximately
-        70 metres (235 feet), the HMCS Canada team developed a custom diver
-        propulsion vehicle (DPV)-mounted imaging platform.
-      </p>
-
-      <p className="mt-2">
-        The system consists of a lightweight frame with integrated buoyancy
-        control, high-output underwater lighting, and dual camera systems
-        mounted to ensure consistent image overlap.
-      </p>
-
-      <p className="mt-2">
-        Attached to a diver propulsion vehicle, the platform provides stability
-        and control during imaging, allowing large areas to be surveyed
-        efficiently under limited bottom time conditions.
-      </p>
-
-      <p className="mt-2">
-        Field testing demonstrated that the system maintained stability at
-        depth, produced high-quality overlapping imagery, and enabled reliable
-        three-dimensional reconstruction of complex structures.
-      </p>
-
-      <p className="mt-2">
-        The platform also allowed imaging to be conducted at speeds
-        significantly greater than conventional fin-based survey methods,
-        improving overall efficiency.
-      </p>
-
-      <p className="mt-2">
-        This technology will be deployed and further refined during the Bell
-        Island Expedition, where environmental conditions—depth, temperature,
-        and currents—are comparable to those encountered during its development
-        off Vancouver Island and its operational use on the HMCS Canada
-        Expedition 2025.
-      </p>
-    </>
-  }
-  image="/images/banner-2.jpg"
-  reverse
-  className="bg-[var(--secondary-bg-color)]"
-/> */}
 
 {/* --------------------------------------------  Section 8 -------------------------------------------- */}
 
@@ -587,13 +358,15 @@ experience in real-world marine environments.
   buttons={[
     {
       text: "Support the Expedition",
-      link: "/support-us",
-      variant: "primary"
+      link: "https://secure.qgiv.com/for/bellislandexpedition/",
+      variant: "primary",
+      buttonTarget:"_blank"
     },
     {
       text: "Contact Us About Partnership Opportunities",
-      link: "/contact",
-      variant: "accent"
+      link: "/sponsors",
+      variant: "accent",
+      buttonTarget:""
     }
   ]}
 />

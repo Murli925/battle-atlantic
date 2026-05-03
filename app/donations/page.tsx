@@ -13,7 +13,7 @@ export default function Donations() {
           <InnerBanner
           subtitle="Support the Expedition"
         title="Battle of the Atlantic Memorial — Bell Island and the North Atlantic War"
-        image="/images/BlastHole-Strathcona.jpg"
+        image="/images/BI-14.jpg"
         imageAlt="Bell Island Harbour"
       />
 {/* --------------------------------------------  Section 1 -------------------------------------------- */}
@@ -46,10 +46,11 @@ export default function Donations() {
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/8ohABBs3.jpg"
   buttonText="Donate Now"
   buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
   buttonVariant="primary"
+  buttonTarget="_blank"
 />
 {/* --------------------------------------------  Section 3 -------------------------------------------- */}
 {/* <ServicesSection/> */}
@@ -136,7 +137,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       />
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/VOYIS-3.png"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -186,7 +187,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/expedition.jpg"
 />
 
 
@@ -247,7 +248,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/man-exploring.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -294,10 +295,11 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       </p>
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/Cemetery Hill Coastal Artillery.jpg"
   buttonText="Donate Now"
   buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
   buttonVariant="primary"
+  buttonTarget="_blank"
 />
 
 
@@ -338,7 +340,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/IMG_7553.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
   // buttonText="Donate Now"
@@ -356,7 +358,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       text: "Support the Expedition",
       link: "https://secure.qgiv.com/for/bellislandexpedition/",
       variant: "primary",
-      linkTarget:"_blank"
+      buttonTarget:"_blank"
 
     }
   ]}

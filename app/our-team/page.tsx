@@ -303,8 +303,9 @@ className="bg-[var(--primary-color)]"
   buttons={[
     {
       text: "Support the Expedition",
-      link: "/support-us",
-      variant: "primary"
+      link: "https://secure.qgiv.com/for/bellislandexpedition/",
+      variant: "primary",
+      buttonTarget:"_blank"
     }
 
   ]}

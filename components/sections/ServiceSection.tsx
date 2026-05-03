@@ -9,32 +9,32 @@ const services = [
   {
     title: "Underwater archaeology",
     description: "High-resolution 3D documentation",
-    image: "/images/banner-1.jpg",
-    link:"#"
+    image: "/images/underwater-archaeology.jpg",
+    link:"/bell-island-1942"
   },
     {
     title: "Digital Terrain Model (DTM)",
     description: "Integrated seabed, shoreline, and land mapping",
-    image: "/images/banner-1.jpg",
-    link:"#"
+    image: "/images/Creating-a-DTM.jpg",
+    link:"/bell-island-1942"
   },
     {
     title: "Marine science",
     description: "Biological and ecological baseline studies",
-    image: "/images/banner-1.jpg",
-    link:"#"
+    image: "/images/marine-science.jpg",
+    link:"/bell-island-1942"
   },
   {
     title: "Graduate student training",
     description: "Field and research participation",
-    image: "/images/banner-2.jpg",
-    link:"#"
+    image: "/images/research-training.jpg",
+    link:"/virtual-memorial"
   },
   {
     title: "Public interpretation and heritage tourism",
     description: "Accessible digital and on-site engagement",
-    image: "/images/banner-2.jpg",
-    link:"#"
+    image: "/images/U-505.jpg",
+    link:"/virtual-memorial"
   }
 ]
 

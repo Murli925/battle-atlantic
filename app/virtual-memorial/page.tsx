@@ -1,9 +1,7 @@
 import ContentSection from "@/components/sections/ContentSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
-// import FullWidthContent from "@/components/sections/FullWidthContent"
 import CheckList from "@/components/CheckList"
-// import CenterImageSection from "@/components/sections/CenterImageSection"
 
 export default function Virtual_Memorial() {
 
@@ -238,8 +236,9 @@ subtitle="Virtual Memorial"
   buttons={[
     {
       text: "Support the Expedition",
-      link: "/donations",
-      variant: "primary"
+      link: "https://secure.qgiv.com/for/bellislandexpedition/",
+      variant: "primary",
+      buttonTarget:"_blank"
     }
 
   ]}

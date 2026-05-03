@@ -192,3 +192,23 @@ strong{
 	border-radius: 30px !important;
 }
 
+
+.footerPattern {
+  position: relative;
+  background: #111;
+}
+
+.footerPattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/dot-grid.png') repeat;
+  opacity: 0.2;
+}
+
+.footerPattern::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}

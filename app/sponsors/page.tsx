@@ -124,10 +124,11 @@ subtitle="Sponsors"
 />
     </>
   }
-  image="/images/banner-2.jpg"
+  image="/images/flag-expediation.jpg"
  buttonText="Support Us"
 buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
 buttonVariant="primary"
+buttonTarget="_blank"
 
 />
 
@@ -141,13 +142,15 @@ buttonVariant="primary"
   buttons={[
     {
       text: "Support the Expedition",
-      link: "/support-us",
-      variant: "primary"
+      link: "https://secure.qgiv.com/for/bellislandexpedition/",
+      variant: "primary",
+      buttonTarget:"_blank"
     },
         {
       text: "Contact Us About Partnership Opportunities",
       link: "/contact-us",
-      variant: "accent"
+      variant: "accent",
+      buttonTarget:"/sponsors"
     }
   ]}
 />
