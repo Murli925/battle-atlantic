@@ -355,7 +355,8 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
     {
       text: "Support the Expedition",
       link: "https://secure.qgiv.com/for/bellislandexpedition/",
-      variant: "primary"
+      variant: "primary",
+      linkTarget:"_blank"
 
     }
   ]}

@@ -17,7 +17,7 @@ export default function InnerBanner({
 }: Props) {
   return (
     <section
-      className={`relative h-[80vh] min-h-[520px] overflow-hidden ${className}`}
+      className={`relative h-[100vh] min-h-[520px] overflow-hidden ${className}`}
     >
       {/* Background */}
       <Image

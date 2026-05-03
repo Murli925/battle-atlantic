@@ -8,15 +8,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-6 py-14">
 
         <div>
-          <h3 className="text-white font-semibold mb-3">
-            Battle of the Atlantic Virtual Memorial
-          </h3>
+          <Image src={`/images/logo.png`} width="120" height="300"alt="Battle of Atlantic Logo" />
 
-          <p className="text-sm">
-            A digital initiative dedicated to preserving the
-            history of the Battle of the Atlantic and honoring
-            those who served.
-          </p>
         </div>
 
         <div>
@@ -34,14 +27,15 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-3">Contact</h4>
 
           <p className="text-sm">
-            Virtual Memorial Research Project
+            Email: <a href="mailto:bellislandexpedition@gmail.com">bellislandexpedition@gmail.com</a>
           </p>
+          
         </div>
 
       </div>
 
       <div className="border-t border-gray-800 text-center text-sm py-4">
-        © 2026 Battle of the Atlantic Virtual Memorial
+        Copyright © Battle of the Atlantic Virtual Memorial 2026 | All Rights Reserved | Powered By <a href="https://www.adaan.com/" target="_blank" className="underline">Adaan Digital Solutions Pvt Limited</a>
       </div>
 
     </footer>

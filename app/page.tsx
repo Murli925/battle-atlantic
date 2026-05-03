@@ -30,12 +30,12 @@ export default function Home() {
       buttons: [
         {
           text: "Support the Expedition",
-          link: "/support-us",
+          link: "https://secure.qgiv.com/for/bellislandexpedition/",
           variant: "accent"
         },
         {
           text: "Explore the Memorial",
-          link: "/project",
+          link: "/virtual-memorial",
           variant: "primary"
         }
       ]
@@ -56,12 +56,12 @@ export default function Home() {
       buttons: [
         {
           text: "Support the Expedition",
-          link: "/support-us",
+          link: "https://secure.qgiv.com/for/bellislandexpedition/",
           variant: "accent"
         },
         {
           text: "Explore the Memorial",
-          link: "/project",
+          link: "/virtual-memorial",
           variant: "primary"
         }
       ]
@@ -79,7 +79,7 @@ export default function Home() {
   description={<><p className='mb-2'>Unlike traditional battlefields, the Battle of the Atlantic left no preserved front lines, monuments, or cemeteries to convey its scale. Over 4,600 Canadian sailors, air crew and merchant seamen from the Royal Canadian Navy, Newfoundland Escort Force, Royal Canadian Air Force, and Merchant Marine, were lost at sea, often without graves, and families were left without a place to visit or remember. As a result, much of this defining campaign remains physically and publicly invisible.</p> <p>The Bell Island Battle of the Atlantic Virtual Memorial addresses this absence by creating a permanent, accessible representation of one of Canada’s most significant wartime environments.</p></>}
   image="/images/GhostBowReneeJILL8747l.jpg"
   buttonText="Learn More"
-  buttonLink="/project"
+  buttonLink="/bell-island-1942"
   buttonVariant="primary"
 />
 <ServicesSection/>
@@ -101,7 +101,8 @@ export default function Home() {
   image="/images/battle-of-atlantic-p1-06.jpg"
   reverse
   buttonText="Support Us"
-  buttonLink="/support-us"
+  buttonTarget="_blank"
+  buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
   buttonVariant="secondary"
 />
 
@@ -116,15 +117,15 @@ export default function Home() {
     description:
       "Bell Island’s iron ore was essential to Allied steel production, making it a strategic target within the North Atlantic war. What appears to be a local anchorage was, in reality, part of a global system linking North America to Britain through convoy routes, naval bases, and industrial supply chains.",
     buttonText: "Learn More",
-    buttonLink: "/project",
+    buttonLink: "/bell-island-1942",
     buttonVariant: "primary"
   }}
 
   right={{
     title: "From Seafloor to Digital Memorial",
     description:"This project creates an integrated three-dimensional landscape linking wrecks, shoreline, and industrial infrastructure into a single, coherent virtual environment—transforming Bell Island from a series of isolated sites into a unified historical battlefield.",
-    buttonText: "Support Us",
-    buttonLink: "/support-us",
+    buttonText: "Know More",
+    buttonLink: "/virtual-memorial",
     buttonVariant: "accent"
   }}
 />
@@ -160,13 +161,15 @@ export default function Home() {
         buttons={[
           {
             text: "Support the Expedition",
-            link: "/support-us",
-            variant: "primary"
+            link: "https://secure.qgiv.com/for/bellislandexpedition/",
+            variant: "primary",
+            linkTarget:"_blank"
           },
           {
             text: "Contact Us About Partnership Opportunities",
-            link: "/contact",
-            variant: "accent"
+            link: "/sponsors",
+            variant: "accent",
+            linkTarget:""
           }
         ]}
       />

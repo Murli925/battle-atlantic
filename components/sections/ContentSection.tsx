@@ -12,6 +12,8 @@ type Props = {
 
   buttonText?: string
   buttonLink?: string
+  buttonTarget?: string
+
   buttonVariant?: "primary" | "secondary" | "accent"
   className?: string
 }
@@ -24,6 +26,7 @@ export default function ContentSection({
   video,
   reverse = false,
   buttonText,
+  buttonTarget,
   buttonLink = "#",
   buttonVariant = "primary",
   className = ""
@@ -65,6 +68,7 @@ const showMedia =
                 {buttonText && (
                   <Link
                     href={buttonLink}
+                    target={buttonTarget}
                     className={`btn btn-${buttonVariant}`}
                   >
                     {buttonText}

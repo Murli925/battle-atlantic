@@ -3,6 +3,7 @@ import styles from './CTASection.module.scss'
 type CTAButton = {
   text: string
   link: string
+  linkTarget:string
   variant?: "primary" | "secondary" | "accent"
 }
 
@@ -44,6 +45,7 @@ export default function CTASection({
             <Link
               key={index}
               href={button.link}
+              target={button.linkTarget}
               className={`btn btn-${button.variant || "primary"}`}
             >
               {button.text}

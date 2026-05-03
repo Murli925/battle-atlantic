@@ -538,13 +538,15 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
     description:
       "Although the Type VII was the most numerous and widely used U-boat of the German Kriegsmarine, the long distance to Newfoundland and the need for sustained operations deep inside Conception Bay made the longer-ranged Type IXC the only practical platform for the Bell Island attacks. (For comparison: a typical Type VII U-boat had a surfaced range of ~6,500–8,500 nautical miles, carried 11–14 torpedoes, and had significantly less fuel endurance, whereas the Type IXC had a surfaced range of ~13,450 nautical miles and carried up to 22 torpedoes.)",
     buttonText: "Learn More",
-    buttonLink: "/project",
+    buttonLink: "/virtual-memorial",
     buttonVariant: "primary"
   }}
 
-right={{
-  title: "Security Improvements After the Attacks",
-  description: (
+/>
+
+<ContentSection
+  title= "Security Improvements After the Attacks"
+  description= {
     <>
       <p className="my-2">
         The September and November 1942 sinkings prompted significant
@@ -595,14 +597,10 @@ right={{
         No further submarine attacks occurred at Bell Island after November 1942.
       </p>
     </>
-  ),
-  buttonText: "Support Us",
-  buttonLink: "/support-us",
-  buttonVariant: "accent"
-}}
+  }
+  image="/images/security-improvements.jpg"
+  className="bg-[var(--secondary-bg-color)]"
 />
-
-
 
 
 <ContentSection
@@ -804,13 +802,15 @@ right={{
         buttons={[
           {
             text: "Support the Expedition",
-            link: "/support-us",
-            variant: "primary"
+            link: "https://secure.qgiv.com/for/bellislandexpedition/",
+            variant: "primary",
+            linkTarget:"_blank"
           },
           {
             text: "Contact Us About Partnership Opportunities",
             link: "/contact",
-            variant: "accent"
+            variant: "accent",
+            linkTarget:""
           }
         ]}
       />

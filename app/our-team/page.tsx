@@ -10,7 +10,7 @@ export default function Our_Team() {
     <>
 <InnerBanner
 subtitle="Our Team"
-  title="Our Team"
+  title="The People Behind the Expedition"
   image="/images/Header-U=576-u576_sonar.jpg"
   imageAlt="Bell Island Expedition Team"
 />

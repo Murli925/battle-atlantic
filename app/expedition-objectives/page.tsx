@@ -1,6 +1,5 @@
 import ContentSection from "@/components/sections/ContentSection"
 import CheckList from "@/components/CheckList"
-import CenterImageSection from "@/components/sections/CenterImageSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 
