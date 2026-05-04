@@ -5,6 +5,20 @@ import InnerBanner from "@/components/sections/Inner-banner"
 import CheckList from "@/components/CheckList"
 import CarouselSection from "@/components/CarouselSection"
 import LogoGallery from "@/components/Logogallery"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Sponsors and Partners | Bell Island Expedition",
+  description:
+    "Discover the organizations and partners supporting the Bell Island Expedition through funding, expertise, and in-kind contributions.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
 
 export default function Sponsors() {
 

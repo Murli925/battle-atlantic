@@ -7,6 +7,20 @@ import CenterImageSection from "@/components/sections/CenterImageSection"
 import CTASection from "@/components/sections/CTASection"
 import ParallaxSection from "@/components/ParallaxSection"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Battle of the Atlantic Virtual Memorial | Bell Island Expedition",
+  description:
+    "A digital reconstruction of the Bell Island naval battlefield. Explore the 1942 attacks, underwater archaeology, and the Battle of the Atlantic through immersive mapping and research.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
 
 export default function Home() {
 
@@ -68,6 +82,9 @@ export default function Home() {
     }
   ]}
 />
+
+
+
 <QuoteSection/>
 
 <ParallaxSection image="./images/planned-convoy-routes.jpg">

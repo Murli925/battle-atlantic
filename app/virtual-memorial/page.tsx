@@ -2,6 +2,20 @@ import ContentSection from "@/components/sections/ContentSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import CheckList from "@/components/CheckList"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Virtual Memorial | Bell Island Battle of the Atlantic",
+  description:
+    "Explore the Bell Island Virtual Memorial—a digital reconstruction of a Second World War naval battlefield, integrating underwater archaeology, mapping, and historical research.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
 
 export default function Virtual_Memorial() {
 

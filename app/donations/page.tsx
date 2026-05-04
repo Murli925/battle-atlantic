@@ -3,6 +3,20 @@ import CheckList from "@/components/CheckList"
 import CenterImageSection from "@/components/sections/CenterImageSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Bell Island Expedition | Donations",
+  description:
+    "Support the Bell Island Battle of the Atlantic Virtual Memorial expedition.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
 
 export default function Donations() {
 

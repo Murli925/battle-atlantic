@@ -2,6 +2,20 @@ import ContentSection from "@/components/sections/ContentSection"
 import CheckList from "@/components/CheckList"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Expedition Objectives | Bell Island Virtual Memorial Project",
+  description:
+    "Discover the objectives of the Bell Island Expedition, including underwater archaeology, marine science, and digital reconstruction of a Second World War naval battlefield.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
 
 export default function Expedition_Objectives() {
 

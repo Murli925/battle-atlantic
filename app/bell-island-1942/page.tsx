@@ -5,6 +5,21 @@ import CTASection from "@/components/sections/CTASection";
 import InnerBanner from "@/components/sections/Inner-banner";
 import Accordion from "@/components/AccordionSection";
 import Gallery from "@/components/GallerySection";
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Bell Island 1942 | Submarine Attacks in the Battle of the Atlantic",
+  description:
+    "Explore the 1942 submarine attacks on Bell Island, Newfoundland—where German U-boats struck Allied ships in a defended harbour during the Battle of the Atlantic.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
+
 
 export default function Bell_island_1942() {
   return (

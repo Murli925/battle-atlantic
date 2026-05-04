@@ -2,6 +2,20 @@ import ContentSection from "@/components/sections/ContentSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import FullWidthContent from "@/components/sections/FullWidthContent"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Team | The Team Behind the Bell Island Expedition",
+  description:
+    "A collaborative team of researchers, divers, and partners working to document and interpret the Bell Island battlefield.",
+  keywords: [
+    "Bell Island",
+    "Battle of the Atlantic",
+    "naval history",
+    "donation",
+    "virtual memorial"
+  ]
+}
 
 export default function Our_Team() {
 
