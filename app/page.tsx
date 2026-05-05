@@ -87,9 +87,26 @@ export default function Home() {
 
 <QuoteSection/>
 
-<ParallaxSection image="./images/planned-convoy-routes.jpg">
+<ParallaxSection image="./images/planned-convoy-routes.jpg" />
 
-</ParallaxSection>
+<ContentSection
+className="bg-[var(--secondary-bg-color)]"
+  title="The war at sea"
+  description={
+    <div className="relative w-full aspect-video mt-4">
+      <iframe
+        src="https://www.youtube.com/embed/tJHs3biTAdI"
+        title="The war at sea"
+        className="absolute mt-2 inset-0 w-full h-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+      <small>Battle of the Atlantic — Archival footage of Royal
+Canadian Navy and Royal Canadian Air Force operations, Allied convoys, and the war at sea (1939–
+1945).</small>
+    </div>
+  }
+/>
 
 <ContentSection
   title="An Invisible Battlefield"
