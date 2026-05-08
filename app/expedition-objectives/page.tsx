@@ -4,7 +4,6 @@ import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import type { Metadata } from "next"
 
-export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Expedition Objectives | Bell Island Virtual Memorial Project",

@@ -4,7 +4,6 @@ import InnerBanner from "@/components/sections/Inner-banner"
 import FullWidthContent from "@/components/sections/FullWidthContent"
 import type { Metadata } from "next"
 
-export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Our Team | The Team Behind the Bell Island Expedition",

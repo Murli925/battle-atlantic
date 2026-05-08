@@ -7,7 +7,6 @@ import CarouselSection from "@/components/CarouselSection"
 import LogoGallery from "@/components/Logogallery"
 import type { Metadata } from "next"
 
-export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Sponsors and Partners | Bell Island Expedition",

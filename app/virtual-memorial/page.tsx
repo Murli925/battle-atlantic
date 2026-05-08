@@ -4,7 +4,8 @@ import InnerBanner from "@/components/sections/Inner-banner"
 import CheckList from "@/components/CheckList"
 import type { Metadata } from "next"
 
-export const runtime = "edge";
+
+
 
 export const metadata: Metadata = {
   title: "Virtual Memorial | Bell Island Battle of the Atlantic",
