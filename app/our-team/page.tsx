@@ -271,7 +271,7 @@ className="bg-[var(--primary-color)]"
       </p>
     </>
   }
-  image="/images/RCGS Expedition Flag.jpg"
+  image="/images/RCGS-Expedition-Flag.jpg"
   reverse
 />
 

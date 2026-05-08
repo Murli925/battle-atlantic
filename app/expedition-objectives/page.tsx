@@ -183,8 +183,8 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
   }
   
       images={[
-"/images/cold water coral by  PLM torpedo Hole JILL.jpg",
-    "/images/Cold Water coral on deck Gun Strathcona.jpg"
+"/images/cold-water-coral-by-PLM-torpedo-Hole-JILL.jpg",
+    "/images/Cold-Water-coral-on-deck-Gun-Strathcona.jpg"
   ]}
     reverse
   className="bg-[var(--secondary-bg-color)]"
