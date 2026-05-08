@@ -37,7 +37,7 @@ export default function RootLayout({
         <Navbar/>
         
 
-        <main className="mx-auto">
+        <main className="mx-auto overflow-hidden">
           {children}
 
         </main>

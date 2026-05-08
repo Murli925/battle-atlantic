@@ -14,7 +14,7 @@ const navLinks = [
   { name: "Our Team", href: "/our-team" },
   { name: "Virtual Memorial", href: "/virtual-memorial" },
   { name: "Sponsors", href: "/sponsors" },
-  { name: "Donations", href: "/donations" }
+  { name: "Support the Expedition", href: "/support-the-expedition" },
 ]
 
 export default function Navbar() {

@@ -339,11 +339,11 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
       <CheckList
         items={[
-          { text: <>preservation of a nationally significant wartime site</> },
-          { text: <>advancement of interdisciplinary research</> },
-          { text: <>development of innovative digital heritage tools</> },
-          { text: <>public understanding of the Battle of the Atlantic</> },
-          { text: <>commemoration of those who served and died at sea</> }
+          { text: <>Preservation of a nationally significant wartime site</> },
+          { text: <>Advancement of interdisciplinary research</> },
+          { text: <>Development of innovative digital heritage tools</> },
+          { text: <>Public understanding of the Battle of the Atlantic</> },
+          { text: <>Commemoration of those who served and died at sea</> }
         ]}
       />
 

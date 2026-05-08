@@ -1,3 +1,4 @@
+import Image from "next/image"
 import ContentSection from "@/components/sections/ContentSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"

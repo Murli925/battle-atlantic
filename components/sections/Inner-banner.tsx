@@ -17,7 +17,7 @@ export default function InnerBanner({
 }: Props) {
   return (
     <section
-      className={`relative h-[100vh] min-h-[520px] overflow-hidden ${className}`}
+      className={`relative h-[60vh] md:h-[100vh] min-h-[520px] overflow-hidden ${className}`}
     >
       {/* Background */}
       <Image
@@ -25,7 +25,7 @@ export default function InnerBanner({
         alt={imageAlt}
         fill
         priority
-        className="object-cover"
+        className="object-cover object-top"
       />
 
       {/* Dark Overlay */}

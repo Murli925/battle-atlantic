@@ -40,7 +40,7 @@ export default function FullWidthContent({
               )}
 
                   {block.image && (
-      <div className="relative w-100 h-[100px] my-4 rounded-xl overflow-hidden">
+      <div className="relative w-100 h-[80px] my-4 rounded-xl overflow-hidden">
         <Image
           src={block.image}
           alt={block.title || "Block image"}
