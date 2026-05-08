@@ -7,6 +7,8 @@ import Accordion from "@/components/AccordionSection";
 import Gallery from "@/components/GallerySection";
 import type { Metadata } from "next"
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Bell Island 1942 | Submarine Attacks in the Battle of the Atlantic",
   description:

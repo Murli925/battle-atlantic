@@ -9,6 +9,9 @@ import ParallaxSection from "@/components/ParallaxSection"
 import Image from "next/image"
 import type { Metadata } from "next"
 
+
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Battle of the Atlantic Virtual Memorial | Bell Island Expedition",
   description:
