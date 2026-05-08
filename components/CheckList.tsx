@@ -1,6 +1,16 @@
 import { BadgeCheck } from "lucide-react";
+import { ReactNode } from "react"
 
-export default function CheckList({ items }) {
+type CheckListItem = {
+  text: ReactNode
+  children?: string[]
+}
+
+type CheckListProps = {
+  items: CheckListItem[]
+}
+
+export default function CheckList({ items }: CheckListProps) {
   return (
     <ul className="check-list">
       {items.map((item, index) => (
