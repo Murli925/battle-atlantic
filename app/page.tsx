@@ -97,7 +97,7 @@ className="bg-[var(--secondary-bg-color)]"
   description={
     <div className="relative w-full aspect-video mt-4">
       <iframe
-        src="https://www.youtube.com/embed/tJHs3biTAdI"
+        src="https://www.youtube-nocookie.com/embed/tJHs3biTAdI?si=ETVTEjSnOgyLlQap"
         title="The war at sea"
         className="absolute mt-2 inset-0 w-full h-full"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
