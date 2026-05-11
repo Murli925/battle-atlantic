@@ -16,7 +16,11 @@ export const metadata: Metadata = {
     "naval history",
     "donation",
     "virtual memorial"
-  ]
+  ],
+    robots: {
+    index: true,
+    follow: true,
+  }
 }
 
 export default function Our_Team() {
