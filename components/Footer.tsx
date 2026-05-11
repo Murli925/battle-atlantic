@@ -12,7 +12,7 @@ const navLinks = [
   { name: "Our Team", href: "/our-team" },
   { name: "Virtual Memorial", href: "/virtual-memorial" },
   { name: "Sponsors", href: "/sponsors" },
-  { name: "Donations", href: "/donations" }
+  { name: "Support the Expedition", href: "/support-the-expedition" }
 ]
 
 export default function Footer() {
@@ -30,7 +30,7 @@ export default function Footer() {
   }}
 >
 
-      {pathname === "/donations" || pathname === "/" && (
+      {pathname === "/support-the-expedition" || pathname === "/" && (
         <Image
           src="/images/Bell-Island-Battle-of-the-Atlantic-Expedition-Banner.jpg"
           className="w-full"
