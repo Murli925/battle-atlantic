@@ -69,7 +69,7 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Toggle */}
-          <button
+          <button title="Menu" aria-label="Mobile Menu"
             onClick={() => setIsOpen(!isOpen)}
             className={`${styles.mobileButton} ${
               isOpen ? styles.open : ""

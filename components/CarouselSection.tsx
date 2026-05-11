@@ -5,6 +5,7 @@ import "./CarouselSection.module.scss"
 import GenericCarousel from "@/components/GenericCarousel"
 
 type Item = {
+  title?: string
   image: string
   link?: string
   alt?: string
@@ -39,7 +40,7 @@ export default function CarouselSection({
           items={items}
           autoplay
           renderItem={(item) => (
-            <a
+            <a aria-label={item.title}
               href={item.link || "#"}
               className="block relative w-full w-100  h-35"
             >

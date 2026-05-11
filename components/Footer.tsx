@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-white font-semibold mb-3">Quick Links</h4>
+          <h3 className="text-white font-semibold mb-3">Quick Links</h3>
 
           <ul className="space-y-2 text-sm">
            {navLinks.map((link) => (
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
 <div>
-  <h4 className="text-white font-semibold mb-3">Contact</h4>
+  <h3 className="text-white font-semibold mb-3">Contact</h3>
 
   <p className="text-sm">
     Email:{" "}
