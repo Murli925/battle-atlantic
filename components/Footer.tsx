@@ -109,7 +109,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-800 text-center text-sm py-4 copyright-bar">
-        Copyright © Battle of the Atlantic Virtual Memorial 2026 | All Rights Reserved | Powered By <a href="https://www.adaan.com/" target="_blank" className="underline">Adaan Digital Solutions Pvt Limited</a>
+        Copyright © Battle of the Atlantic Virtual Memorial 2026 | All Rights Reserved | <small>Powered By <a href="https://www.adaan.com/" target="_blank" className="underline">Adaan Digital Solutions Pvt Limited</a></small>
       </div>
 
     </footer>

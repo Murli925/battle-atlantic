@@ -24,23 +24,29 @@ export default function GenericCarousel<T>({
   slidesPerView = 3,
   spaceBetween = 20,
   autoplay = true,
-  loop = true
+  loop = true,
+
 }: Props<T>) {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       navigation
       pagination={false}
+      centeredSlides={true}
       loop={loop}
-      autoplay={autoplay ? { delay: 3000, disableOnInteraction: false } : false}
+      autoplay={{
+  delay: 3000,
+  disableOnInteraction: false,
+  pauseOnMouseEnter: true,
+}}
       spaceBetween={spaceBetween}
-      speed={1000}
+      speed={2000}
 
       breakpoints={{
         0: { slidesPerView: 1 },
         640: { slidesPerView: 1.2 },
         768: { slidesPerView: 2 },
-        1024: { slidesPerView }
+        1024: { slidesPerView: 3 }
       }}
     >
       {items.map((item, index) => (

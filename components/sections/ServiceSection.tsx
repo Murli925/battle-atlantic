@@ -27,7 +27,7 @@ const services = [
   {
     title: "Graduate student training",
     description: "Field and research participation",
-    image: "/images/research-training.jpg",
+    image: "/images/Graduate-Students.jpg",
     link:"/virtual-memorial"
   },
   {
@@ -60,8 +60,8 @@ export default function ServicesSection() {
             />
           )}
         />
-        <p className="mt-10 text-center max-w-4xl mx-auto px-5">This work builds on the HMCS Canada Expedition, which produced a complete three-dimensional photogrammetric model of Canada’s first purpose-built warship.</p>
-
+        {/* <p className="mt-10 text-center max-w-4xl mx-auto px-5">This work builds on the HMCS Canada Expedition, which produced a complete three-dimensional photogrammetric model of Canada’s first purpose-built warship.</p> */}
+<p className="mt-10 text-center max-w-4xl mx-auto px-5">This work builds on the HMCS <i>Canada</i> Expedition 2025, which produced a complete three-dimensional photogrammetric model of Canada&rsquo;s first purpose-built warship, as part of an integrated archaeological and marine science investigation, and NOAA&rsquo;s 2016 Battle of the Atlantic Expedition, which documented the wrecks of the German submarine U-<i>576</i> and the freighter <i>Bluefields</i> off North Carolina.</p>
       </div>
 
     </section>

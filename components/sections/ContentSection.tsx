@@ -8,6 +8,7 @@ type Props = {
   image?: string
   images?: string[]
   video?: string 
+  caption?: string
   reverse?: boolean
 
   buttonText?: string
@@ -24,6 +25,7 @@ export default function ContentSection({
   image,
   images,
   video,
+  caption,
   reverse = false,
   buttonText,
   buttonTarget,
@@ -40,7 +42,7 @@ const showMedia =
   (video && video.trim() !== "")
 
   return (
-    <section className={`py-10 ${className} md:py-20`}>
+    <section className={`content-section py-10 ${className} md:py-20`}>
       <div className="max-w-7xl mx-auto px-5" data-aos="fade-up">
         <div
           className={`flex gap-4 md:gap-12 flex-col md:flex-row items-stretch ${
@@ -86,14 +88,16 @@ const showMedia =
 
       {/* 🎥 VIDEO */}
       {video ? (
-        <video
+        <><video
           src={video}
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="relative inset-0 w-full h-full object-cover"
         />
+        <small>{caption}</small></>
+        
       ) : images && images.length === 2 ? (
 
         /* 🖼️ TWO IMAGE GRID */

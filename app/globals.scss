@@ -15,12 +15,12 @@
   --secondary-color: #0e5fa7;
   --tertiary-color: #0e5fa7;
 
-  --accent-color: #BE9942;
+  --accent-color: #d09b20;
   --text-white: #ffffff;
 }
 
 html {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 body {
@@ -147,7 +147,7 @@ h1, h2, h3, h4{
   }
   h2.heading{
     font-size:32px !important;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
   }
     h3.heading{
     font-size:26px !important;
@@ -215,4 +215,20 @@ strong{
 }
 .copyright-bar{
 background: #090e18;
+}
+
+.content-section small {
+	position: relative;
+	bottom: 90px;
+	padding: 20px;
+	background: #00000091;
+	width: 100%;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+  transition: 0.5s all ease-in-out;
+}
+.content-section small:hover {
+	background: #000000;
+  transition: 0.5s all ease-in-out;
 }

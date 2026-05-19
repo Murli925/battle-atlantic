@@ -42,7 +42,7 @@ export default function HeroSlider({
         navigation={showNavigation}
         pagination={showPagination ? { clickable: true } : false}
         loop={true}
-        autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
+        //autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
         speed={1200}
       >
 

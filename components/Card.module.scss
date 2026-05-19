@@ -23,6 +23,10 @@
   height: 300px;
 }
 
+.imageWrapper img {
+	object-fit: cover;
+}
+
 .content {
   padding: 20px;
   display: flex;
