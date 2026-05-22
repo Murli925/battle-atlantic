@@ -20,7 +20,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 17.5px;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
   background: var(--background-color);
   color: var(--foreground-color);
   font-family: "Barlow", sans-serif;
-  font-size: 17px !important;
+  font-size: 1rem !important;
 
 
   .text-color-primary{
@@ -153,6 +153,9 @@ h1, h2, h3, h4{
     font-size:26px !important;
       margin-bottom: 15px;
   }
+.content-section small {
+	position: absolute;
+}
 }
 @media all and (max-width:991px){
   h1.heading{
@@ -166,8 +169,11 @@ h1, h2, h3, h4{
     font-size:22px !important;
       margin-bottom: 15px;
   }
-  
+.content-section small {
+	position: relative;
 }
+}
+
 strong{
   font-weight: 600;
 }
@@ -218,17 +224,30 @@ background: #090e18;
 }
 
 .content-section small {
-	position: relative;
-	bottom: 90px;
-	padding: 20px;
+	color: #fff;
 	background: #00000091;
 	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	transition: all .5s ease-in-out;
 	display: block;
-	color: #fff;
-	font-size: 16px;
-  transition: 0.5s all ease-in-out;
+	bottom: 0px;
 }
-.content-section small:hover {
+.content-section .col-secondary small:hover {
 	background: #000000;
   transition: 0.5s all ease-in-out;
+}
+.media-caption {
+margin-top: -9.5%;
+    z-index: 9999;
+    font-size: 14.5px;
+    display: block;
+    position: relative;
+    background: #000000d4;
+    color: #fff;
+    padding: 10px;
+}
+.accordion-content .content-section>div{
+  padding-left: 0 !important ;
+  padding-right: 0 !important ;
 }

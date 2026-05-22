@@ -6,6 +6,7 @@ import InnerBanner from "@/components/sections/Inner-banner";
 import Accordion from "@/components/AccordionSection";
 import Gallery from "@/components/GallerySection";
 import type { Metadata } from "next"
+import Image from "next/image";
 
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ export default function Bell_island_1942() {
       <InnerBanner
         subtitle="Bell Island 1942"
         title="Bell Island in the Second World War"
-        image="/images/BlastHole-Strathcona.jpg"
+        image="/images/U-518-at-sea.jpg"
         imageAlt="Bell Island Harbour"
       />
       {/* --------------------------------------------  Section 2 -------------------------------------------- */}
@@ -75,14 +76,16 @@ export default function Bell_island_1942() {
               Anti-submarine defences were limited, and harbour protection
               measures such as anti-torpedo nets were not yet in place.
             </p>
-            <p className="mt-2">
+            <p className="mt-2 mb-4">
               Bell Island was, in effect, a vital industrial node operating
               within a global convoy system&mdash;but without the defensive
               depth that system required.
             </p>
           </>
         }
-        image="/images/GhostBowReneeJILL8747l.jpg"
+        image="/images/convoy-routes.jpeg"
+        caption="Caption: North Atlantic convoy routes and escort zones during the Second World War, illustrating
+Newfoundland’s strategic position within the Allied Atlantic supply system."
         buttonText="Learn More"
         buttonLink="/virtual-memorial"
         buttonVariant="primary"
@@ -123,7 +126,9 @@ export default function Bell_island_1942() {
             </p>
           </>
         }
-        image="/images/banner-2.jpg"
+        image="/images/fHE6J28H.png"
+        caption="Caption: Conception Bay and Bell Island during the Second World War, showing the iron ore anchorage,
+loading piers, and coastal defence positions associated with the 1942 attacks."
         reverse
         buttonText="Support Us"
         buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
@@ -139,11 +144,18 @@ export default function Bell_island_1942() {
         blocks={[
           {
             blockClassName: "bg-[var(--background-color)] text-black",
-            title: "5 September 1942 — U-boat U-513 Attack",
+            title:(<>5 September 1942 — U-boat <i>U-513</i> Attack</>),
             description: (
               <>
+              <Image src="/images/wIePj3CQ.jpeg" alt="Burning Ship" className="w-full h-130 object-cover mb-4 rounded" width={100} height={100} />
+                
+                
+
+                <ContentSection
+                  title=""
+                  description={<>
                 <p className="mt-2">
-                  On 5 September 1942, the German submarine U-513—a long-range
+                  On 5 September 1942, the German submarine <i>U-513</i>—a long-range
                   Type IXC U-boat under the command of Korvettenkapitän Rolf
                   Rüggeberg— entered Conception Bay. Navigating through narrow
                   approaches, shoals, and tidal currents, the submarine
@@ -157,7 +169,7 @@ export default function Bell_island_1942() {
                 </p>
 
                 <p className="mt-2">
-                  At approximately 11:00 a.m., U-513 fired torpedoes into the
+                  At approximately 11:00 a.m., <i>U-513</i> fired torpedoes into the
                   anchored ships. The British vessel Saganaga was struck first.
                   The explosion was catastrophic: the ship sank in well under a
                   minute, giving the crew almost no time to respond. Twenty-nine
@@ -183,18 +195,48 @@ export default function Bell_island_1942() {
                 <p className="mt-2 font-semibold">
                   This was no longer a distant ocean war.
                 </p>
+                  </>}
+                reverse
+                  image="/images/U-576-on-war-patrol.jpg"
+                  className="!px-0 !py-4"
+                />
+                
+<Gallery
+              items={[
+                {
+                  src: "/images/0vipgwHf.jpeg",
+                  alt: "New photograph of Saganaga",
+                },
+                {
+                  src: "/images/ARX6eTou.jpeg",
+                  alt: "Lord Strathcona",
+                }
+              ]}
+            />
+
+                
+                
+                
+                
+                
               </>
             ),
           },
 
           {
             blockClassName: "bg-[var(--background-color)] text-black",
-            title: "2 November 1942 — U-boat U-518 Attack",
+            title: (<>2 November 1942 — U-boat <i>U-518</i> Attack</>),
             description: (
               <>
+              <Image src="/images/NCeCXwlK.jpeg" alt="Burning Ship" className="w-full h-130 object-cover mb-4" width={100} height={100} />
+                
+                
+              <ContentSection
+                  title=""
+                  description={<>
                 <p className="mt-2">
                   Nearly two months later, on 2 November 1942, a second German
-                  submarine—U-518, also a Type IXC boat under the command of
+                  submarine <i>U-518</i>, also a Type IXC boat under the command of
                   Oberleutnant zur See Friedrich-Wilhelm Wissmann—repeated the
                   feat.
                 </p>
@@ -206,7 +248,7 @@ export default function Bell_island_1942() {
 
                 <p className="mt-2">
                   Operating under cover of darkness and exploiting the same
-                  defensive weaknesses, U-518 launched torpedo attacks against
+                  defensive weaknesses, <i>U-518</i> launched torpedo attacks against
                   vessels at anchor. The Canadian ore carrier Rose Castle was
                   struck and sank within minutes, with the loss of twenty-four
                   crew members.
@@ -225,6 +267,33 @@ export default function Bell_island_1942() {
                   Fairmile motor launches— and local civilian vessels. Many
                   reached shore directly.
                 </p>
+                  </>}
+                
+                  image="/images/RSusYdY_.jpeg"
+                  className="!px-0 !py-4"
+                />
+                
+                
+                <Gallery
+              items={[
+                {
+                  src: "/images/13vYV2sj.png",
+                  alt: "Rose Castle",
+                },
+                {
+                  src: "/images/QF8LK0LI.jpeg",
+                  alt: "PLM-27",
+                },
+                {
+                  src: "/images/14HWecDg.png",
+                  alt: "U-518-at-sea",
+                }
+              ]}
+            />
+                
+                
+                
+                
               </>
             ),
           },
@@ -234,6 +303,9 @@ export default function Bell_island_1942() {
             title: "Operational Significance",
             description: (
               <>
+
+<Image src="/images/rEGdk7WS.jpeg" alt="Convoy Route Map" className="w-full h-130 object-cover mb-4" width={100} height={100} />
+
                 <p className="mt-2">
                   The success of both attacks reflected a combination of German
                   operational audacity and Allied defensive limitations.
@@ -252,10 +324,26 @@ export default function Bell_island_1942() {
                 </p>
 
                 <p className="mt-2">
-                  That both U-513 and U-518 succeeded underscores both the skill
+                  That both <i>U-513</i> and <i>U-518</i> succeeded underscores both the skill
                   of their commanders and the absence of effective
                   anti-submarine defences at Bell Island in 1942.
                 </p>
+
+
+<Gallery
+              items={[
+                {
+                  src: "/images/iAFrLRHR.png",
+                  alt: "MSS-4-wrecks-named-multibeam",
+                },
+                {
+                  src: "/images/FEVVYn17.png",
+                  alt: "U-boat and Allied shipping losses",
+                }
+              ]}
+            />
+
+
               </>
             ),
           },
@@ -265,6 +353,10 @@ export default function Bell_island_1942() {
             title: "A Defended Harbour Breached",
             description: (
               <>
+
+
+<Image src="/images/Newfoundland military bases map.jpeg" alt="Newfoundland military bases map" className="w-full h-130 object-cover mb-4" width={100} height={100} />
+
                 <CheckList
                   items={[
                     {
@@ -301,6 +393,29 @@ export default function Bell_island_1942() {
                   harbour along the east coast of either Canada or the United
                   States during the Second World War.
                 </p>
+
+
+
+<Gallery
+              items={[
+                {
+                  src: "/images/Rya9Uput.jpeg",
+                  alt: "RCN Fairmile patrol",
+                },
+                {
+                  src: "/images/9tFuTaeV.jpeg",
+                  alt: "RCAF on patrol",
+                },
+                {
+                  src: "/images/QEzDTTh.jpeg",
+                  alt: "Cemetery Hill Coastal Artillery",
+                },
+                {
+                  src: "/images/Wyai9Mxw.jpeg",
+                  alt: "Scotia Pier loading ships",
+                }
+              ]}
+            />
               </>
             ),
           },
@@ -310,6 +425,11 @@ export default function Bell_island_1942() {
             title: "From Industrial Site to Naval Battlefield",
             description: (
               <>
+
+
+<Image src="/images/89fKBUQ.png" alt="Cross section Bell Island iron mines" className="w-full h-130 object-cover mb-4" width={100} height={100} />
+
+
                 <p className="mt-2">
                   What makes Bell Island historically unique is not simply that
                   ships were sunk—but where they were sunk.
@@ -342,6 +462,29 @@ export default function Bell_island_1942() {
                   What had been an industrial anchorage became, in two brief and
                   violent episodes, part of the Battle of the Atlantic itself.
                 </p>
+<Gallery
+              items={[
+                {
+                  src: "/images/R2-Bell Island.webp",
+                  alt: "R2-Bell Island.webp",
+                },
+                {
+                  src: "/images/R6. Torpedo strike on Scotia Pier.gif",
+                  alt: "Torpedo strike on Scotia Pier",
+                },
+                {
+                  src: "/images/R11. Lance Cove Cemetary.jpg",
+                  alt: "Lance Cove Cemetary",
+                },
+                {
+                  src: "/images/R17. Saganaga Anchor.jpg",
+                  alt: "Saganaga Anchor",
+                }
+              ]}
+            />
+
+
+
               </>
             ),
           },
@@ -352,7 +495,7 @@ export default function Bell_island_1942() {
         title="Allied Vessels Sunk at Bell Island"
         description={
           <>
-            <h3 className="heading text-2xl my-5">SS Saganaga</h3>
+            <h3 className="heading text-2xl my-5">SS <i>Saganaga</i></h3>
 
             <CheckList
               items={[
@@ -466,15 +609,15 @@ export default function Bell_island_1942() {
             />
           </>
         }
-        image="/images/SS-SAGANAGA.jpg"
+        image="/images/5LP4BcOg.jpeg"
       />
 
-      {/* --------------------------------------------  Section 7 -------------------------------------------- */}
+      {/* --------------------------------------------  Section 6 -------------------------------------------- */}
       <ContentSection
         title=""
         description={
           <>
-            <h3 className="heading text-2xl my-5">SS Lord Strathcona</h3>
+            <h3 className="heading text-2xl my-5">SS <i>Lord Strathcona</i></h3>
 
             <CheckList
               items={[
@@ -544,7 +687,7 @@ export default function Bell_island_1942() {
                   text: (
                     <>
                       <strong>Attack:</strong> Torpedoed 5 September 1942 by
-                      U-513
+                      <i>U-513</i>
                     </>
                   ),
                 },
@@ -587,12 +730,12 @@ export default function Bell_island_1942() {
         // buttonLink="/support-us"
         // buttonVariant="secondary"
       />
-      {/* --------------------------------------------  Section 8 -------------------------------------------- */}
+      {/* --------------------------------------------  Section 7 -------------------------------------------- */}
       <ContentSection
         title=""
         description={
           <>
-            <h3 className="heading text-2xl my-5">SS Rose Castle</h3>
+            <h3 className="heading text-2xl my-5">SS <i>Rose Castle</i></h3>
 
             <CheckList
               items={[
@@ -664,7 +807,7 @@ export default function Bell_island_1942() {
                   text: (
                     <>
                       <strong>Attack:</strong> Torpedoed 2 November 1942 by
-                      U-518
+                      <i>U-518</i>
                     </>
                   ),
                 },
@@ -714,7 +857,7 @@ export default function Bell_island_1942() {
         title=""
         description={
           <>
-            <h3 className="heading text-2xl my-5">SS PLM-27</h3>
+            <h3 className="heading text-2xl my-5">SS <i>PLM-27</i></h3>
 
             <CheckList
               items={[
@@ -772,7 +915,7 @@ export default function Bell_island_1942() {
                   text: (
                     <>
                       <strong>Attack:</strong> Torpedoed 2 November 1942 by
-                      U-518
+                      <i>U-518</i>
                     </>
                   ),
                 },
@@ -873,7 +1016,7 @@ export default function Bell_island_1942() {
         title="German Submarines Involved"
         description={
           <>
-            <h3 className="heading text-2xl my-5">U-513</h3>
+            <h3 className="heading text-2xl my-5"><i>U-513</i></h3>
             <CheckList
               items={[
                 {
@@ -937,13 +1080,7 @@ export default function Bell_island_1942() {
 
             <CheckList
               items={[
-                {
-                  text: (
-                    <>
-                      <strong>Commanding Officer:</strong> Rolf Rüggeberg
-                    </>
-                  ),
-                },
+
                 {
                   text: (
                     <>
@@ -966,6 +1103,35 @@ export default function Bell_island_1942() {
                     </>
                   ),
                 },
+
+
+              ]}
+            />
+
+            <p className="my-4">
+              <strong>Korvettenkapitän</strong>
+            </p>
+
+
+        <CheckList
+              items={[
+
+                {
+                  text: (
+                    <>
+                      <strong>RN/RCN Equivalent:</strong> Lieutenant-Commander
+                    </>
+                  ),
+                },
+
+                {
+                  text: (
+                    <>
+                      <strong>USN Equivalent: </strong> Lieutenant-Commander (O-5)
+                    </>
+                  ),
+                },
+
               ]}
             />
 
@@ -997,7 +1163,7 @@ export default function Bell_island_1942() {
         title=""
         description={
           <>
-            <h3 className="heading text-2xl my-5">U-518</h3>
+            <h3 className="heading text-2xl my-5"><i>U-518</i></h3>
 
             <CheckList
               items={[
@@ -1087,18 +1253,18 @@ export default function Bell_island_1942() {
             />
 
             <p className="mt-4">
-              <strong>Vessels Sunk at Bell Island:</strong> Rose Castle, PLM-27
+              <strong>Vessels Sunk at Bell Island:</strong> <i>Rose Castle, PLM-27</i>
             </p>
 
             <p className="mt-4">
-              <strong>Later Fate:</strong> U-518 was sunk on 22 April 1945 in
+              <strong>Later Fate:</strong> <i>U-518</i> was sunk on 22 April 1945 in
               the North Atlantic northwest of the Azores by depth charges from
               the U.S. destroyer escorts USS Carter and USS Neal A. Scott, with
               the loss of all 56 hands.
             </p>
             <p className="mt-4">
               <strong>Additional notes:</strong> After sinking Rose Castle and
-              PLM-27, Wissmann successfully landed a German intelligence agent
+              <i>PLM-27</i>, Wissmann successfully landed a German intelligence agent
               at Baie des Chaleurs in Quebec on 9 November 1942. By December,
               Wissmann was promoted to Kapitänleutnant (Lieutenant Commander).
               After leaving U-518, he served as a training officer with the 2nd,
@@ -1187,7 +1353,9 @@ export default function Bell_island_1942() {
             </p>
           </>
         }
-        image="/images/security-improvements.jpg"
+        image="/images/FWpMYm_3.jpeg"
+        caption="Caption: Fairmile motor launches formed part of the expanded anti-submarine and harbour defence
+measures introduced after the Bell Island attacks."
         className="bg-[var(--secondary-bg-color)]"
       />
 
@@ -1330,18 +1498,21 @@ export default function Bell_island_1942() {
               items={[
                 {
                   src: "/images/Burning_ship.jpg",
-                  alt: "Wreck Site",
+                  alt: "Torpedoed freighter",
                 },
                 {
                   src: "/images/HMCS_Penetang.webp",
-                  alt: "Underwater Survey",
+                  alt: "HMCS Penetang",
                 },
                 {
                   src: "/images/Second_Torpedoed ship.jpg",
-                  alt: "Bell Island",
+                  alt: "Torpedoed freighter",
                 },
               ]}
             />
+            <p className="text-gray-500">
+              (From left to right: Torpedoed freighter (left), HMCS Penetang (middle), Torpedoed freighter (right))
+            </p>
             <p className="mt-3">
               More than 4,600 Canadians of the Royal Canadian Navy, Royal
               Canadian Air Force, and Canadian Merchant Navy were lost during
@@ -1379,6 +1550,12 @@ export default function Bell_island_1942() {
                 },
               ]}
             />
+
+            <p className="text-gray-500">
+              (From left to right: RCAF Liberator Searching for U-boats (left), RCAF Liberators Attacking U-Boat (middle), RCAF
+Liberator Flying Protecting Convoy (right))
+            </p>
+
             <p className="mt-3">
               Air power was also central to the Atlantic war. Aircraft of the
               Royal Air Force, the Royal Canadian Air Force, and the United
@@ -1425,7 +1602,7 @@ export default function Bell_island_1942() {
             <Gallery
               items={[
                 {
-                  src: "/images/Submarine & Allied shipping losses.jpg",
+                  src: "/images/KXNZU36.png",
                   alt: "Submarine & Allied shipping losses",
                 },
               ]}

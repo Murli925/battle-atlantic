@@ -3,6 +3,7 @@ import CheckList from "@/components/CheckList"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import type { Metadata } from "next"
+import Image from "next/image"
 
 
 export const metadata: Metadata = {
@@ -40,10 +41,13 @@ export default function Expedition_Objectives() {
   title="Expedition Objectives"
   description={<><p className="mb-2">The Bell Island Battle of the Atlantic Expedition is designed to document, interpret, and make accessible one of the most intact Second World War naval battle landscapes in North America.</p> <p>The project brings together underwater archaeology, marine science—including marine biology and environmental study—advanced imaging technologies, and historical research to produce a comprehensive digital record of the 1942 attacks and their wider operational and geographic context within the Battle of the Atlantic, while also supporting responsible heritage interpretation and long-term scientific study in Newfoundland and Labrador.</p>
 </>}
-  image="/images/2jqiAjcdx4VHPgzUc26l2QBRu49F19CGWFqAlXQt6Z6plR_xuHhWWgR5eemALygVk8M2V_44vYK3zBy3ZFdPq-ijSiNj6U4xg6uxafaLeEYJjlp5fT6gK-fTvOzQaUVFLK2ZWByjdJcK1VNo8NROjhIH0sxSdRdgODmvIE7EUdgudQinrrQwZHpbgoIIXSs9.jpg"
-  buttonText="Learn More"
-  buttonLink="/virtual-memorial"
-  buttonVariant="primary"
+  image="/images/Integrated Battlefield diagram.png"
+  caption="Caption: Integrated reconstruction of the Bell Island battlefield linking wrecks, shoreline infrastructure,
+coastal defence positions, and community landscape into a unified spatial interpretation model.
+This is an illustration"
+  // buttonText="Learn More"
+  // buttonLink="/virtual-memorial"
+  // buttonVariant="primary"
 />
 {/* --------------------------------------------  Section 3 -------------------------------------------- */}
 {/* <ServicesSection/> */}
@@ -57,6 +61,8 @@ export default function Expedition_Objectives() {
   description={
     <>
       {/* <h3 className="heading text-2xl my-5">SS Saganaga</h3> */}
+    <Image src="/images/Creating-a-DTM.png" alt="Cross section Bell Island iron mines" className="w-full h-210 object-cover mb-4" width={100} height={100} />
+
 <p className="mb-2">At the core of the expedition is the development of a fully integrated three-dimensional Digital Terrain Model (DTM) of the Bell Island battlefield.</p>
 <p className="mb-2">This model will combine:</p>
       <CheckList
@@ -121,8 +127,8 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
     </>
   }
   
-  image="/images/Creating-a-DTM.png"
-  reverse
+  // image="/images/Creating-a-DTM.png"
+  // reverse
   className="bg-[var(--secondary-bg-color)]"
 />
 

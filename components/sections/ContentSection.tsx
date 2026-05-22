@@ -43,7 +43,7 @@ const showMedia =
 
   return (
     <section className={`content-section py-10 ${className} md:py-20`}>
-      <div className="max-w-7xl mx-auto px-5" data-aos="fade-up">
+      <div className="max-w-7xl mx-auto px-5">
         <div
           className={`flex gap-4 md:gap-12 flex-col md:flex-row items-stretch ${
             reverse ? "md:flex-row-reverse" : ""
@@ -52,7 +52,7 @@ const showMedia =
 
           {/* Text Section */}
           {showText && (
-            <div className="flex-1 order-2 md:order-1 md:my-4">
+            <div className="flex-1 order-2 md:order-1 md:my-4 col-primary">
               <div className="max-w-full md:mx-0">
 
                 {title && (
@@ -83,50 +83,65 @@ const showMedia =
 
           {/* Image Section */}
           {showMedia && (
-  <div className="flex-1 w-full order-1 md:order-2 flex">
-    <div className="relative w-full min-h-[250px] md:min-h-full overflow-hidden">
+  <div className="flex-1 w-full order-1 md:order-2 flex col-secondary">
+    
+    <div className="w-full">
 
-      {/* 🎥 VIDEO */}
-      {video ? (
-        <><video
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="relative inset-0 w-full h-full object-cover"
-        />
-        <small>{caption}</small></>
-        
-      ) : images && images.length === 2 ? (
+      {/* Media Wrapper */}
+      <div className="relative w-full min-h-[250px] md:min-h-full overflow-hidden">
 
-        /* 🖼️ TWO IMAGE GRID */
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full">
-          {images.map((img, i) => (
-            <div key={i} className="relative w-full h-full min-h-[250px]">
-              <Image
-                src={img}
-                alt={`image-${i}`}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ))}
-        </div>
+        {/* 🎥 VIDEO */}
+        {video ? (
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="inset-0 w-full h-full object-cover absolute"
+          />
+        ) : images && images.length === 2 ? (
 
-      ) : (
+          /* 🖼️ TWO IMAGE GRID */
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className="relative w-full h-full min-h-[450px]"
+              >
+                <Image
+                  src={img}
+                  alt={`image-${i}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
 
-        /* 🖼️ SINGLE IMAGE */
+        ) : (
 
-        <Image
-          src={image!}
-          alt={title || "Section image"}
-          fill
-          className={styles.image}
-        />
+          /* 🖼️ SINGLE IMAGE */
+          <Image
+            src={image!}
+            alt={title || "Section image"}
+            fill
+            className={styles.image}
+          />
+
+        )}
+
+      </div>
+
+      {/* Caption */}
+      {caption && (
+        <p className="text-sm mt-1 text-foreground-color media-caption">
+          {caption}
+        </p>
       )}
 
     </div>
+
   </div>
 )}
 

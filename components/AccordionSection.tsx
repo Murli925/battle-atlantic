@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 type Block = {
-  title?: string
+  title: React.ReactNode
   description?: React.ReactNode
   blockClassName?: string
 }
@@ -52,8 +52,8 @@ export default function Accordion({
 
               {/* Content */}
               <div
-                className={`transition-all duration-800 ease-in-out overflow-hidden ${
-                  isOpen ? "max-h-[1000px] p-5 pt-0" : "max-h-0 px-5"
+                className={`transition-all duration-800 ease-in-out overflow-scroll accordion-content ${
+                  isOpen ? "max-h-[1500px] p-5 pt-0" : "max-h-0 px-5"
                 }`}
               >
                 {block.description}
