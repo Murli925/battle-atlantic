@@ -5,6 +5,7 @@ import Image from "next/image"
 type Block = {
   title?: string
   image?: string
+  image2?: string
   description?: React.ReactNode
   buttonText?: string
   buttonLink?: string
@@ -39,16 +40,41 @@ export default function FullWidthContent({
                 </h2>
               )}
 
-                  {block.image && (
-      <div className="relative w-100 h-[80px] my-4 rounded-xl overflow-hidden">
+{(block.image || block.image2) && (
+
+  <div className="flex flex-wrap gap-4 items-center my-4">
+
+    {/* First Image */}
+    {block.image && (
+      <div className="relative w-[210px] h-[80px] rounded-lg overflow-hidden">
+
         <Image
           src={block.image}
           alt={block.title || "Block image"}
           fill
           className="object-contain object-left"
         />
+
       </div>
     )}
+
+    {/* Second Image */}
+    {block.image2 && (
+      <div className="relative w-[210px] h-[80px] rounded-lg overflow-hidden">
+
+        <Image
+          src={block.image2}
+          alt={block.title || "Block image 2"}
+          fill
+          className="object-contain object-left"
+        />
+
+      </div>
+    )}
+
+  </div>
+
+)}
 
               {block.description && (
                 <div className={`!mb-0 ${styles.description}`}>

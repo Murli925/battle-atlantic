@@ -5,12 +5,14 @@ type Props = {
   title: string
   image: string
   imageAlt?: string
+  caption?: string
   className?: string
 }
 
 export default function InnerBanner({
   subtitle,
   title,
+  caption,
   image,
   imageAlt = "Banner image",
   className = ""
@@ -48,11 +50,13 @@ export default function InnerBanner({
             <h1 className="text-white heading leading-tight font-semibold">
               {title}
             </h1>
-
+<small className="block text-white pt-4">{caption}</small>
             
           </div>
         </div>
       </div>
     </section>
+    
+
   )
 }

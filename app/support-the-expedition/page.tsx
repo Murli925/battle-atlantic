@@ -4,6 +4,7 @@ import CenterImageSection from "@/components/sections/CenterImageSection"
 import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import type { Metadata } from "next"
+import SupportSection from "@/components/sections/SupportSection"
 
 
 export const metadata: Metadata = {
@@ -31,14 +32,14 @@ export default function Donations() {
 
           <InnerBanner
           subtitle="Support the Expedition"
-        title="Battle of the Atlantic Memorial — Bell Island and the North Atlantic War"
+        title="Bell Island Battle of the Atlantic Memorial"
         image="/images/BI-14.jpg"
         imageAlt="Bell Island Harbour"
       />
 {/* --------------------------------------------  Section 1 -------------------------------------------- */}
 {/* --------------------------------------------  Section 2 -------------------------------------------- */}
 <ContentSection
-  title="Support the Expedition"
+  title="Why This Expedition Matters"
   description={
     <>
       <p className="mt-2">
@@ -65,7 +66,7 @@ export default function Donations() {
       </p>
     </>
   }
-  image="/images/8ohABBs3.jpg"
+  image="/images/VOYIS-tethered.jpg"
   buttonText="Donate Now"
   buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
   buttonVariant="primary"
@@ -132,12 +133,16 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 />
 
 
+<SupportSection/>
 
 
-<ContentSection
+
+{/* <ContentSection
   title="What Your Support Enables"
   description={
     <>
+    
+
       <p className="mt-2 mb-2">
         Contributions directly support:
       </p>
@@ -159,7 +164,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
   image="/images/VOYIS-3.png"
   reverse
   className="bg-[var(--secondary-bg-color)]"
-/>
+/> */}
 
 
 
@@ -194,15 +199,11 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       />
 
       <p className="mt-2">
-        This baseline will provide a reference point for future scientific and
-        archaeological study, allowing researchers to track environmental
-        change and assess the rate and nature of site deterioration over time.
+        This baseline will support future scientific and archaeological study by allowing researchers to monitor environmental change and assess the long-term deterioration of the wrecks over time.
       </p>
 
       <p className="mt-2">
-        Without this documentation, both the ecological context and the
-        physical condition of the wrecks will continue to change without a
-        comprehensive record of their current state.
+        Without comprehensive documentation, both the ecological context and physical condition of the wrecks will continue to change without a permanent scientific record of their current state.
       </p>
     </>
   }
@@ -217,7 +218,7 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
     <>
       <p className="mt-2 mb-2">
         The expedition is carried out through a coordinated partnership
-        combining academic, technical, and expeditionary expertise:
+        combining academic, scientific, technical, and operational expertise.
       </p>
 
       <CheckList
@@ -225,35 +226,54 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
           {
             text: (
               <>
-                <strong>Marine Institute, Memorial University of Newfoundland (MI–MUN):</strong> vessels, operations, and research integration
+                <strong>
+                  Marine Institute, Memorial University of Newfoundland (MI-MUN):
+                </strong>{" "}
+                Vessels, field operations, drone imaging, and research integration.
               </>
             )
           },
+
           {
             text: (
               <>
-                <strong>VOYIS Imaging:</strong> underwater imaging systems and data processing
+                <strong>VOYIS Imaging:</strong>{" "}
+                Underwater imaging systems, three-dimensional documentation,
+                and data processing.
               </>
             )
           },
+
           {
             text: (
               <>
-                <strong>Royal Canadian Geographical Society (RCGS):</strong> expedition governance, funding administration, and national outreach
+                <strong>
+                  Royal Canadian Geographical Society (RCGS):
+                </strong>{" "}
+                Expedition governance, funding administration,
+                cartographic support, and national outreach.
               </>
             )
           },
+
           {
             text: (
               <>
-                <strong>Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL):</strong> heritage stewardship and provincial coordination
+                <strong>
+                  Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL):
+                </strong>{" "}
+                Heritage stewardship, provincial coordination,
+                and community engagement.
               </>
             )
           },
+
           {
             text: (
               <>
-                <strong>HMCS Canada Expedition Dive Team:</strong> advanced underwater documentation and field operations
+                <strong>HMCS Canada Expedition Dive Team:</strong>{" "}
+                Advanced underwater documentation, technical diving operations,
+                and photogrammetric field support.
               </>
             )
           }
@@ -262,8 +282,8 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
       <p className="mt-2">
         The expedition has been awarded a Major Grant by the Royal Canadian
-        Geographical Society and operates under its established governance and
-        financial oversight framework.
+        Geographical Society and operates under the Society’s established
+        expedition governance and financial oversight framework.
       </p>
     </>
   }
@@ -275,42 +295,45 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
 
 <ContentSection
-  title="How to Support the Project"
+  title="Support the Expedition"
   description={
     <>
       <p className="mt-2">
         Donations may be made through the Royal Canadian Geographical
-        Society’s secure expedition funding portal:
-      </p>
-
-      <p className="mt-2 font-semibold">
-        <a href="https://secure.qgiv.com/for/bellislandexpedition/" className="text-primary">https://secure.qgiv.com/for/bellislandexpedition/</a>
+        Society’s secure expedition funding portal.
       </p>
 
       <p className="mt-2">
         All contributions are administered through the Society’s official
-        expedition program and are eligible for Canadian charitable tax
-        receipting.
+        expedition program and are eligible for Canadian charitable tax receipting.
       </p>
 
       <p className="mt-2">
-        Organizations and individuals interested in partnership or sponsorship
-        opportunities are invited to contact the expedition directly.
+        Support for the expedition helps advance underwater archaeology,
+        marine science, digital heritage documentation, public education,
+        and long-term preservation of one of Canada’s most significant
+        Battle of the Atlantic landscapes.
+      </p>
+
+      <p className="mt-2">
+        Organizations, foundations, and potential sponsors interested in
+        supporting the expedition are invited to contact the project team directly.
       </p>
 
       <h3 className="mt-4 heading">
         Contact the Expedition
       </h3>
 
+      <h4 className="heading">
+        <b>Joseph Frey</b>
+      </h4>
 
-        <h4 className="heading"><b>Joseph Frey</b></h4>
-        <p className="mt-2 mb-4">
+      <p className="mt-2 mb-4">
         Expedition Lead and Project Director
         <br />
-        Battle of the Atlantic Virtual Memorial — Bell Island and the North
-        Atlantic War
+        Bell Island Battle of the Atlantic Memorial
         <br />
-        Email: bellislandexpedition@gmail.com
+        Email: <a href="mailto:bellislandexpedition@gmail.com" className="text-gray-600 hover:text-blue-500">bellislandexpedition@gmail.com</a>
       </p>
     </>
   }
@@ -327,14 +350,16 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
   description={
     <>
       <p className="mt-2">
-        The Bell Island Expedition will create a permanent digital record of
-        one of the most intact naval battlefields of the Second World War.
+        The Bell Island Expedition will create a permanent digital memorial
+        and scientific record of one of the most intact naval battlefields
+        of the Second World War.
       </p>
 
       <p className="mt-2">
-        By integrating archaeology, marine science, and historical research,
-        the project will preserve a site that would otherwise remain largely
-        unseen and difficult to interpret.
+        By integrating underwater archaeology, marine science, historical
+        research, and advanced digital mapping, the project will preserve
+        a site that would otherwise remain largely unseen and difficult
+        to interpret.
       </p>
 
       <p className="mt-2 mb-2">
@@ -343,34 +368,74 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 
       <CheckList
         items={[
-          { text: <>Preservation of a nationally significant wartime site</> },
-          { text: <>Advancement of interdisciplinary research</> },
-          { text: <>Development of innovative digital heritage tools</> },
-          { text: <>Public understanding of the Battle of the Atlantic</> },
-          { text: <>Commemoration of those who served and died at sea</> }
+          {
+            text: (
+              <>
+                Preservation of a nationally significant wartime landscape
+              </>
+            )
+          },
+
+          {
+            text: (
+              <>
+                Advancement of interdisciplinary archaeological and marine research
+              </>
+            )
+          },
+
+          {
+            text: (
+              <>
+                Development of innovative digital heritage tools and public interpretation
+              </>
+            )
+          },
+
+          {
+            text: (
+              <>
+                Greater public understanding of the Battle of the Atlantic
+              </>
+            )
+          },
+
+          {
+            text: (
+              <>
+                Commemoration of those who served and died at sea
+              </>
+            )
+          }
         ]}
       />
 
       <p className="mt-2">
-        Without this work, much of this history will remain out of sight—and,
-        over time, may be lost to both environmental change and structural
-        deterioration.
+        Without comprehensive documentation, much of this history will
+        gradually be lost to environmental change and structural
+        deterioration over time.
       </p>
-
     </>
   }
   image="/images/IMG_7553.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
-  // buttonText="Donate Now"
-  // buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
-  // buttonVariant="primary"
 />
 
 
 
 <CTASection
-  title="Support the Bell Island Expedition 2027"
+  title="Help Preserve the Battle of the Atlantic"
+  description={(<>
+  <p className=" mb-2 w-full max-w-4xl mx-auto px-5">
+   The Bell Island Expedition is creating a permanent digital memorial to one of the most
+significant surviving Battle of the Atlantic landscapes in the world.</p>
+<p className="mt-2 mb-2 w-full max-w-4xl mx-auto px-5">
+Through underwater archaeology, marine science, and advanced three-dimensional
+documentation, the project will help preserve this unique wartime environment for future
+generations.
+  </p>
+  </>)}
   backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
   buttons={[
     {

@@ -4,6 +4,8 @@ import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import FullWidthContent from "@/components/sections/FullWidthContent"
 import type { Metadata } from "next"
+import CheckList from "@/components/CheckList"
+import TeamSection from "@/components/sections/TeamSection"
 
 
 export const metadata: Metadata = {
@@ -30,9 +32,9 @@ export default function Our_Team() {
     <>
 <InnerBanner
 subtitle="Our Team"
-  title="The People Behind the Expedition"
+  title="The Expedition Team"
   image="/images/Header-U=576-u576_sonar.jpg"
-  imageAlt="Bell Island Expedition Team"
+  imageAlt="Bringing together expertise in underwater archaeology, marine science, technical diving, digital terrain modelling, historical research, and advanced subsea imaging technologies."
 />
 
 <ContentSection
@@ -40,82 +42,171 @@ subtitle="Our Team"
   description={
     <>
       <p className="mt-2">
-        The Bell Island Battle of the Atlantic Virtual Memorial Expedition 2027
-        brings together a multidisciplinary team of technical divers, marine
-        scientists, archaeologists, historians, and expedition specialists with
-        extensive experience in underwater documentation, cold-water
-        operations, and maritime heritage research.
+The Bell Island Battle of the Atlantic Virtual Memorial Expedition 2027 brings together a multidisciplinary team of technical divers, marine scientists, archaeologists, historians, and expedition specialists with extensive experience in underwater documentation, cold-water operations, and maritime heritage research.
       </p>
 
       <p className="mt-2">
-        Members of the expedition have participated in major projects involving
-        shipwreck archaeology, naval operations, marine technology development,
-        and scientific fieldwork in Canada, the United States, Europe, and the
-        polar regions. The project builds directly on the experience and
-        methodologies developed during the HMCS Canada Expedition and extends
-        them into a complex, multi-site wartime landscape.
+        Members of the expedition have participated in major projects involving shipwreck archaeology, naval operations, marine technology development, and scientific fieldwork in Canada, the United States, Europe, and the polar regions.
       </p>
 
       <p className="mt-2">
-        The Bell Island project requires expertise not only in diving, but also
-        in remote sensing, cartography, marine biology, archival research, and
-        expedition logistics. The integration of these disciplines allows the
-        expedition to document the site accurately, safely, and with full
-        respect for its historical and commemorative significance.
+Building on the experience of NOAA’s 2016 Battle of the Atlantic Expedition, the HMCS Canada Expedition 2025, the Bell Island project combines historical research, advanced imaging technologies, marine science, and expedition field operations to document one of the most intact Battle of the Atlantic landscapes in North America.
       </p>
+      <p  className="mb-2">The expedition integrates expertise in:</p>
+      <CheckList
+        items={[
+    { text: <>Underwater archaeology</> },
+    { text: <>Digital terrain modelling (DTM)</> },
+    { text: <>Marine ecology</> },
+    { text: <>Technical diving</> },
+    { text: <>Cartography</> },
+{ text: <>Remote sensing</> },
+{ text: <>Archival research</> },
+{ text: <>Subsea imaging technologies</> }
+  ]}
+
+   />
+<p>Together, these disciplines allow the battlefield landscape to be documented accurately, safely, and non-intrusively while preserving its historical and commemorative significance.</p>
     </>
   }
-  image="/images/HMCS-Canada_Starboard.jpg"
+  image="/images/cold-water-coral-by-PLM-torpedo-Hole-JILL.jpg"
 />
 
-<ContentSection
-  title="Joseph Frey, CD, FRCGS"
-  description={
-    <>
-      <h3 className="heading mt-2">
-        Expedition Lead and Project Director (Historical and Scientific Integration)
-      </h3>
+<TeamSection
+  members={[
+    {
+      name: "Joseph Frey",
+      role: "Expedition Lead and Project Director",
+      subtitle: "Historical and Scientific Integration",
+      image: "/images/joseph-frey.jpg",
+      bio: (
+        <>
+          <p>
+            Joseph Frey is a Canadian explorer, science writer, retired military officer, and expedition leader specializing in the integration of historical research, underwater archaeology, marine science, and advanced marine imaging technologies. His work focuses on combining archival analysis, field operations, and digital documentation to interpret complex maritime heritage sites and underwater cultural landscapes.
+          </p>
 
-      <p className="mt-2">
-        Joseph Frey is a former military officer, explorer, science writer, and
-        expedition leader specializing in the integration of historical
-        research, underwater archaeology, and advanced marine imaging
-        technologies.
-      </p>
+          <p>
+            Frey has participated in major international expeditions, including the discovery expedition to HMS Erebus, NOAA’s survey of the German submarine U-576, and the HMCS Canada Expedition 2025, which produced the first comprehensive three-dimensional documentation of Canada’s first purpose-built warship. He serves as Vice-President and Chair of the College of Fellows of the Royal Canadian Geographical Society and is a former Vice-President and Director of The Explorers Club.
+          </p>
 
-      <p className="mt-2">
-        His work focuses on bringing together archival analysis, field
-        operations, and digital documentation to interpret complex maritime
-        heritage sites. He has participated in major international expeditions,
-        including the discovery of HMS Erebus and NOAA’s survey of the German
-        submarine U-576—a Battle of the Atlantic wreck off North Carolina—as
-        well as leading the HMCS Canada Expedition, which produced the first
-        comprehensive three-dimensional record of Canada’s first purpose-built
-        warship.
-      </p>
+          <p>
+            For the Bell Island Expedition, Frey is responsible for overall project direction, interdisciplinary coordination, institutional partnerships, and the integration of historical and scientific research.
+          </p>
+        </>
+      )
+    },
 
-      <p className="mt-2">
-        In addition to fieldwork, Joseph has written extensively on
-        exploration, archaeology, field sciences, and maritime history for
-        publications including TIME, The Globe and Mail, National Post, and
-        Canadian Geographic, and has contributed to multiple books on polar
-        exploration and history.
-      </p>
+    {
+      name: "Kirk Regular",
+      role: "Marine Institute, Memorial University of Newfoundland",
+      subtitle: "Expedition Operations and Marine Survey Integration",
+      image: "",
+      bio: (
+        <>
+          <p>
+            Kirk Regular is associated with the Marine Institute of Memorial University of Newfoundland and supports the expedition through marine operations planning, survey integration, and coordination of applied ocean technology systems. His work contributes to the integration of marine science, vessel operations, and digital survey methodologies within the expedition framework.
+          </p>
 
-      <p className="mt-2">
-        He is a Fellow and senior leader of the Royal Canadian Geographical Society, where he serves as Vice-President and Chair of the College of Fellows, and is a former Vice-President and Director of The Explorers Club. His career brings together academic institutions, government agencies, technology partners, and expedition teams to deliver integrated scientific and historical outcomes.
-      </p>
+          <p>
+            Through the Marine Institute, Regular supports the expedition’s operational planning, research-vessel coordination, and the integration of academic and technical field activities. His experience in marine operations and applied ocean technologies contributes to the development of the expedition’s integrated Digital Terrain Model (DTM) approach.
+          </p>
 
-      <p className="mt-2">
-        For the Bell Island Expedition, Frey is responsible for overall project direction, the integration of historical and scientific research, and the coordination of field operations and partner contributions. The project reflects a broader effort to develop new methods for documenting and interpreting maritime battlefields through large-scale digital terrain modelling and public-facing virtual reconstruction.
-      </p>
-    </>
-  }
-  image="/images/Joseph-Frey.jpg"
-  reverse
-  className="bg-[var(--secondary-bg-color)]"
+          <p>
+            For the Bell Island Expedition, Regular assists with expedition planning, marine survey coordination, and the integration of field operations with academic research and technical documentation.
+          </p>
+        </>
+      )
+    },
+
+    {
+      name: "Neil Burgess",
+      role: "Shipwreck Preservation Society of Newfoundland and Labrador",
+      subtitle: "Heritage and Regional Operations Support",
+      image: "",
+      bio: (
+        <>
+          <p>
+            Neil Burgess is associated with the Shipwreck Preservation Society of Newfoundland and Labrador and contributes regional expertise, heritage knowledge, and operational support for the Bell Island Expedition. His work helps connect the expedition with local heritage organizations, diving communities, and regional stakeholders.
+          </p>
+
+          <p>
+            The Society has long supported the documentation and protection of maritime heritage sites in Newfoundland and Labrador waters, particularly those associated with shipwreck archaeology and underwater cultural heritage. Burgess assists in ensuring that expedition activities align with established heritage stewardship practices and local operational requirements.
+          </p>
+
+          <p>
+            For the Bell Island Expedition, Burgess supports historical coordination, regional operational planning, and liaison with local heritage and diving communities.
+          </p>
+        </>
+      )
+    },
+
+    {
+      name: "Brenden St. John",
+      role: "VOYIS",
+      subtitle: "Underwater Imaging and Survey Technology",
+      image: "",
+      bio: (
+        <>
+          <p>
+            Brenden St. John is Head of Ocean Science at VOYIS and specializes in advanced underwater imaging, photogrammetry, and subsea survey technologies. His work focuses on the development and deployment of high-resolution optical imaging systems for marine science, shipwreck documentation, and ocean exploration.
+          </p>
+
+          <p>
+            St. John has been involved in major underwater imaging initiatives and technical survey projects in challenging marine environments, including work associated with deep-water archaeology and polar exploration. His expertise includes laser scanning systems, subsea imaging integration, and large-scale three-dimensional documentation workflows.
+          </p>
+
+          <p>
+            For the Bell Island Expedition, St. John supports the integration of imaging systems, survey technologies, and Digital Terrain Model (DTM) development for the documentation of the battlefield landscape.
+          </p>
+        </>
+      )
+    },
+
+    {
+      name: "Tim Joyce",
+      role: "Royal Canadian Geographical Society",
+      subtitle: "Cartography and Educational Outreach",
+      image: "",
+      bio: (
+        <>
+          <p>
+            Tim Joyce is associated with the Royal Canadian Geographical Society and supports the Bell Island Expedition through cartographic coordination, educational outreach, and public engagement initiatives. His work contributes to the development of mapping, educational resources, and geographic interpretation associated with the expedition.
+          </p>
+
+          <p>
+            Through the Royal Canadian Geographical Society and Canadian Geographic Education, Joyce assists with the communication of expedition results to national and international audiences. His involvement supports the integration of cartography, storytelling, and public education within the broader Battle of the Atlantic Virtual Memorial project.
+          </p>
+
+          <p>
+            For the Bell Island Expedition, Joyce supports geographic interpretation, educational development, and public-facing communication of the expedition’s historical and scientific results.
+          </p>
+        </>
+      )
+    },
+
+    {
+      name: "Guy Shockey",
+      role: "Dive Team Lead",
+      subtitle: "Diving Operations",
+      image: "",
+      bio: (
+        <>
+          <p>
+            Guy Shockey is a Canadian technical diving instructor, expedition diver, and founder of Thermocline Diving. He is one of Canada’s most experienced technical divers and has participated in advanced wreck-diving, underwater archaeology, and expedition operations in deep-water and cold-water environments around the world.
+          </p>
+
+          <p>
+            Shockey has extensive experience in technical diving instruction, closed-circuit rebreather operations, and diver-based photogrammetry. He served as Dive Team Lead during the HMCS Canada Expedition 2025, coordinating deep technical diving operations associated with the three-dimensional documentation of Canada’s first purpose-built warship.
+          </p>
+
+          <p>
+            For the Bell Island Expedition, Shockey is responsible for technical diving operations, diver safety, underwater imaging coordination, and the management of in-water expedition activities.
+          </p>
+        </>
+      )
+    }
+  ]}
 />
-
 
 <FullWidthContent
 className="bg-[var(--primary-color)]"
@@ -124,6 +215,7 @@ className="bg-[var(--primary-color)]"
     blockClassName: "bg-[var(--background-color)] p-5",
       title: "Marine Institute, Memorial University of Newfoundland",
       image: "/images/marine-institute.jpg",
+      image2: "/images/MUN-logo.png",
       description: (
         <>
           <h3 className="heading mt-2">
@@ -217,7 +309,8 @@ className="bg-[var(--primary-color)]"
         {
     blockClassName: "bg-[var(--background-color)] p-5",
       title: "Royal Canadian Geographical Society (RCGS)",
-      image: "/images/Can Geo logo.jpg",
+      image: "/images/RCGS-logo.jpg",
+      image2: "/images/Can Geo logo.jpg",
       description: (
         <>
 <h3 className="heading mt-2">Expedition Partner</h3>
@@ -251,7 +344,7 @@ className="bg-[var(--primary-color)]"
 
 
 <ContentSection
-  title="Technical Dive Team"
+  title="Dive Team"
   description={
     <>
       <p className="mt-2">
@@ -276,7 +369,7 @@ className="bg-[var(--primary-color)]"
       </p>
     </>
   }
-  image="/images/RCGS-Expedition-Flag.jpg"
+  image="/images/HMCS-Canada-Expedition-Logo.jpg"
   reverse
 />
 
@@ -319,6 +412,7 @@ className="bg-[var(--primary-color)]"
 
 <CTASection
   title="Support the Bell Island Expedition Team"
+  description=""
   backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
   buttons={[
     {

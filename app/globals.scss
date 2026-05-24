@@ -251,3 +251,27 @@ margin-top: -9.5%;
   padding-left: 0 !important ;
   padding-right: 0 !important ;
 }
+
+
+.designation{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+button:hover{
+cursor: pointer;
+}
+
+// .image-hover-zoom {
+//   overflow: visible;
+//   position: relative;
+//   border-radius: inherit;
+// }
+
+// .image-hover-zoom img {
+//   transition: transform 0.7s ease;
+// }
+
+// .image-hover-zoom:hover img {
+//   transform: scale(1.5);
+// }

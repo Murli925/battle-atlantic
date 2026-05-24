@@ -135,9 +135,9 @@ const showMedia =
 
       {/* Caption */}
       {caption && (
-        <p className="text-sm mt-1 text-foreground-color media-caption">
+          <figcaption className="text-sm mt-2 opacity-75 media-caption">
           {caption}
-        </p>
+          </figcaption>
       )}
 
     </div>

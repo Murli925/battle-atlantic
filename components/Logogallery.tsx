@@ -10,6 +10,7 @@ type Item = {
 
 type Group = {
   title?: string
+  description?: string
   items: Item[]
 }
 
@@ -31,9 +32,14 @@ export default function LogoGallery({
 
             {/* Group Title */}
             {group.title && (
-              <h3 className="heading mb-4">
+              <h3 className="heading mb-4 mt-4">
                 {group.title}
               </h3>
+            )}
+            {group.description && (
+              <p className="mb-4">
+                {group.description}
+              </p>
             )}
 
             {/* Grid */}

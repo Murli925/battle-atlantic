@@ -3,6 +3,7 @@ import CTASection from "@/components/sections/CTASection"
 import InnerBanner from "@/components/sections/Inner-banner"
 import CheckList from "@/components/CheckList"
 import type { Metadata } from "next"
+import Image from "next/image"
 
 
 
@@ -32,17 +33,20 @@ export default function Virtual_Memorial() {
 <InnerBanner
 subtitle="Virtual Memorial"
   title="Digital Documentation, Mapping, and Interpretation"
+  caption="Conceptual illustration for interpretive purposes"
   image="/images/Integrated Battlefield diagram.png"
   imageAlt="Bell Island Expedition Project"
 />
 
 <ContentSection
-  title="The Project"
+  title="The Virtual Memorial Project"
   description={
     <>
 <p>The Bell Island Expedition is a Canadian-led initiative to document and interpret the wrecks sunk during the German submarine attacks of 1942, and to present them within a unified wartime landscape.</p>
 <p className="mt-2">Rather than treating each wreck or site in isolation, the Virtual Memorial enables the Bell Island battlefield to be understood spatially—linking events at sea to the shoreline, industrial infrastructure, and the community that witnessed the attacks.</p>
-<p className="mt-2">The result is not simply a record of individual shipwrecks, but the reconstruction of a Battle of the Atlantic battlefield as a connected historical environment.</p>
+<p className="mt-2">The result is not simply documentation of individual shipwrecks,
+but the reconstruction of a Battle of the Atlantic battlefield as a connected historical
+environment.</p>
     </>
   }
   image="/images/diver-with-torch.jpg"
@@ -63,6 +67,8 @@ subtitle="Virtual Memorial"
     </>
   }
   image="/images/Bell-Island-sea-floor.jpg"
+  caption="Existing bathymetric survey data showing the spatial relationship between the
+Bell Island wrecks and shoreline."
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -76,6 +82,8 @@ subtitle="Virtual Memorial"
   title="What the Virtual Memorial Provides"
   description={
     <>
+    <Image src="/images/Bell-Island-Virtual-Memorial-mock-up.jpg" alt="Bell Island Virtual Memorial mock up" className="w-full object-cover mb-4" width={100} height={100} />
+<figcaption className="text-gray-500 text-sm mb-2">Conceptual illustration for interpretive purposes</figcaption>
       <p className="mt-2">
         The Bell Island Virtual Memorial will result in a permanent digital
         reconstruction of the battlefield, designed for exploration, research,
@@ -104,7 +112,7 @@ subtitle="Virtual Memorial"
       </p>
     </>
   }
-  image="/images/HMCS-Canada_Starboard_Fracture.jpg"
+  // image="/images/HMCS-Canada_Starboard_Fracture.jpg"
 
 />
 
@@ -145,15 +153,11 @@ subtitle="Virtual Memorial"
   description={
     <>
       <p className="mt-2">
-        The Bell Island Virtual Memorial builds directly on the methodology
-        developed during the HMCS Canada Expedition, which produced the first
-        complete three-dimensional record of Canada’s first purpose-built
-        warship.
+        The Bell Island Virtual Memorial builds directly on the methodology developed during the HMCS Canada Expedition 2025, which produced the first complete three-dimensional record of Canada’s first purpose-built warship.
       </p>
 
       <p className="mt-2 mb-2">
-        That expedition demonstrated how high-resolution imaging and digital
-        reconstruction can:
+        That expedition demonstrated how high-resolution imaging and digital reconstruction can:
       </p>
 
       <CheckList
@@ -165,16 +169,11 @@ subtitle="Virtual Memorial"
       />
 
       <p className="mt-2">
-        Members of the expedition team also participated in the 2016 Battle of
-        the Atlantic expedition led by the National Oceanic and Atmospheric
-        Administration, which combined historical research, seafloor mapping,
-        and high-resolution imaging to document wartime wrecks such as the
-        German submarine U-576 and the freighter Bluefields.
+        Members of the expedition team also participated in the 2016 Battle of the Atlantic expedition led by the National Oceanic and Atmospheric Administration (NOAA), which combined historical research, seafloor mapping, and high-resolution imaging to document wartime wrecks such as the German submarine U-576 and the freighter SS Bluefields.
       </p>
 
       <p className="mt-2">
-        The Bell Island project extends these approaches from individual wreck
-        documentation to the reconstruction of an entire battlefield landscape.
+        The Bell Island project extends these approaches from individual wreck documentation to the reconstruction of an entire battlefield landscape.
       </p>
     </>
   }
@@ -207,14 +206,12 @@ subtitle="Virtual Memorial"
       />
 
       <p className="mt-2">
-        Future phases will expand this foundation to include a comprehensive
-        interpretation of the North Atlantic system and the global naval war,
-        placing Bell Island within the full operational and strategic framework
-        of the Second World War.
-      </p>
+        Future phases will expand this foundation to include a comprehensive interpretation of the North Atlantic system and the global naval war, placing Bell Island within the full operational and strategic framework of the Second World War at
+sea.</p>
     </>
   }
   image="/images/Bell Island Virtual Memorial mock up.png"
+  caption="Conceptual illustration for interpretive purposes"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -226,9 +223,7 @@ subtitle="Virtual Memorial"
   description={
     <>
       <p className="mt-2">
-        The Bell Island Expedition 2027 represents the first stage of a
-        multi-year effort to document and interpret one of the most important
-        integrated naval battlefields of the Second World War.
+        The Bell Island Expedition 2027 represents the first stage of a multi-year effort to document and interpret one of the most important surviving integrated naval battlefields of the Second World War.
       </p>
 
       <p className="mt-2">
@@ -252,7 +247,13 @@ subtitle="Virtual Memorial"
 
 
 <CTASection
-  title="Support the Bell Island Expedition Team"
+  title="Support the Expedition"
+  description={(
+    <>
+    Preserving and interpreting one of North
+America’s most significant Battle of the Atlantic landscapes.
+    </>
+  )}
   backgroundImage="/images/virtual-memorial-call-to-action.jpg"
   buttons={[
     {

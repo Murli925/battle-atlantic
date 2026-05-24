@@ -84,7 +84,7 @@ export default function Bell_island_1942() {
           </>
         }
         image="/images/convoy-routes.jpeg"
-        caption="Caption: North Atlantic convoy routes and escort zones during the Second World War, illustrating
+        caption=" North Atlantic convoy routes and escort zones during the Second World War, illustrating
 Newfoundland’s strategic position within the Allied Atlantic supply system."
         buttonText="Learn More"
         buttonLink="/virtual-memorial"
@@ -127,7 +127,7 @@ Newfoundland’s strategic position within the Allied Atlantic supply system."
           </>
         }
         image="/images/fHE6J28H.png"
-        caption="Caption: Conception Bay and Bell Island during the Second World War, showing the iron ore anchorage,
+        caption=" Conception Bay and Bell Island during the Second World War, showing the iron ore anchorage,
 loading piers, and coastal defence positions associated with the 1942 attacks."
         reverse
         buttonText="Support Us"
@@ -1354,7 +1354,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
           </>
         }
         image="/images/FWpMYm_3.jpeg"
-        caption="Caption: Fairmile motor launches formed part of the expanded anti-submarine and harbour defence
+        caption=" Fairmile motor launches formed part of the expanded anti-submarine and harbour defence
 measures introduced after the Bell Island attacks."
         className="bg-[var(--secondary-bg-color)]"
       />
@@ -1631,6 +1631,7 @@ Liberator Flying Protecting Convoy (right))
 
       <CTASection
         title="Support the Virtual Memorial"
+        description=""
         backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
         buttons={[
           {

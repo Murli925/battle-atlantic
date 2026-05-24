@@ -56,7 +56,7 @@ export default function Footer() {
 
           <ul className="space-y-2 text-sm">
            {navLinks.map((link) => (
-            <>
+
 <li key={link.name}>
               <Link
                 key={link.href}
@@ -66,7 +66,7 @@ export default function Footer() {
                 {link.name}
               </Link>
 </li>
-</>
+
             ))}
           </ul>
         </div>

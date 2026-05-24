@@ -42,7 +42,7 @@ export default function Expedition_Objectives() {
   description={<><p className="mb-2">The Bell Island Battle of the Atlantic Expedition is designed to document, interpret, and make accessible one of the most intact Second World War naval battle landscapes in North America.</p> <p>The project brings together underwater archaeology, marine science—including marine biology and environmental study—advanced imaging technologies, and historical research to produce a comprehensive digital record of the 1942 attacks and their wider operational and geographic context within the Battle of the Atlantic, while also supporting responsible heritage interpretation and long-term scientific study in Newfoundland and Labrador.</p>
 </>}
   image="/images/Integrated Battlefield diagram.png"
-  caption="Caption: Integrated reconstruction of the Bell Island battlefield linking wrecks, shoreline infrastructure,
+  caption="Integrated reconstruction of the Bell Island battlefield linking wrecks, shoreline infrastructure,
 coastal defence positions, and community landscape into a unified spatial interpretation model.
 This is an illustration"
   // buttonText="Learn More"
@@ -61,7 +61,13 @@ This is an illustration"
   description={
     <>
       {/* <h3 className="heading text-2xl my-5">SS Saganaga</h3> */}
-    <Image src="/images/Creating-a-DTM.png" alt="Cross section Bell Island iron mines" className="w-full h-210 object-cover mb-4" width={100} height={100} />
+
+      
+    <Image src="/images/Creating-a-DTM.png" alt="Cross section Bell Island iron mines" className="w-full object-cover mb-4" width={100} height={100} />
+
+<p className="text-gray-500 text-sm mb-2">Integrated workflow combining diver-based photogrammetry, multibeam sonar, USBL positioning,
+drone imaging, and terrestrial laser scanning into a unified Digital Terrain Model (DTM) of the Bell
+Island battlefield. This is an illustration</p>
 
 <p className="mb-2">At the core of the expedition is the development of a fully integrated three-dimensional Digital Terrain Model (DTM) of the Bell Island battlefield.</p>
 <p className="mb-2">This model will combine:</p>
@@ -138,6 +144,11 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
 <ContentSection
   title="Underwater Archaeological Documentation and Site Condition Assessment"
   description={<>
+  <iframe title="HMCS Canada (SS Queen of Nassau)" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/201457d4ee034ff9a3c25a34e560bf89/embed" width="100%" height="500"> </iframe>
+
+<p className="text-gray-500 text-sm mt-2 mb-2">High-resolution diver-based photogrammetry enables precise three-dimensional documentation
+of complex wreck structures, forming the archaeological foundation of the Digital Terrain Model (DTM).</p>
+
 <p>
   The expedition will conduct systematic, non-intrusive archaeological
   recording of the wrecks.
@@ -160,7 +171,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
 
   </>}
 
-  image="/images/1b24e84f974e42068251f5928464e540.jpeg"
+  // image="/images/1b24e84f974e42068251f5928464e540.jpeg"
 />
 {/* --------------------------------------------  Section 5 -------------------------------------------- */}
 
@@ -196,6 +207,8 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
 "/images/cold-water-coral-by-PLM-torpedo-Hole-JILL.jpg",
     "/images/Cold-Water-coral-on-deck-Gun-Strathcona.jpg"
   ]}
+  caption="Cold-water coral growth on the Bell Island wrecks illustrates the development of complex marine
+habitats and provides a measurable baseline for future ecological change due to climate change."
     reverse
   className="bg-[var(--secondary-bg-color)]"
 
@@ -225,6 +238,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
       </p>
     </>
   }
+  
   image="/images/Joe-Hoyt-photographing-U-576.jpg"
 
 />
@@ -253,9 +267,13 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
       <p className="mt-2">
         This approach treats Bell Island not as a collection of isolated sites, but as a complete wartime system in which industry, geography, and naval conflict intersect.
       </p>
+      <Image src="/images/xlQzr7gp.png" alt="Mini Graphic Illustration" className="w-full object-cover mt-4 mb-0" width={100} height={100} />
+    <p className="text-sm mt-3 text-foreground-color media-caption">Integrated interpretation linking seabed wrecks, coastal defence positions, industrial
+infrastructure, and the Bell Island community landscape into a unified wartime system.</p>
     </>
   }
-  image="/images/Bell_Island_Newfoundland.jpg"
+
+image="/images/Bell_Island_Newfoundland.jpg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -266,6 +284,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
   title="Public Interpretation and Digital Access"
   description={
     <>
+    <iframe title="HMCS Canada (SS Queen of Nassau)" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/201457d4ee034ff9a3c25a34e560bf89/embed" width="100%" height="500"> </iframe>
       <p className="mt-2">
         A central goal of the project is to make this history accessible to
         Canadians and an international audience.
@@ -287,7 +306,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
       </p>
     </>
   }
-  image="/images/U-576-sonar.jpg"
+  // image="/images/U-576-sonar.jpg"
 
 />
 
@@ -316,7 +335,7 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
       </p>
     </>
   }
-  image="/images/IMG_5379.jpg"
+  image="/images/ZpDWntlM.jpeg"
   reverse
   className="bg-[var(--secondary-bg-color)]"
 />
@@ -329,8 +348,9 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
   description={
     <>
       <p className="mt-2">
-        The Bell Island attacks represent one of the few instances of direct
-        enemy action within Canadian waters during the Second World War.
+        The Bell Island attacks brought the Battle of the Atlantic directly to Newfoundland, then a
+separate Dominion, striking a vital Allied industrial and shipping centre and linking the island’s
+wartime experience to the wider struggle for control of the North Atlantic.
       </p>
 
       <p className="mt-2 mb-2">
@@ -340,15 +360,19 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
 
       <CheckList
         items={[
-          { text: <>Recognition of the Royal Canadian Navy, the Merchant Navy, Allied seafarers, and the Royal Canadian Air Force</> },
-          { text: <>Greater public understanding of Canada’s and Newfoundland’s—then a separate Dominion—role in the Battle of the Atlantic</> },
-          { text: <>The creation of a meaningful and enduring digital memorial</> }
+          { text: <>Recognition of the Royal Canadian Navy, the Royal Canadian Air Force, the Newfoundland
+Escort Force, the Merchant Navy, and sailors and aircrew from many nations who perished
+during the Battle of the Atlantic—the longest continuous campaign of the Second World War</> },
+          { text: <>Greater public understanding of the roles played by Canada and Newfoundland—then a
+separate Dominion—in the Battle of the Atlantic</> },
+          { text: <>The creation of an enduring digital memorial to those who served and were lost during the
+Battle of the Atlantic</> }
         ]}
       />
 
     </>
   }
-  image="/images/IMG_7857.jpg"
+  image="/images/hdFatPHZ.jpg"
 
 />
 
@@ -359,17 +383,29 @@ and land-based wartime infrastructure into a single coherent spatial model.</p>
   title="Looking Ahead"
   description={
     <>
-      <p className="mt-2">
+    <Image src="/images/looking-ahead.jpg" alt="Looking Ahead" className="w-full object-cover mb-4" width={100} height={100} />
+    
+    <p className="text-gray-600 text-sm mb-4">Conceptual illustration of the Bell Island Battle of the Atlantic Virtual Memorial
+Expedition’s integrated documentation approach, showing the relationship between
+seabed wrecks, shoreline infrastructure, convoy routes, and digital terrain modelling
+within the wider North Atlantic system. Diagram is illustrative and interpretive in nature;
+positions, scales, and spatial relationships are not survey-accurate and do not represent
+final expedition data products.</p>
+    
+    <p className="mt-2">
 The Bell Island Expedition 2027 represents the foundation of a long-term effort to document, understand, and interpret Canada’s wartime heritage in its full geographic context—from seabed to shoreline to inland infrastructure.
       </p>
 
       <p className="mt-2">
-Building on approaches developed during NOAA’s 2016 Battle of the Atlantic expedition and the HMCS Canada Expedition 2025, this project extends integrated documentation methods to a larger and more complex battlefield environment, linking scientific research, historical interpretation, and commemoration within the broader North Atlantic system.
+Building on methods developed during NOAA’s 2016 Battle of the Atlantic expedition and
+the HMCS Canada Expedition 2025, this project extends integrated documentation
+methods to a larger and more complex battlefield environment, linking scientific research,
+historical interpretation, and commemoration within the broader North Atlantic system.
       </p>
     </>
   }
-  image="/images/IMG_7881.jpg"
-  reverse
+  // image="/images/looking-ahead.jpg"
+  // reverse
   className="bg-[var(--secondary-bg-color)]"
 
 />
@@ -379,6 +415,7 @@ Building on approaches developed during NOAA’s 2016 Battle of the Atlantic exp
 
 <CTASection
   title="Support the Bell Island Expedition 2027"
+  description=""
   backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
   buttons={[
     {
