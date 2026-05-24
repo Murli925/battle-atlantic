@@ -239,7 +239,9 @@ habitats and provides a measurable baseline for future ecological change due to 
     </>
   }
   
-  image="/images/Joe-Hoyt-photographing-U-576.jpg"
+  video="/videos/Roger-Lacasse-at-bow-Ewan-1.MP4"
+
+  // image="/images/Joe-Hoyt-photographing-U-576.jpg"
 
 />
 
@@ -284,7 +286,10 @@ image="/images/Bell_Island_Newfoundland.jpg"
   title="Public Interpretation and Digital Access"
   description={
     <>
-    <iframe title="HMCS Canada (SS Queen of Nassau)" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/201457d4ee034ff9a3c25a34e560bf89/embed" width="100%" height="500"> </iframe>
+    {/* <iframe title="HMCS Canada (SS Queen of Nassau)" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/201457d4ee034ff9a3c25a34e560bf89/embed" width="100%" height="500"> </iframe> */}
+      
+    <video src="videos/HMCS-Canada_Travel_w_Background.mp4" className="inset-0 w-full w-100 h-full" controls></video>
+      
       <p className="mt-2">
         A central goal of the project is to make this history accessible to
         Canadians and an international audience.
