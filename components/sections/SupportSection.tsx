@@ -8,43 +8,43 @@ const supports = [
     title: "Vessel Operations",
     description: "Field deployment",
     image: "/images/vessel.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   },
     {
     title: "Imaging Systems",
     description: "Photogrammetry & sonar",
     image: "/images/imaging.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   },
     {
     title: "Underwater Archaeology",
     description: "Wreck investigation & documentation",
     image: "/images/underwater.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   },
   {
     title: "Marine Biology/ Marine Ecology",
     description: "Habitat assessment & biodiversity",
     image: "/images/marine.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   },
   {
     title: "Field Logistics",
     description: "Equipment staging & at-sea support",
     image: "/images/field.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   },
     {
     title: "Student Training",
     description: "MI-MUN participation",
     image: "/images/student.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   },
     {
     title: "Virtual Memorial",
     description: "Public access platform",
     image: "/images/virtual-memorial.jpg",
-    link:""
+    link:"https://secure.qgiv.com/for/bellislandexpedition/"
   }
 ]
 
