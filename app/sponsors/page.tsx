@@ -66,6 +66,7 @@ subtitle="Project Partners and Sponsors"
 
       <CheckList
   items={[
+    { text: <>Peter & Carmen Griffis</> },
     { text: <>Joseph & Diane Frey</> }
   ]}
 
@@ -279,8 +280,8 @@ className="bg-[var(--primary-color)]"
 <Gallery
               items={[
                 {
-                  src: "/images/M92.29.3-Propaganda-Poster.jpg",
-                  alt: "Propaganda Poster",
+                  src: "/images/War-Saving-Stamps.jpg",
+                  alt: "War Saving Stamps",
                 },
                 {
                   src: "/images/Convoy-forming-in-Bedford-Basin.jpg",
