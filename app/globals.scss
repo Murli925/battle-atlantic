@@ -222,9 +222,7 @@ strong{
 .copyright-bar{
 background: #090e18;
 }
-.copyright-bar small a{
-	font-size: 70%;
-}
+
 .content-section small {
 	color: #fff;
 	background: #00000091;
@@ -263,6 +261,20 @@ margin-top: -9.5%;
 button:hover{
 cursor: pointer;
 }
+
+.depth-shadow {
+	box-shadow: inset 0px 800px 120px #ffffff05, inset 0px 60px 120px #0000004d;
+}
+
+// section {
+// background:
+// linear-gradient(
+// 90deg,
+// transparent,
+// rgba(255,255,255,.18),
+// transparent
+// );
+// }
 
 // .image-hover-zoom {
 //   overflow: visible;
