@@ -96,6 +96,7 @@ const showMedia =
             src={video}
             autoPlay
             loop
+            controls
             muted
             playsInline
             className="inset-0 w-full h-full object-cover absolute"
