@@ -78,7 +78,7 @@ Building on the experience of NOAA’s 2016 Battle of the Atlantic Expedition, t
       name: "Joseph Frey",
       role: "Expedition Lead and Project Director",
       subtitle: "Historical and Scientific Integration",
-      image: "/images/joseph-frey.jpg",
+      image: "",
       bio: (
         <>
           <p>
@@ -204,7 +204,30 @@ Building on the experience of NOAA’s 2016 Battle of the Atlantic Expedition, t
           </p>
         </>
       )
+    },
+
+    {
+      name: "Roger Lacasse",
+      role: "3D Photogrammetry Lead",
+      subtitle: "Photogrammetry",
+      image: "",
+      bio: (
+        <>
+          <p>
+           Roger Lacasse is an accomplished technical diver with more than 900 dives across North America, the Caribbean, Europe, Asia, and Australia. A technical diver since 2002, he is trained in cave and trimix diving and specializes in underwater photogrammetry, three-dimensional modelling, and the documentation of maritime heritage sites.
+          </p>
+
+          <p>
+            Roger served as 3D Photogrammetry Lead for the HMCS Canada Expedition 2025, overseeing image acquisition and model development for the first complete three-dimensional photogrammetric documentation of HMCS Canada, Canada’s first purpose-built warship. The project produced a high-resolution digital model from thousands of underwater photographs and provided new archaeological and ecological management data for NOAA and marine heritage and ecological researchers.
+          </p>
+
+          <p>
+            For the Bell Island Battle of the Atlantic Virtual Memorial Expedition 2027, Roger serves as 3D Photogrammetry Lead, responsible for coordinating underwater imaging and photogrammetric documentation of the four Bell Island wrecks. Working with expedition partners, he will help develop detailed three-dimensional models that form a key component of the project's integrated Digital Terrain Model and Virtual Memorial.
+            </p>
+        </>
+      )
     }
+
   ]}
 />
 
