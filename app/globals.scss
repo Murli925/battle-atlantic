@@ -266,26 +266,14 @@ cursor: pointer;
 	box-shadow: inset 0px 800px 120px #ffffff05, inset 0px 60px 120px #0000004d;
 }
 
-// section {
-// background:
-// linear-gradient(
-// 90deg,
-// transparent,
-// rgba(255,255,255,.18),
-// transparent
-// );
-// }
-
-// .image-hover-zoom {
-//   overflow: visible;
-//   position: relative;
-//   border-radius: inherit;
-// }
-
-// .image-hover-zoom img {
-//   transition: transform 0.7s ease;
-// }
-
-// .image-hover-zoom:hover img {
-//   transform: scale(1.5);
-// }
+.quote-1{
+  margin-left: -30px;
+  transform: rotatey(180deg);
+  margin-bottom: -20px;
+}
+.quote-2{
+  margin-right: 0px;
+  margin-left: auto;
+  //transform: rotatey(180deg);
+  margin-top: -40px;
+}
