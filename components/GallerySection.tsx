@@ -1,6 +1,7 @@
 "use client"
 
 import LightGallery from "lightgallery/react"
+import React from "react"
 
 // plugins
 import lgThumbnail from "lightgallery/plugins/thumbnail"
@@ -17,6 +18,7 @@ type Item = {
   src: string
   thumb?: string
   alt?: string
+  caption?: React.ReactNode
 }
 
 type Props = {
@@ -52,6 +54,11 @@ export default function Gallery({
                   className="object-cover hover:scale-105 transition duration-300"
                 />
               </div>
+              {item.caption && (
+                <figcaption className="text-center text-sm mt-2">
+                  {item.caption}
+                </figcaption>
+              )}
             </a>
           ))}
         </LightGallery>
