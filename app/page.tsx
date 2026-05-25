@@ -125,7 +125,7 @@ War. The footage includes both Canadian and captured German material.</small>
           </div>
         }
       />
-
+<div className="h-px w-full bg-white/10" />
       <ContentSection
         title="An Invisible Battlefield"
         description={
@@ -166,7 +166,7 @@ War. The footage includes both Canadian and captured German material.</small>
                 { text: "Four Second World War shipwrecks in Conception Bay" },
                 { text: "The remains of Scotia Pier" },
                 { text: "A preserved coastal artillery battery" },
-                { text: "The Seamen&rsquo;s Cemetery at Lance Cove" },
+                { text: "The Seamen’s Memorial Cemetery at Lance Cove" },
                 { text: "Extensive flooded iron ore mine workings" },
               ]}
             />
@@ -181,7 +181,7 @@ War. The footage includes both Canadian and captured German material.</small>
       />
 
       <CenterImageSection
-        className="bg-[var(--primary-color)] text-white"
+        className="bg-[var(--primary-color)] text-white depth-shadow"
         image="/images/shovel-loading-iron-ore.jpg"
         imageAlt="Historic submarine"
         left={{
@@ -229,10 +229,10 @@ War. The footage includes both Canadian and captured German material.</small>
           </>
         }
         video="/videos/(U-576) wk186-monitor-merchant-mariners.mp4"
-        caption="NOAA archival material related to the Battle of the Atlantic and maritime
-memorialization within the Monitor National Marine Sanctuary."
+        caption="NOAA archival material related to the US Battle of the Atlantic and undersea maritime memorialization within the Monitor National Marine Sanctuary off North Carolina."
         reverse
         buttonText="Support Us"
+        className="partner-video-section"
         buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
         buttonVariant="primary"
       />
