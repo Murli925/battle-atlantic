@@ -239,7 +239,7 @@ habitats and provides a measurable baseline for future ecological change due to 
     </>
   }
   
-  video="/videos/Roger-Lacasse-at-bow- Ewan-39(2).mp4"
+  video="/videos/Roger-Lacasse-at-bow- Ewan-39.MP4"
 
   // image="/images/Joe-Hoyt-photographing-U-576.jpg"
 
@@ -368,8 +368,7 @@ wartime experience to the wider struggle for control of the North Atlantic.
           { text: <>Recognition of the Royal Canadian Navy, the Royal Canadian Air Force, the Newfoundland
 Escort Force, the Merchant Navy, and sailors and aircrew from many nations who perished
 during the Battle of the Atlantic—the longest continuous campaign of the Second World War</> },
-          { text: <>Greater public understanding of the roles played by Canada and Newfoundland—then a
-separate Dominion—in the Battle of the Atlantic</> },
+          { text: <>Greater public understanding of the roles played by Canada and Newfoundland in the Battle of the Atlantic</> },
           { text: <>The creation of an enduring digital memorial to those who served and were lost during the
 Battle of the Atlantic</> }
         ]}
