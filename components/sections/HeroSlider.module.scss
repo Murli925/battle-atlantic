@@ -34,7 +34,7 @@
 }
 :global(.swiper-button-next),
 :global(.swiper-button-prev) {
-  background: rgba(15, 42, 68, 0.7); // navy tone
+  background: #d09b20e5;
   color: #fff !important;
   padding: 15px;
   border-radius: 30px !important;
@@ -71,7 +71,13 @@
   text-align: center;
   color: #fff;
   padding: 0 20px;
-background: linear-gradient(#0a141e42, #000000c2);
+background:
+linear-gradient(to bottom,
+rgba(2,10,20,.82),
+rgba(2,10,20,.45)),
+radial-gradient(circle at center,
+transparent 0%,
+rgba(0,0,0,.55) 100%);
   // background: linear-gradient(
   //   rgba(10, 20, 30, 0.6),
    //  rgba(10, 20, 30, 0.85)
@@ -80,10 +86,12 @@ background: linear-gradient(#0a141e42, #000000c2);
 
 /* Text */
 .overlay h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 58px;
+  margin-bottom: 24px;
   max-width: 750px;
-  line-height: 1.2em;
+  line-height: 1.1em;
+  font-weight: 600;
+letter-spacing: .03em
 }
 
 .overlay p {
