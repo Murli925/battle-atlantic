@@ -45,8 +45,8 @@ export default function Footer() {
         <div>
           <Link href="/"> <Image src={`/images/logo.png`}
               alt="Battle of Atlantic Logo"
-              width={100}
-              height={60}
+              width={160}
+              height={90}
               priority /></Link>
 
         </div>
