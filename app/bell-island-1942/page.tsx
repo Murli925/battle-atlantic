@@ -98,8 +98,8 @@ Newfoundland’s strategic position within the Allied Atlantic supply system."
         description={
           <>
             <p className="mb-2">
-              Bell Island's importance to the Allied war effort made it a
-              legitimate military target. In 1942, the island's iron ore
+              Bell Island&rsquo;s importance to the Allied war effort made it a
+              legitimate military target. In 1942, the island&rsquo;s iron ore
               operations were supplying essential raw materials for
               shipbuilding, armaments production, and industrial manufacturing
               in Canada and Britain. Although the anchorage inside Conception
@@ -110,10 +110,10 @@ Newfoundland’s strategic position within the Allied Atlantic supply system."
               On 5 September and 2 November 1942, German submarines penetrated
               Conception Bay and attacked Allied shipping engaged in loading
               operations off Bell Island. The attacks demonstrated that even a
-              sheltered industrial harbour, located well inside Newfoundland's
+              sheltered industrial harbour, located well inside Newfoundland&rsquo;s
               coastline, remained vulnerable to submarine warfare. Four merchant
               vessels were sunk and dozens of sailors lost their lives, bringing
-              the Battle of the Atlantic directly to Newfoundland's shores.
+              the Battle of the Atlantic directly to Newfoundland&rsquo;s shores.
             </p>
             <p>
               The consequences extended far beyond the immediate losses. The
@@ -366,11 +366,86 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
           },
 
           {
-            blockClassName: "bg-[var(--background-color)] text-black",
+            blockClassName: "bg-[var(--background-color)] text-black defended-harbour-accordion",
             title: "A Defended Harbour Breached",
             description: (
               <>
-                <Image
+
+
+<ContentSection
+        title=""
+        className="py-0"
+        description={
+          <>
+            <CheckList
+                  items={[
+                    {
+                      text: (
+                        <>
+                          Four ore carriers were sunk (<i>Saganaga, Lord
+                          Strathcona, Rose Castle, PLM-27</i>)
+                        </>
+                      ),
+                    },
+                    {
+                      text: (
+                        <>
+                          Approximately 65 sailors were killed (with some
+                          sources citing slightly higher totals)
+                        </>
+                      ),
+                    },
+                    { text: <>Critical industrial shipping was disrupted</> },
+                    {
+                      text: (
+                        <>
+                          A major North Atlantic war zone was extended directly
+                          into a coastal harbour
+                        </>
+                      ),
+                    },
+                  ]}
+                />
+
+                <p className="mt-2 mb-8">
+                  Bell Island thus became the site of the only confirmed
+                  sinkings of Allied shipping within a defended industrial
+                  harbour along the east coast of either Canada or the United
+                  States during the Second World War.
+                </p>
+
+                <Gallery
+                  items={[
+                    {
+                      src: "/images/Rya9Uput.jpeg",
+                      alt: "RCN Fairmile patrol",
+                    },
+                    {
+                      src: "/images/9tFuTaeV.jpeg",
+                      alt: "RCAF on patrol",
+                    },
+                    {
+                      src: "/images/QEzDTTh.jpeg",
+                      alt: "Cemetery Hill Coastal Artillery",
+                    },
+                    {
+                      src: "/images/Wyai9Mxw.jpeg",
+                      alt: "Scotia Pier loading ships",
+                    },
+                  ]}
+                    mobileCols={1}
+  tabletCols={2}
+  desktopCols={2}
+                />
+          </>
+        }
+        image="/images/Newfoundland military bases map.jpeg"
+        
+      />
+
+
+
+                {/* <Image
                   src="/images/Newfoundland military bases map.jpeg"
                   alt="Newfoundland military bases map"
                   className="w-full h-410 object-contain mb-4"
@@ -413,28 +488,11 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                   sinkings of Allied shipping within a defended industrial
                   harbour along the east coast of either Canada or the United
                   States during the Second World War.
-                </p>
+                </p> */}
 
-                <Gallery
-                  items={[
-                    {
-                      src: "/images/Rya9Uput.jpeg",
-                      alt: "RCN Fairmile patrol",
-                    },
-                    {
-                      src: "/images/9tFuTaeV.jpeg",
-                      alt: "RCAF on patrol",
-                    },
-                    {
-                      src: "/images/QEzDTTh.jpeg",
-                      alt: "Cemetery Hill Coastal Artillery",
-                    },
-                    {
-                      src: "/images/Wyai9Mxw.jpeg",
-                      alt: "Scotia Pier loading ships",
-                    },
-                  ]}
-                />
+
+
+                
               </>
             ),
           },
@@ -503,6 +561,10 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       alt: "Saganaga Anchor",
                     },
                   ]}
+                    mobileCols={1}
+                    tabletCols={2}
+                    desktopCols={4}
+                 
                 />
               </>
             ),

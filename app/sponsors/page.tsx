@@ -289,6 +289,23 @@ className="bg-[var(--primary-color)]"
               ]}
             />
 
+ <h3 className="heading mt-6 mb-2">Shearwater Aviation Museum</h3>
+
+            <LogoGallery
+  groups={[
+    {
+      title: "",
+      items: [
+        {
+          image: "/images/SAM-logo.jpg",
+          link: "https://shearwateraviationmuseum.ca/"
+        }
+      ]
+    }
+  ]}
+/> 
+
+
  <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
  <p><b>Jill Heinerth</b></p> <p>Honorary Vice-President</p> <p className="text-gray-500">Royal Canadian Geographical Society</p>
 

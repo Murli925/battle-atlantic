@@ -119,9 +119,7 @@ export default function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             /></>
-            <small>Official Royal Canadian Navy archival footage documenting convoy operations, escort
-vessels, submarine warfare, and the wider Atlantic campaign during the Second World
-War. The footage includes both Canadian and captured German material.</small>
+            <small>Official Royal Canadian Navy archival footage documenting convoy operations, escort vessels, submarine warfare, and the wider Atlantic campaign during the Second World War. The footage includes both Canadian and German material.</small>
           </div>
         }
       />

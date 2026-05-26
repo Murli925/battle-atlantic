@@ -222,7 +222,7 @@ Building on the experience of NOAA’s 2016 Battle of the Atlantic Expedition, t
           </p>
 
           <p>
-            For the Bell Island Battle of the Atlantic Virtual Memorial Expedition 2027, Roger serves as 3D Photogrammetry Lead, responsible for coordinating underwater imaging and photogrammetric documentation of the four Bell Island wrecks. Working with expedition partners, he will help develop detailed three-dimensional models that form a key component of the project's integrated Digital Terrain Model and Virtual Memorial.
+            For the Bell Island Battle of the Atlantic Virtual Memorial Expedition 2027, Roger serves as 3D Photogrammetry Lead, responsible for coordinating underwater imaging and photogrammetric documentation of the four Bell Island wrecks. Working with expedition partners, he will help develop detailed three-dimensional models that form a key component of the project&rsquo;s integrated Digital Terrain Model and Virtual Memorial.
             </p>
         </>
       )
