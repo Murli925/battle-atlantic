@@ -52,7 +52,7 @@ const showMedia =
 
           {/* Text Section */}
           {showText && (
-            <div className="flex-1 order-2 md:order-1 md:my-4 col-primary">
+            <div className="flex-1 order-2 md:order-1 md:my-2 col-primary">
               <div className="max-w-full md:mx-0">
 
                 {title && (
@@ -99,7 +99,7 @@ const showMedia =
             controls
             muted
             playsInline
-            className="inset-0 w-full h-full object-cover absolute"
+            className="inset-0 w-full min-h-[250px] md:min-h-[400px] object-cover absolute"
           />
         ) : images && images.length === 2 ? (
 

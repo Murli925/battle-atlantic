@@ -329,10 +329,9 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
       </h4>
 
       <p className="mt-2 mb-4">
-        Expedition Lead and Project Director
+        {/* Expedition Lead and Project Director
         <br />
-        Bell Island Battle of the Atlantic Memorial
-        <br />
+        Bell Island Battle of the Atlantic Memorial */}
         Email: <a href="mailto:bellislandexpedition@gmail.com" className="text-gray-600 hover:text-blue-500">bellislandexpedition@gmail.com</a>
       </p>
     </>

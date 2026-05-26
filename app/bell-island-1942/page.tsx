@@ -141,7 +141,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
       {/* --------------------------------------------  Section 4 -------------------------------------------- */}
 
       <Accordion
-        className="bg-[var(--primary-color)] text-white"
+        className="bg-[var(--primary-color)] text-white depth-shadow"
         blocks={[
           {
             blockClassName: "bg-[var(--background-color)] text-black",
@@ -288,7 +288,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                     </>
                   }
                   image="/images/RSusYdY_.jpeg"
-                  className="!px-0 !py-4"
+                  className="!px-0 !py-4 secret-map-accordion-2"
                 />
 
                 <Gallery
@@ -1522,8 +1522,8 @@ measures introduced after the Bell Island attacks."
               ]}
             />
             <p className="text-gray-500">
-              (From left to right: Torpedoed freighter (left), HMCS <i>Penetang</i>
-              (middle), Torpedoed freighter (right))
+              (From left to right: Torpedoed freighter (left), HMCS <i>Penetang </i>
+               (middle), Torpedoed freighter (right))
             </p>
             <p className="mt-3">
               More than 4,600 Canadians of the Royal Canadian Navy, Royal

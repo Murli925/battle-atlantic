@@ -66,8 +66,7 @@ subtitle="Project Partners and Sponsors"
 
       <CheckList
   items={[
-    { text: <>Peter & Carmen Griffis</> },
-    { text: <>Joseph & Diane Frey</> }
+    { text: <>Peter & Carmen Griffis, Joseph & Diane Frey</> }
   ]}
 
 /> 
@@ -290,6 +289,8 @@ className="bg-[var(--primary-color)]"
               ]}
             />
 
+ <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
+ <p><b>Jill Heinerth</b></p> <p>Honorary Vice-President</p> <p className="text-gray-500">Royal Canadian Geographical Society</p>
 
         </>
       )

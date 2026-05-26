@@ -361,16 +361,14 @@ className="bg-[var(--primary-color)]"
         </p>
         </>
       )
-    }
-  ]}
-/>
-
-
-<ContentSection
-  title="Dive Team"
-  description={
-    <>
-      <p className="mt-2">
+    },
+    {
+    blockClassName: "bg-[var(--background-color)] p-5",
+      title: "Dive Team",
+      image: "/images/HMCS-Canada-Expedition-Logo.jpg",
+      description: (
+        <>
+<p className="mt-2">
         The expedition dive team consists of highly experienced technical divers
         with backgrounds in deep-water, cold-water, and wreck-diving
         operations.
@@ -390,11 +388,13 @@ className="bg-[var(--primary-color)]"
         conducted safely, efficiently, and in accordance with non-intrusive
         archaeological protocols.
       </p>
-    </>
-  }
-  image="/images/HMCS-Canada-Expedition-Logo.jpg"
-  reverse
+        </>
+      )
+    }
+  ]}
 />
+
+
 
 <ContentSection
   title="A Collaborative Expedition"

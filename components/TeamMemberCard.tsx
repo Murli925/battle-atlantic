@@ -22,7 +22,7 @@ const profileImage = image || "/images/default-team-member.jpg"
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 items-center p-3 bg-[var(--primary-bg-color)]" data-aos="fade-up">
 
       {/* Image */}
-      <div className="relative w-full h-full aspect-[4/5] overflow-hidden">
+      {/* <div className="relative w-full h-full aspect-[4/5] overflow-hidden">
 
         <Image
           src={profileImage}
@@ -31,10 +31,10 @@ const profileImage = image || "/images/default-team-member.jpg"
           className="object-cover h-full min-h-[350px] duration-700 hover:scale-110"
         />
 
-      </div>
+      </div> */}
 
       {/* Content */}
-      <div className="md:col-span-2 py-4">
+      <div className="md:col-span-4 py-4">
 
         <h2 className="text-3xl heading">
           {name}

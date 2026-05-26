@@ -46,13 +46,13 @@ export default function FullWidthContent({
 
     {/* First Image */}
     {block.image && (
-      <div className="relative w-[210px] h-[80px] rounded-lg overflow-hidden">
+      <div className="relative w-[270px] h-[100px] rounded-lg overflow-hidden">
 
         <Image
           src={block.image}
           alt={block.title || "Block image"}
           fill
-          className="object-contain object-left"
+          className="object-contain object-left rounded-lg"
         />
 
       </div>
@@ -60,7 +60,7 @@ export default function FullWidthContent({
 
     {/* Second Image */}
     {block.image2 && (
-      <div className="relative w-[210px] h-[80px] rounded-lg overflow-hidden">
+      <div className="relative w-[270px] h-[100px] rounded-lg overflow-hidden">
 
         <Image
           src={block.image2}
