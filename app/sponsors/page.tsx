@@ -297,13 +297,26 @@ className="bg-[var(--primary-color)]"
       title: "",
       items: [
         {
-          image: "/images/SAM-logo.jpg",
+          image: "/images/13.-Shearwater-Aviation-Museum-SAM-logo.jpg",
           link: "https://shearwateraviationmuseum.ca/"
         }
       ]
     }
   ]}
 /> 
+
+<Gallery
+              items={[
+                {
+                  src: "/images/13a.-RCAF-sub-killers.jpg",
+                  alt: "RCAF Submarine Killers",
+                },
+                {
+                  src: "/images/13b.-Eastern-Air-Command.jpg",
+                  alt: "Eastern Air Command",
+                },
+              ]}
+            />
 
 
  <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
