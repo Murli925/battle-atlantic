@@ -225,7 +225,7 @@ War. The footage includes both Canadian and captured German material.</small>
               programs, and corporate partners will enable the full realization
               of the Virtual Memorial.
             </p>
-            {/* <a href="https://secure.qgiv.com/for/bellislandexpedition/" className={`text-[var(--accent-color)]`}>https://secure.qgiv.com/for/bellislandexpedition/</a> */}
+            
           </>
         }
         video="/videos/(U-576) wk186-monitor-merchant-mariners.mp4"
