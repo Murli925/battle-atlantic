@@ -127,7 +127,7 @@ Newfoundland’s strategic position within the Allied Atlantic supply system."
             </p>
           </>
         }
-        image="/images/fHE6J28H.png"
+        image="/images/fHE6J28H.jpg"
         caption=" Conception Bay and Bell Island during the Second World War, showing the iron ore anchorage,
 loading piers, and coastal defence positions associated with the 1942 attacks."
         reverse

@@ -73,18 +73,20 @@ export default function CTASection({
           backgroundImage: `url('${backgroundImage}')`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
+          backgroundColor: "rgba(10, 36, 60, 0.67)",
+          backgroundBlendMode: "multiply"
         }}
       />
 
       {/* Overlay */}
-      <div
+      {/* <div
         className={`absolute inset-0 ${overlayClassName}`}
-      />
+      /> */}
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-5 text-center">
 
-        <h2 className={`text-white ${styles.heading}`}>
+        <h2 className={`text-white font-600 ${styles.heading}`}>
           {title}
         </h2>
 

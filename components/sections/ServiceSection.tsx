@@ -40,7 +40,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-10 md:py-20 bg-[var(--primary-color)] depth-shadow">
+    <section className="py-10 md:py-20 bg-[var(--primary-color)] depth-shadow services-section">
 
       <div className="max-w-7xl mx-auto px-5">
 

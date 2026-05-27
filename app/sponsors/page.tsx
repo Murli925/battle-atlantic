@@ -61,8 +61,7 @@ subtitle="Project Partners and Sponsors"
       <h3 className="heading mt-3 mb-2">
         Expedition Sponsors
       </h3>
-      <p className="mb-2">($5,000 CAD and above)</p>
-<h4 className="mb-2">Names listed with permission: </h4>
+      <p className="mb-2">Donations of CAD $5,000 and above (Names listed with permission):</p>
 
       <CheckList
   items={[
@@ -289,8 +288,6 @@ className="bg-[var(--primary-color)]"
               ]}
             />
 
- <h3 className="heading mt-6 mb-2">Shearwater Aviation Museum</h3>
-
             <LogoGallery
   groups={[
     {
@@ -320,7 +317,7 @@ className="bg-[var(--primary-color)]"
 
 
  <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
- <p><b>Jill Heinerth</b></p> <p>Honorary Vice-President</p> <p className="text-gray-500">Royal Canadian Geographical Society</p>
+ <p>Jill Heinerth, FRCGS, Honorary Vice-President, Royal Canadian Geographical Society</p>
 
         </>
       )
@@ -337,7 +334,7 @@ className="bg-[var(--primary-color)]"
 
   title="Support the Virtual Memorial"
   description=""
-  backgroundImage="/images/GhostBowReneeJILL8747l.jpg"
+  backgroundImage="/images/cta-banner-new.jpg"
   buttons={[
     {
       text: "Support the Expedition",
