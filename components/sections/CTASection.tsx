@@ -99,6 +99,7 @@ export default function CTASection({
           {buttons.map((button, index) => (
             <Link
               key={index}
+              title={button.text}
               href={button.link}
               target={button.buttonTarget}
               className={`btn btn-${button.variant || "primary"}`}

@@ -179,7 +179,7 @@ export default function Home() {
       />
 
       <CenterImageSection
-        className="bg-[var(--primary-color)] text-white depth-shadow center-image-section-homepage"
+        className="bg-[var(--primary-color)] text-white depthShadow center-image-section-homepage"
         image="/images/shovel-loading-iron-ore.jpg"
         imageAlt="Historic submarine"
         left={{

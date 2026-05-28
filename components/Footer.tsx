@@ -6,13 +6,13 @@ import { Facebook, Instagram } from "lucide-react"
 import { usePathname } from "next/navigation"
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Bell Island 1942", href: "/bell-island-1942" },
-  { name: "Expedition Objectives", href: "/expedition-objectives" },
-  { name: "Our Team", href: "/our-team" },
-  { name: "Virtual Memorial", href: "/virtual-memorial" },
-  { name: "Sponsors", href: "/sponsors" },
-  { name: "Support the Expedition", href: "/support-the-expedition" }
+  { name: "Home", href: "/", title: "Home" },
+  { name: "Bell Island 1942", href: "/bell-island-1942", title: "Bell Island 1942" },
+  { name: "Expedition Objectives", href: "/expedition-objectives", title: "Expedition Objectives" },
+  { name: "Our Team", href: "/our-team", title: "Our Team" },
+  { name: "Virtual Memorial", href: "/virtual-memorial", title: "Virtual Memorial" },
+  { name: "Sponsors", href: "/sponsors", title: "Sponsors" },
+  { name: "Support the Expedition", href: "/support-the-expedition", title: "Support the Expedition" },
 ]
 
 export default function Footer() {
@@ -61,6 +61,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
+                title={link.title}
                 className="block"
               >
                 {link.name}
@@ -89,6 +90,7 @@ export default function Footer() {
     <a
       href="https://facebook.com"
       target="_blank"
+      title="Facebook"
       rel="noopener noreferrer"
       className="hover:text-white transition"
     >
@@ -98,6 +100,7 @@ export default function Footer() {
     <a
       href="https://instagram.com"
       target="_blank"
+      title="Instagram"
       rel="noopener noreferrer"
       className="hover:text-white transition"
     >

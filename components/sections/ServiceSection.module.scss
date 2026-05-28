@@ -1,0 +1,13 @@
+.servicesSection::before {
+	content: "";
+	background-image: url("/images/sonar-grid.png");
+	display: inline-block;
+	position: absolute;
+	min-width: 400px;
+	min-height: 400px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	right: 0;
+	bottom: 0;
+	top: auto;
+}

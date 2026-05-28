@@ -70,6 +70,7 @@ const showMedia =
                 {buttonText && (
                   <Link
                     href={buttonLink}
+                    title={buttonText}
                     target={buttonTarget}
                     className={`btn btn-${buttonVariant}`}
                   >

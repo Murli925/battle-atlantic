@@ -141,7 +141,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
       {/* --------------------------------------------  Section 4 -------------------------------------------- */}
 
       <Accordion
-        className="bg-[var(--primary-color)] text-white depth-shadow"
+        className="bg-[var(--primary-color)] text-white depthShadow "
         blocks={[
           {
             blockClassName: "bg-[var(--background-color)] text-black",

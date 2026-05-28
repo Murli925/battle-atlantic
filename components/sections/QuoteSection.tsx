@@ -10,7 +10,7 @@ const cormorant = Cormorant({
 export default function QuoteSection() {
   return (
 
-<section className={`py-5 px-5 bg-[var(--primary-color)] md:py-12 depth-shadow`} >
+<section className={`py-5 px-5 bg-[var(--primary-color)] md:py-12 depthShadow`} >
 
   <div className="max-w-7xl mx-auto px-5 py-8" data-aos="fade-up">
         <div className="max-w-full md:max-w-[1100px] mx-auto text-center">
