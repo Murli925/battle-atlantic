@@ -221,7 +221,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       caption: (<>SS <i>Saganaga</i></>) 
                     },
                     {
-                      src: "/images/QF8LK0LI.jpeg",
+                      src: "/images/lord_strathcona-1.jpg",
                       alt: "Lord Strathcona",
                       caption: (<>SS <i>Lord Strathcona</i></>) 
                     },
@@ -299,9 +299,9 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       caption: (<>SS <i>Rose Castle</i></>)
                     },
                     {
-                      src: "/images/QF8LK0LI.jpeg",
-                      alt: "SS Lord Strathcona",
-                      caption: (<>SS <i>Lord Strathcona</i></>)  
+                      src: "/images/p_l_m_27-1.jpg",
+                      alt: "SS PLM 27",
+                      caption: (<>SS <i>PLM-27</i></>)  
                     },
                     {
                       src: "/images/14HWecDg.png",

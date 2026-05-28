@@ -1,6 +1,9 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./ContentSection.module.scss"
+import { useEffect, useRef } from "react"
 
 type Props = {
   title?: string
@@ -40,6 +43,14 @@ const showMedia =
   (images && images.length > 0) ||
   (image && image.trim() !== "") ||
   (video && video.trim() !== "")
+
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.currentTime = 10
+    }
+  }, [])
 
   return (
     <section className={`content-section py-10 ${className} md:py-20`}>
@@ -95,11 +106,11 @@ const showMedia =
         {video ? (
           <video
             src={video}
-            autoPlay
             loop
             controls
             muted
             playsInline
+            ref={videoRef}
             className="inset-0 w-full min-h-[250px] md:min-h-[400px] object-cover absolute"
           />
         ) : images && images.length === 2 ? (

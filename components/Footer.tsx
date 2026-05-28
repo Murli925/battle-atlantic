@@ -47,7 +47,7 @@ export default function Footer() {
               alt="Battle of Atlantic Logo"
               width={160}
               height={90}
-              priority /></Link>
+              priority title="Battle of Atlantic Memorial Logo" /></Link>
 
         </div>
 
@@ -80,6 +80,7 @@ export default function Footer() {
     <a
       href="mailto:bellislandexpedition@gmail.com"
       className="underline hover:text-white"
+      title="Email Us"
     >
       bellislandexpedition@gmail.com
     </a>
