@@ -221,7 +221,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       caption: (<>SS <i>Saganaga</i></>) 
                     },
                     {
-                      src: "/images/ARX6eTou.jpeg",
+                      src: "/images/QF8LK0LI.jpeg",
                       alt: "Lord Strathcona",
                       caption: (<>SS <i>Lord Strathcona</i></>) 
                     },

@@ -293,57 +293,6 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
 />
 {/* --------------------------------------------  Section 8 -------------------------------------------- */}
 
-
-<ContentSection
-  title="Support the Expedition"
-  description={
-    <>
-      <p className="mt-2">
-        Donations may be made through the Royal Canadian Geographical
-        Society’s secure expedition funding portal.
-      </p>
-
-      <p className="mt-2">
-        All contributions are administered through the Society’s official
-        expedition program and are eligible for Canadian charitable tax receipting.
-      </p>
-
-      <p className="mt-2">
-        Support for the expedition helps advance underwater archaeology,
-        marine science, digital heritage documentation, public education,
-        and long-term preservation of one of Canada’s most significant
-        Battle of the Atlantic landscapes.
-      </p>
-
-      <p className="mt-2">
-        Organizations, foundations, and potential sponsors interested in
-        supporting the expedition are invited to contact the project team directly.
-      </p>
-
-      <h3 className="mt-4 heading">
-        Contact the Expedition
-      </h3>
-
-      <h4 className="heading">
-        <b>Joseph Frey</b>
-      </h4>
-
-      <p className="mt-2 mb-4">
-        {/* Expedition Lead and Project Director
-        <br />
-        Bell Island Battle of the Atlantic Memorial */}
-        Email: <a href="mailto:bellislandexpedition@gmail.com" className="text-gray-600 hover:text-blue-500">bellislandexpedition@gmail.com</a>
-      </p>
-    </>
-  }
-  image="/images/Cemetery Hill Coastal Artillery.jpg"
-  buttonText="Donate Now"
-  buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
-  buttonVariant="primary"
-  buttonTarget="_blank"
-/>
-
-
 <ContentSection
   title="A Project of National and International Significance"
   description={
@@ -417,9 +366,64 @@ className="bg-[var(--primary-color-70-alpha)] text-white"
     </>
   }
   image="/images/IMG_7553.jpg"
-  reverse
-  className="bg-[var(--secondary-bg-color)]"
+  
 />
+
+
+
+<ContentSection
+  title="Support the Expedition"
+  className="bg-[var(--secondary-bg-color)]"
+  description={
+    <>
+      <p className="mt-2">
+        Donations may be made through the Royal Canadian Geographical
+        Society’s secure expedition funding portal.
+      </p>
+
+      <p className="mt-2">
+        All contributions are administered through the Society’s official
+        expedition program and are eligible for Canadian charitable tax receipting.
+      </p>
+
+      <p className="mt-2">
+        Support for the expedition helps advance underwater archaeology,
+        marine science, digital heritage documentation, public education,
+        and long-term preservation of one of Canada’s most significant
+        Battle of the Atlantic landscapes.
+      </p>
+
+      <p className="mt-2">
+        Organizations, foundations, and potential sponsors interested in
+        supporting the expedition are invited to contact the project team directly.
+      </p>
+
+      <h3 className="mt-4 heading">
+        Contact the Expedition
+      </h3>
+
+      <h4 className="heading">
+        <b>Joseph Frey</b>
+      </h4>
+
+      <p className="mt-2 mb-4">
+        {/* Expedition Lead and Project Director
+        <br />
+        Bell Island Battle of the Atlantic Memorial */}
+        Email: <a href="mailto:bellislandexpedition@gmail.com" className="text-gray-600 hover:text-blue-500">bellislandexpedition@gmail.com</a>
+      </p>
+    </>
+  }
+  image="/images/Cemetery Hill Coastal Artillery.jpg"
+  buttonText="Donate Now"
+  reverse
+  buttonLink="https://secure.qgiv.com/for/bellislandexpedition/"
+  buttonVariant="primary"
+  buttonTarget="_blank"
+/>
+
+
+
 
 
 
