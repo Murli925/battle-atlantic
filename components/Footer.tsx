@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Bell Island 19423", href: "/bell-island-1942" },
+  { name: "Bell Island 1942", href: "/bell-island-1942" },
   { name: "Expedition Objectives", href: "/expedition-objectives" },
   { name: "Our Team", href: "/our-team" },
   { name: "Virtual Memorial", href: "/virtual-memorial" },
