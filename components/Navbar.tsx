@@ -49,7 +49,7 @@ export default function Navbar() {
               alt="Logo"
               width={130}
               height={70}
-              priority
+              fetchPriority="high"
             />
           </Link>
 
