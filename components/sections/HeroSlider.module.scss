@@ -132,8 +132,15 @@ letter-spacing: .03em
 
 @media (max-width: 768px) {
 .content {
-max-width: 90%;
+max-width: 100%;
+
+
 }
+.content .buttons {
+  margin-top: 0px !important;
+  gap: 0;
+}
+
 }
 
 
