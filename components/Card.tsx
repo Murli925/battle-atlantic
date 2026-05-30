@@ -23,7 +23,9 @@ export default function Card({ title, description, image, link }: Props) {
         <p>{description}</p>
         </div>
         <div className={styles.btnWrapper}>
-        <a href={link}><ChevronRight className="w-5 h-5 text-white" /></a>
+        <a href={link} aria-label={`Learn more about ${title}`}>
+          <ChevronRight className="w-5 h-5 text-white" />
+        </a>
         </div>
       </div>
 

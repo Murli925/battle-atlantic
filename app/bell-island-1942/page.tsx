@@ -217,12 +217,12 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                   items={[
                     {
                       src: "/images/0vipgwHf.jpeg",
-                      alt: "New photograph of Saganaga",
+                      alt: "SS Saganaga",
                       caption: (<>SS <i>Saganaga</i></>) 
                     },
                     {
                       src: "/images/lord_strathcona-1.jpg",
-                      alt: "Lord Strathcona",
+                      alt: "SS Lord Strathcona",
                       caption: (<>SS <i>Lord Strathcona</i></>) 
                     },
                   ]}
@@ -505,7 +505,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                 <Image
                   src="/images/89fKBUQ.png"
                   alt="Cross section Bell Island iron mines"
-                  className="w-full h-130 object-cover mb-4"
+                  className="w-full md:h-130 object-cover mb-4"
                   width={100}
                   height={100}
                 />
@@ -546,19 +546,23 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                   items={[
                     {
                       src: "/images/R2-Bell Island.webp",
-                      alt: "R2-Bell Island.webp",
+                      alt: "Bell Island",
+                    caption: "Bell Island"
                     },
                     {
                       src: "/images/R6. Torpedo strike on Scotia Pier.gif",
                       alt: "Torpedo strike on Scotia Pier",
+                      caption: "Torpedo strike on Scotia Pier"
                     },
                     {
                       src: "/images/R11. Lance Cove Cemetary.jpg",
                       alt: "Lance Cove Cemetary",
+                      caption: "Lance Cove Cemetary"
                     },
                     {
                       src: "/images/R17. Saganaga Anchor.jpg",
                       alt: "Saganaga Anchor",
+                      caption: "Saganaga Anchor"
                     },
                   ]}
                     mobileCols={1}
@@ -1612,15 +1616,15 @@ measures introduced after the Bell Island attacks."
               items={[
                 {
                   src: "/images/RCAF-on-patrol.jpg",
-                  alt: "Wreck Site",
+                  alt: "RCAF Liberator Bomber",
                 },
                 {
                   src: "/images/RCAF-sub-killers.jpg",
-                  alt: "Underwater Survey",
+                  alt: "RCAF attacking U-boat",
                 },
                 {
                   src: "/images/RCAF-flying-over-convoy.jpg",
-                  alt: "Bell Island",
+                  alt: "RCAF providing convoy protection",
                 },
               ]}
             />
@@ -1663,7 +1667,7 @@ measures introduced after the Bell Island attacks."
                 },
                 {
                   src: "/images/U-576-First-photograph-of-U-576.jpg",
-                  alt: "U-576 First photograph of U-576",
+                  alt: "First photograph of U-576",
                 },
               ]}
             />
