@@ -556,8 +556,8 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                     },
                     {
                       src: "/images/R11. Lance Cove Cemetary.jpg",
-                      alt: "Lance Cove Cemetary",
-                      caption: "Lance Cove Cemetary"
+                      alt: "Lance Cove Seaman’s Memorial",
+                      caption: "Lance Cove Seaman’s Memorial"
                     },
                     {
                       src: "/images/R17. Saganaga Anchor.jpg",
