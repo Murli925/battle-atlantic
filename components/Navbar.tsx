@@ -49,8 +49,7 @@ export default function Navbar() {
               alt="Battle of the Atlantic Memorial Logo"
               width={130}
               height={70}
-              loading="eager"
-              
+
             />
           </Link>
 

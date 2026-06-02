@@ -235,7 +235,7 @@ export default function Home() {
           title: "Newfoundland and the North Atlantic War",
           description:
             "Bell Island’s iron ore was essential to Allied steel production, making it a strategic target within the North Atlantic war. What appears to be a local anchorage was, in reality, part of a global system linking North America to Britain through convoy routes, naval bases, and industrial supply chains.",
-          buttonText: "Learn More",
+          buttonText: "Learn About North Atlantic War",
           buttonLink: "/bell-island-1942",
           buttonVariant: "primary",
         }}
