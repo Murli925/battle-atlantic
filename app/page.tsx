@@ -8,6 +8,7 @@ import CTASection from "@/components/sections/CTASection";
 import ParallaxSection from "@/components/ParallaxSection";
 import Image from "next/image";
 import type { Metadata } from "next";
+import YoutubeEmbed from "@/components/youtubeEmbedd";
 
 const siteUrl = "https://battleoftheatlanticmemorial.org";
 
@@ -160,13 +161,7 @@ export default function Home() {
         description={
           <div className="relative w-full aspect-video mt-4">
             <>
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/tJHs3biTAdI?si=ETVTEjSnOgyLlQap"
-                title="Archival Footage: The Battle of the Atlantic"
-                className="mt-2 inset-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <YoutubeEmbed />
             </>
             <small>
               Official Royal Canadian Navy archival footage documenting convoy
