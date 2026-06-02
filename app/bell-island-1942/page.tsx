@@ -202,7 +202,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                 <Image
                   src="/images/wIePj3CQ.jpeg"
                   alt="Burning Ship"
-                  className="w-full h-130 object-cover mb-4 rounded"
+                  className="w-full md:h-130 object-cover mb-4"
                   width={100}
                   height={100}
                 />
@@ -281,6 +281,9 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       ),
                     },
                   ]}
+                  mobileCols={1}
+                  tabletCols={2}
+                  desktopCols={2}
                 />
               </>
             ),
@@ -298,7 +301,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                 <Image
                   src="/images/NCeCXwlK.jpeg"
                   alt="Burning Ship"
-                  className="w-full h-130 object-cover mb-4"
+                  className="w-full md:h-130 object-cover mb-4"
                   width={100}
                   height={100}
                 />
@@ -376,6 +379,9 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       ),
                     },
                   ]}
+                                          mobileCols={1}
+                        tabletCols={2}
+                        desktopCols={2}
                 />
               </>
             ),
@@ -389,7 +395,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                 <Image
                   src="/images/rEGdk7WS.jpeg"
                   alt="Convoy Route Map"
-                  className="w-full h-130 object-cover mb-4"
+                  className="w-full md:h-130 object-cover mb-4"
                   width={100}
                   height={100}
                 />
@@ -427,6 +433,9 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       alt: "U-boat and Allied shipping losses",
                     },
                   ]}
+                  mobileCols={1}
+                  tabletCols={2}
+                  desktopCols={2}
                 />
               </>
             ),

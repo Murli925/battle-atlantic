@@ -93,7 +93,7 @@ export default function Gallery({
               className="relative block overflow-hidden group"
             >
 
-              <div className="relative w-full h-[200px] overflow-hidden">
+              <div className="relative w-full h-[250px] overflow-hidden">
 
                 <Image
                   src={item.thumb || item.src}

@@ -46,10 +46,10 @@ export default function Navbar() {
           <Link href="/" className={styles.logo}>
             <Image
               src="/images/logo.png"
-              alt="Logo"
+              alt="Battle of the Atlantic Memorial Logo"
               width={130}
               height={70}
-              fetchPriority="high"
+              
             />
           </Link>
 

@@ -43,7 +43,7 @@ export default function LogoGallery({
             )}
 
             {/* Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
 
               {group.items.map((item, i) => {
                 const content = (
