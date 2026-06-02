@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={`${barlow.className} ${sourceserif4.className}`}>
+      <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Organization", name: "Battle of the Atlantic Virtual Memorial", url: "https://battleoftheatlanticmemorial.org", logo: "https://battleoftheatlanticmemorial.org/images/logo.png", sameAs: [], description: "A digital reconstruction of the Bell Island naval battlefield and memorial dedicated to the Battle of the Atlantic.", }), }} />
         <AOSInit/>
         <Navbar/>
