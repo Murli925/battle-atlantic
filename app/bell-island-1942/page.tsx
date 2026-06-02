@@ -5,27 +5,73 @@ import CTASection from "@/components/sections/CTASection";
 import InnerBanner from "@/components/sections/Inner-banner";
 import Accordion from "@/components/AccordionSection";
 import Gallery from "@/components/GallerySection";
-import type { Metadata } from "next"
+import type { Metadata } from "next";
 import Image from "next/image";
 
+const siteUrl = "https://battleoftheatlanticmemorial.org";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: "Bell Island 1942 | Submarine Attacks in the Battle of the Atlantic",
+
   description:
-    "Explore the 1942 submarine attacks on Bell Island, Newfoundland—where German U-boats struck Allied ships in a defended harbour during the Battle of the Atlantic.",
+    "Explore the 1942 submarine attacks on Bell Island, Newfoundland, where German U-boats struck Allied ships inside a defended harbour during the Battle of the Atlantic.",
+
   keywords: [
-    "Bell Island",
+    "Bell Island 1942",
     "Battle of the Atlantic",
-    "naval history",
-    "donation",
-    "virtual memorial"
+    "German U-boats",
+    "Newfoundland naval history",
+    "WWII naval attacks",
+    "Bell Island submarine attacks",
+    "underwater archaeology",
+    "Canadian wartime history",
   ],
-    robots: {
+
+  robots: {
     index: true,
     follow: true,
-  }
-}
+  },
 
+  alternates: {
+    canonical: "/bell-island-1942",
+  },
+
+  openGraph: {
+    title: "Bell Island 1942 | Submarine Attacks in the Battle of the Atlantic",
+
+    description:
+      "Discover the 1942 U-boat attacks on Bell Island and their significance in the Battle of the Atlantic through immersive historical reconstruction.",
+
+    url: `${siteUrl}/bell-island-1942`,
+
+    siteName: "Battle of the Atlantic Memorial",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bell Island 1942 - Battle of the Atlantic",
+      },
+    ],
+
+    locale: "en_US",
+    type: "article",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Bell Island 1942 | Battle of the Atlantic",
+
+    description:
+      "Explore the historic German U-boat attacks on Bell Island during WWII.",
+
+    images: ["/og-image.jpg"],
+  },
+};
 
 export default function Bell_island_1942() {
   return (
@@ -110,10 +156,11 @@ Newfoundland’s strategic position within the Allied Atlantic supply system."
               On 5 September and 2 November 1942, German submarines penetrated
               Conception Bay and attacked Allied shipping engaged in loading
               operations off Bell Island. The attacks demonstrated that even a
-              sheltered industrial harbour, located well inside Newfoundland&rsquo;s
-              coastline, remained vulnerable to submarine warfare. Four merchant
-              vessels were sunk and dozens of sailors lost their lives, bringing
-              the Battle of the Atlantic directly to Newfoundland&rsquo;s shores.
+              sheltered industrial harbour, located well inside
+              Newfoundland&rsquo;s coastline, remained vulnerable to submarine
+              warfare. Four merchant vessels were sunk and dozens of sailors
+              lost their lives, bringing the Battle of the Atlantic directly to
+              Newfoundland&rsquo;s shores.
             </p>
             <p>
               The consequences extended far beyond the immediate losses. The
@@ -188,11 +235,11 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                       </p>
 
                       <p className="mt-2">
-                        Nearby, the Canadian vessel <i>Lord Strathcona</i> had already
-                        begun taking evasive action after witnessing the
-                        destruction of <i>Saganaga</i>. Her crew abandoned ship before
-                        she was struck. When the torpedo hit, the vessel sank
-                        rapidly—but remarkably, there were no fatalities.
+                        Nearby, the Canadian vessel <i>Lord Strathcona</i> had
+                        already begun taking evasive action after witnessing the
+                        destruction of <i>Saganaga</i>. Her crew abandoned ship
+                        before she was struck. When the torpedo hit, the vessel
+                        sank rapidly—but remarkably, there were no fatalities.
                       </p>
 
                       <p className="mt-2">
@@ -218,12 +265,20 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                     {
                       src: "/images/0vipgwHf.jpeg",
                       alt: "SS Saganaga",
-                      caption: (<>SS <i>Saganaga</i></>) 
+                      caption: (
+                        <>
+                          SS <i>Saganaga</i>
+                        </>
+                      ),
                     },
                     {
                       src: "/images/lord_strathcona-1.jpg",
                       alt: "SS Lord Strathcona",
-                      caption: (<>SS <i>Lord Strathcona</i></>) 
+                      caption: (
+                        <>
+                          SS <i>Lord Strathcona</i>
+                        </>
+                      ),
                     },
                   ]}
                 />
@@ -268,15 +323,15 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                         Operating under cover of darkness and exploiting the
                         same defensive weaknesses, <i>U-518</i> launched torpedo
                         attacks against vessels at anchor. The Canadian ore
-                        carrier <i>Rose Castle</i> was struck and sank within minutes,
-                        with the loss of twenty-four crew members.
+                        carrier <i>Rose Castle</i> was struck and sank within
+                        minutes, with the loss of twenty-four crew members.
                       </p>
 
                       <p className="mt-2">
-                        Shortly thereafter, the vessel <i>PLM-27</i> a Free French ship
-                        operating under British wartime control—was also
-                        torpedoed. Lacking defensive armament and with a smaller
-                        crew, she sank quickly. Twelve men were killed.
+                        Shortly thereafter, the vessel <i>PLM-27</i> a Free
+                        French ship operating under British wartime control—was
+                        also torpedoed. Lacking defensive armament and with a
+                        smaller crew, she sank quickly. Twelve men were killed.
                       </p>
 
                       <p className="mt-2">
@@ -296,17 +351,29 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                     {
                       src: "/images/13vYV2sj.png",
                       alt: "Rose Castle",
-                      caption: (<>SS <i>Rose Castle</i></>)
+                      caption: (
+                        <>
+                          SS <i>Rose Castle</i>
+                        </>
+                      ),
                     },
                     {
                       src: "/images/p_l_m_27-1.jpg",
                       alt: "SS PLM 27",
-                      caption: (<>SS <i>PLM-27</i></>)  
+                      caption: (
+                        <>
+                          SS <i>PLM-27</i>
+                        </>
+                      ),
                     },
                     {
                       src: "/images/14HWecDg.png",
                       alt: "U-518-at-sea",
-                      caption: (<><i>U-518</i></>)  
+                      caption: (
+                        <>
+                          <i>U-518</i>
+                        </>
+                      ),
                     },
                   ]}
                 />
@@ -366,84 +433,87 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
           },
 
           {
-            blockClassName: "bg-[var(--background-color)] text-black defended-harbour-accordion",
+            blockClassName:
+              "bg-[var(--background-color)] text-black defended-harbour-accordion",
             title: "A Defended Harbour Breached",
             description: (
               <>
+                <ContentSection
+                  title=""
+                  className="py-0"
+                  description={
+                    <>
+                      <CheckList
+                        items={[
+                          {
+                            text: (
+                              <>
+                                Four ore carriers were sunk (
+                                <i>
+                                  Saganaga, Lord Strathcona, Rose Castle, PLM-27
+                                </i>
+                                )
+                              </>
+                            ),
+                          },
+                          {
+                            text: (
+                              <>
+                                Approximately 65 sailors were killed (with some
+                                sources citing slightly higher totals)
+                              </>
+                            ),
+                          },
+                          {
+                            text: (
+                              <>Critical industrial shipping was disrupted</>
+                            ),
+                          },
+                          {
+                            text: (
+                              <>
+                                A major North Atlantic war zone was extended
+                                directly into a coastal harbour
+                              </>
+                            ),
+                          },
+                        ]}
+                      />
 
+                      <p className="mt-2 mb-8">
+                        Bell Island thus became the site of the only confirmed
+                        sinkings of Allied shipping within a defended industrial
+                        harbour along the east coast of either Canada or the
+                        United States during the Second World War.
+                      </p>
 
-<ContentSection
-        title=""
-        className="py-0"
-        description={
-          <>
-            <CheckList
-                  items={[
-                    {
-                      text: (
-                        <>
-                          Four ore carriers were sunk (<i>Saganaga, Lord
-                          Strathcona, Rose Castle, PLM-27</i>)
-                        </>
-                      ),
-                    },
-                    {
-                      text: (
-                        <>
-                          Approximately 65 sailors were killed (with some
-                          sources citing slightly higher totals)
-                        </>
-                      ),
-                    },
-                    { text: <>Critical industrial shipping was disrupted</> },
-                    {
-                      text: (
-                        <>
-                          A major North Atlantic war zone was extended directly
-                          into a coastal harbour
-                        </>
-                      ),
-                    },
-                  ]}
+                      <Gallery
+                        items={[
+                          {
+                            src: "/images/Rya9Uput.jpeg",
+                            alt: "RCN Fairmile patrol",
+                          },
+                          {
+                            src: "/images/9tFuTaeV.jpeg",
+                            alt: "RCAF on patrol",
+                          },
+                          {
+                            src: "/images/QEzDTTh.jpeg",
+                            alt: "Cemetery Hill Coastal Artillery",
+                          },
+                          {
+                            src: "/images/Wyai9Mxw.jpeg",
+                            alt: "Scotia Pier loading ships",
+                          },
+                        ]}
+                        mobileCols={1}
+                        tabletCols={2}
+                        desktopCols={2}
+                      />
+                    </>
+                  }
+                  image="/images/Newfoundland military bases map.jpeg"
                 />
-
-                <p className="mt-2 mb-8">
-                  Bell Island thus became the site of the only confirmed
-                  sinkings of Allied shipping within a defended industrial
-                  harbour along the east coast of either Canada or the United
-                  States during the Second World War.
-                </p>
-
-                <Gallery
-                  items={[
-                    {
-                      src: "/images/Rya9Uput.jpeg",
-                      alt: "RCN Fairmile patrol",
-                    },
-                    {
-                      src: "/images/9tFuTaeV.jpeg",
-                      alt: "RCAF on patrol",
-                    },
-                    {
-                      src: "/images/QEzDTTh.jpeg",
-                      alt: "Cemetery Hill Coastal Artillery",
-                    },
-                    {
-                      src: "/images/Wyai9Mxw.jpeg",
-                      alt: "Scotia Pier loading ships",
-                    },
-                  ]}
-                    mobileCols={1}
-  tabletCols={2}
-  desktopCols={2}
-                />
-          </>
-        }
-        image="/images/Newfoundland military bases map.jpeg"
-        
-      />
-
-
 
                 {/* <Image
                   src="/images/Newfoundland military bases map.jpeg"
@@ -489,10 +559,6 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                   harbour along the east coast of either Canada or the United
                   States during the Second World War.
                 </p> */}
-
-
-
-                
               </>
             ),
           },
@@ -519,7 +585,11 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
 
                 <CheckList
                   items={[
-                    { text: <>Within a functioning defended industrial harbour</> },
+                    {
+                      text: (
+                        <>Within a functioning defended industrial harbour</>
+                      ),
+                    },
                     { text: <>In close proximity to shore</> },
                     { text: <>In full view of civilian populations</> },
                     {
@@ -547,28 +617,27 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                     {
                       src: "/images/R2-Bell Island.webp",
                       alt: "Bell Island",
-                    caption: "Bell Island"
+                      caption: "Bell Island",
                     },
                     {
                       src: "/images/R6. Torpedo strike on Scotia Pier.gif",
                       alt: "Torpedo strike on Scotia Pier",
-                      caption: "Torpedo strike on Scotia Pier"
+                      caption: "Torpedo strike on Scotia Pier",
                     },
                     {
                       src: "/images/R11. Lance Cove Cemetary.jpg",
                       alt: "Lance Cove Seaman’s Memorial",
-                      caption: "Lance Cove Seaman’s Memorial"
+                      caption: "Lance Cove Seaman’s Memorial",
                     },
                     {
                       src: "/images/R17. Saganaga Anchor.jpg",
                       alt: "Saganaga Anchor",
-                      caption: "Saganaga Anchor"
+                      caption: "Saganaga Anchor",
                     },
                   ]}
-                    mobileCols={1}
-                    tabletCols={2}
-                    desktopCols={4}
-                 
+                  mobileCols={1}
+                  tabletCols={2}
+                  desktopCols={4}
                 />
               </>
             ),
@@ -1175,7 +1244,7 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
 
             <CheckList
               items={[
-                 {
+                {
                   text: (
                     <>
                       <strong>Rank:</strong> Korvettenkapitän
@@ -1194,20 +1263,19 @@ loading piers, and coastal defence positions associated with the 1942 attacks."
                     <>
                       <strong>USN Equivalent:</strong> Commander (O-5)
                     </>
-                  )
+                  ),
                 },
 
                 {
                   text: (
                     <>
-                      <strong>Vessels Sunk at Bell Island:</strong> <i>Saganaga,
-                      Lord Strathcona</i>
+                      <strong>Vessels Sunk at Bell Island:</strong>{" "}
+                      <i>Saganaga, Lord Strathcona</i>
                     </>
                   ),
-                }
+                },
               ]}
             />
-
 
             <p className="mt-4">
               <strong>Later Fate:</strong> U-513 was sunk off the coast of
@@ -1588,8 +1656,9 @@ measures introduced after the Bell Island attacks."
               ]}
             />
             <p className="text-gray-500">
-              (From left to right: Torpedoed freighter (left), HMCS <i>Penetang </i>
-               (middle), Torpedoed freighter (right))
+              (From left to right: Torpedoed freighter (left), HMCS{" "}
+              <i>Penetang </i>
+              (middle), Torpedoed freighter (right))
             </p>
             <p className="mt-3">
               More than 4,600 Canadians of the Royal Canadian Navy, Royal

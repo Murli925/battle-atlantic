@@ -73,9 +73,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-
-
 export default function Home() {
   return (
     <>
@@ -162,18 +159,25 @@ export default function Home() {
         title="Archival Footage: The Battle of the Atlantic"
         description={
           <div className="relative w-full aspect-video mt-4">
-            <><iframe
-              src="https://www.youtube-nocookie.com/embed/tJHs3biTAdI?si=ETVTEjSnOgyLlQap"
-              title="Archival Footage: The Battle of the Atlantic"
-              className="mt-2 inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            /></>
-            <small>Official Royal Canadian Navy archival footage documenting convoy operations, escort vessels, submarine warfare, and the wider Atlantic campaign during the Second World War. The footage includes both Canadian and German material.</small>
+            <>
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/tJHs3biTAdI?si=ETVTEjSnOgyLlQap"
+                title="Archival Footage: The Battle of the Atlantic"
+                className="mt-2 inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </>
+            <small>
+              Official Royal Canadian Navy archival footage documenting convoy
+              operations, escort vessels, submarine warfare, and the wider
+              Atlantic campaign during the Second World War. The footage
+              includes both Canadian and German material.
+            </small>
           </div>
         }
       />
-<div className="h-px w-full bg-white/10" />
+      <div className="h-px w-full bg-white/10" />
       <ContentSection
         title="An Invisible Battlefield"
         description={
@@ -256,8 +260,12 @@ export default function Home() {
           <>
             <CheckList
               items={[
-                { text: "Marine Institute, Memorial University of Newfoundland (MI–MUN)",},
-                {text: "Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL)",},
+                {
+                  text: "Marine Institute, Memorial University of Newfoundland (MI–MUN)",
+                },
+                {
+                  text: "Shipwreck Preservation Society of Newfoundland and Labrador (SPSNL)",
+                },
                 { text: "VOYIS Imaging" },
                 { text: "Royal Canadian Geographical Society (RCGS)" },
                 { text: "HMCS Canada Expedition Dive Team" },
@@ -273,7 +281,6 @@ export default function Home() {
               programs, and corporate partners will enable the full realization
               of the Virtual Memorial.
             </p>
-            
           </>
         }
         video="/videos/(U-576) wk186-monitor-merchant-mariners.mp4"

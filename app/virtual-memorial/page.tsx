@@ -8,22 +8,76 @@ import Image from "next/image"
 
 
 
+const siteUrl = "https://battleoftheatlanticmemorial.org";
+
 export const metadata: Metadata = {
-  title: "Virtual Memorial | Bell Island Battle of the Atlantic",
+  metadataBase: new URL(siteUrl),
+
+  title:
+    "Virtual Memorial | Bell Island Battle of the Atlantic",
+
   description:
-    "Explore the Bell Island Virtual Memorial—a digital reconstruction of a Second World War naval battlefield, integrating underwater archaeology, mapping, and historical research.",
+    "Explore the Bell Island Virtual Memorial, a digital reconstruction of a Second World War naval battlefield integrating underwater archaeology, 3D mapping, maritime history, and historical research.",
+
   keywords: [
-    "Bell Island",
+    "Bell Island Virtual Memorial",
     "Battle of the Atlantic",
-    "naval history",
-    "donation",
-    "virtual memorial"
+    "underwater archaeology",
+    "WWII naval battlefield",
+    "digital reconstruction",
+    "maritime history",
+    "Bell Island shipwrecks",
+    "historical mapping",
+    "Canadian naval heritage",
   ],
-    robots: {
+
+  robots: {
     index: true,
     follow: true,
-  }
-}
+  },
+
+  alternates: {
+    canonical: "/virtual-memorial",
+  },
+
+  openGraph: {
+    title:
+      "Virtual Memorial | Bell Island Battle of the Atlantic",
+
+    description:
+      "Discover an immersive digital reconstruction of the Bell Island naval battlefield through underwater archaeology, mapping, and historical interpretation.",
+
+    url: `${siteUrl}/virtual-memorial`,
+
+    siteName: "Battle of the Atlantic Memorial",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bell Island Virtual Memorial",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Virtual Memorial | Bell Island Battle of the Atlantic",
+
+    description:
+      "Explore the immersive digital memorial preserving the Bell Island naval battlefield and its wartime history.",
+
+    images: ["/og-image.jpg"],
+  },
+};
+
+
 
 export default function Virtual_Memorial() {
 

@@ -7,22 +7,76 @@ import type { Metadata } from "next"
 import SupportSection from "@/components/sections/SupportSection"
 
 
+const siteUrl = "https://battleoftheatlanticmemorial.org";
+
 export const metadata: Metadata = {
-  title: "Bell Island Expedition | Donations",
+  metadataBase: new URL(siteUrl),
+
+  title:
+    "Support the Expedition | Bell Island Battle of the Atlantic Memorial",
+
   description:
-    "Support the Bell Island Battle of the Atlantic Virtual Memorial expedition.",
+    "Support the Bell Island Battle of the Atlantic Virtual Memorial expedition through donations that help preserve underwater heritage, historical research, and digital reconstruction efforts.",
+
   keywords: [
-    "Bell Island",
-    "Battle of the Atlantic",
-    "naval history",
-    "donation",
-    "virtual memorial"
+    "Bell Island donations",
+    "Battle of the Atlantic memorial",
+    "support the expedition",
+    "virtual memorial donations",
+    "underwater archaeology funding",
+    "WWII naval history preservation",
+    "Bell Island Expedition support",
+    "historical preservation donations",
+    "Canadian naval heritage",
   ],
-    robots: {
+
+  robots: {
     index: true,
     follow: true,
-  }
-}
+  },
+
+  alternates: {
+    canonical: "/support-the-expedition",
+  },
+
+  openGraph: {
+    title:
+      "Support the Expedition | Bell Island Battle of the Atlantic Memorial",
+
+    description:
+      "Help support underwater archaeology, historical preservation, and digital memorial initiatives connected to the Bell Island Expedition.",
+
+    url: `${siteUrl}/support-the-expedition`,
+
+    siteName: "Battle of the Atlantic Memorial",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Support the Bell Island Expedition",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Support the Expedition | Bell Island Memorial",
+
+    description:
+      "Support the preservation and digital reconstruction of the Bell Island Battle of the Atlantic memorial project.",
+
+    images: ["/og-image.jpg"],
+  },
+};
+
+
 
 export default function Donations() {
 
