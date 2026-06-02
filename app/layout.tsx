@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar"
 import AOSInit from "@/components/AOSInit"
 import Footer from "@/components/Footer"
+import Script from "next/script";
 
 
 import { Barlow, Source_Serif_4, Great_Vibes } from "next/font/google"
@@ -30,7 +31,10 @@ export default function RootLayout({
     <html lang="en">
 
       <body>
+<Script src="https://www.googletagmanager.com/gtag/js?id=G-L0Q6LH4N38" strategy="afterInteractive" /> <Script id="google-analytics" strategy="afterInteractive"> {` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-L0Q6LH4N38'); `} </Script>
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Organization", name: "Battle of the Atlantic Virtual Memorial", url: "https://battleoftheatlanticmemorial.org", logo: "https://battleoftheatlanticmemorial.org/images/logo.png", sameAs: [], description: "A digital reconstruction of the Bell Island naval battlefield and memorial dedicated to the Battle of the Atlantic.", }), }} />
+
         <AOSInit/>
         <Navbar/>
         
