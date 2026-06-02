@@ -9,22 +9,72 @@ import ParallaxSection from "@/components/ParallaxSection";
 import Image from "next/image";
 import type { Metadata } from "next";
 
+const siteUrl = "https://battleoftheatlanticmemorial.org";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: "Battle of the Atlantic Virtual Memorial | Bell Island Expedition",
+
   description:
     "A digital reconstruction of the Bell Island naval battlefield. Explore the 1942 attacks, underwater archaeology, and the Battle of the Atlantic through immersive mapping and research.",
+
   keywords: [
     "Bell Island",
     "Battle of the Atlantic",
     "naval history",
-    "donation",
     "virtual memorial",
+    "underwater archaeology",
+    "WWII naval battlefield",
+    "Bell Island Expedition",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Battle of the Atlantic Virtual Memorial | Bell Island Expedition",
+
+    description:
+      "Explore the 1942 Bell Island attacks through immersive mapping, underwater archaeology, and historical reconstruction.",
+
+    url: siteUrl,
+
+    siteName: "Battle of the Atlantic Memorial",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Battle of the Atlantic Virtual Memorial",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Battle of the Atlantic Virtual Memorial",
+
+    description:
+      "Explore the 1942 Bell Island attacks through immersive mapping and historical reconstruction.",
+
+    images: ["/og-image.jpg"],
+  },
 };
+
+
+
 
 export default function Home() {
   return (

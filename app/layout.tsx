@@ -19,10 +19,7 @@ const sourceserif4 = Source_Serif_4({
 })
 
 
-export const metadata = {
-  title: "Battle of the Atlantic Virtual Memorial",
-  description: "Historical memorial project"
-}
+export const metadata = { metadataBase: new URL("https://battleoftheatlanticmemorial.org"), title: "Battle of the Atlantic Virtual Memorial", description: "A digital reconstruction of the Bell Island naval battlefield and memorial dedicated to the Battle of the Atlantic.", }
 
 export default function RootLayout({
   children
@@ -32,7 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body>
+      <body className={`${barlow.className} ${sourceserif4.className}`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Organization", name: "Battle of the Atlantic Virtual Memorial", url: "https://battleoftheatlanticmemorial.org", logo: "https://battleoftheatlanticmemorial.org/images/logo.png", sameAs: [], description: "A digital reconstruction of the Bell Island naval battlefield and memorial dedicated to the Battle of the Atlantic.", }), }} />
         <AOSInit/>
         <Navbar/>
         
