@@ -80,7 +80,7 @@ export default function CenterImageSection({
 
               {left.buttonText && (
                 <Link
-                  href={left.buttonLink || "#"} title={left.buttonText}
+                  href={left.buttonLink || "#"} title={left.title}
                   className={`btn btn-${left.buttonVariant || "primary"}`}
                 >
                   {left.buttonText}
@@ -119,7 +119,7 @@ export default function CenterImageSection({
               {right.buttonText && (
                 <Link
                   href={right.buttonLink || "#"}
-                  title={right.buttonText}
+                  title={right.title}
                   className={`btn btn-${right.buttonVariant || "primary"}`}
                 >
                   {right.buttonText}
