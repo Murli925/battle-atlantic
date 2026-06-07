@@ -94,7 +94,7 @@ export const metadata: Metadata = {
 
             <CheckList
               items={[
-                { text: <>Peter & Carmen Griffis, Joseph & Diane Frey</> },
+                { text: <>Peter & Carmen Griffis, John Geiger, Joseph & Diane Frey</> },
               ]}
             />
           </>
