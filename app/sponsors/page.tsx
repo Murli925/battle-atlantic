@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       />
 
       <ContentSection
-        title="Institutional Partners"
+        title="Institutional Partners ($5,000 and above)"
         description={
           <>
             <CheckList
@@ -78,23 +78,42 @@ export const metadata: Metadata = {
                 {
                   text: <>Royal Canadian Geographical Society — Major Grant</>,
                 },
+                {
+                  text: <>History & Heroes Alberta Foundation — Major Sponsor</>,
+                },
               ]}
             />
-            <Image
-              src="/images/RCGS-logo.jpg"
-              alt="Royal Canadian Geographical Society"
-              width={200}
-              height={100}
-              className="rounded"
+
+            <LogoGallery className="w-140"
+
+              groups={[
+
+                {
+                  title: "",
+                  description:
+                    "",
+                  items: [
+                    { image: "/images/RCGS-logo.jpg" },
+                    { image: "/images/History-of-hero-logo.jpg" },
+                  ],
+                },
+              ]}
             />
+            
             <h3 className="heading mt-3 mb-2">Expedition Sponsors</h3>
-            <p className="mb-2">
-              Donations of CAD $5,000 and above (Names listed with permission):
-            </p>
+            <h4 className="heading mt-3 mb-2">Lead Sponsors ($5,000 and above)</h4>
 
             <CheckList
               items={[
-                { text: <>Peter & Carmen Griffis, John Geiger, Joseph & Diane Frey</> },
+                { text: <>Joseph & Diane Frey </> },
+                { text: <>John Geiger</> },
+              ]}
+            />
+            <h4 className="heading mt-3 mb-2">Supporting Sponsors ($1,000–$4,999)</h4>
+
+            <CheckList
+              items={[
+                { text: <>Peter & Carmen Griffis</> }
               ]}
             />
           </>
@@ -143,7 +162,7 @@ export const metadata: Metadata = {
               groups={[
                 {
                   title: "",
-                  items: [{ image: "/images/RCGS-logo.jpg" }],
+                  items: [{ image: "/images/RCGS-logo.jpg" }, { image: "/images/Combine-TEC-logo.jpg" }],
                 },
                 {
                   title: "Media and Outreach Partners",
