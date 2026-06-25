@@ -160,7 +160,7 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
               groups={[
                 {
                   title: "",
-                  items: [{ image: "/images/RCGS-logo.jpg" }, { image: "/images/Combine-TEC-logo.jpg" }],
+                  items: [{ image: "/images/RCGS-logo.jpg" }, { image: "/images/The-Explorers-Club-flag.jpg" }],
                 },
                 {
                   title: "Media and Outreach Partners",
