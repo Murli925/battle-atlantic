@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       />
 
       <ContentSection
-        title="Institutional Partners ($5,000 and above)"
+        title={<>Institutional Partners <span className="text-lg">($5,000 and above)</span></>}
         description={
           <>
             <CheckList
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
             />
             
             <h3 className="heading mt-3 mb-2">Expedition Sponsors</h3>
-            <h4 className="heading mt-3 mb-2">Lead Sponsors ($5,000 and above)</h4>
+            <h4 className="heading mt-3 mb-2 text-lg">Lead Sponsors <span className="text-xs">($5,000 and above)</span></h4>
 
             <CheckList
               items={[
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
                 { text: <>John Geiger</> },
               ]}
             />
-            <h4 className="heading mt-3 mb-2">Supporting Sponsors ($1,000–$4,999)</h4>
+            <h4 className="heading mt-3 mb-2">Supporting Sponsors <span className="text-xs">($1,000–$4,999)</span></h4>
 
             <CheckList
               items={[
@@ -153,9 +153,7 @@ export const metadata: Metadata = {
         description={
           <>
             <p className="my-2">
-              The expedition has received recognition and support from leading
-              geographical and exploration organizations dedicated to science,
-              heritage, education, and public engagement.
+The Bell Island Expedition 2027 has received the highest recognition from both the Royal Canadian Geographical Society and The Explorers Club as official Flag Expeditions for its dedication to science, heritage, education, and public engagement.
             </p>
             <LogoGallery
               // className="bg-[var(--secondary-bg-color)]"
