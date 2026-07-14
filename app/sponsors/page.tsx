@@ -70,55 +70,113 @@ export const metadata: Metadata = {
       />
 
       <ContentSection
-        title={<>Institutional Partners <span className="text-lg">($5,000 and above)</span></>}
-        description={
-          <>
-            <CheckList
-              items={[
-                {
-                  text: <>Royal Canadian Geographical Society — Major Grant</>,
-                },
-                {
-                  text: <>History & Heroes Alberta Foundation — Major Sponsor</>,
-                },
-              ]}
-            />
-
-            <LogoGallery className="w-140"
-
-              groups={[
-
-                {
-                  title: "",
-                  description:
-                    "",
-                  items: [
-                    { image: "/images/RCGS-logo.jpg" },
-                    { image: "/images/History-of-hero-logo.jpg" },
-                  ],
-                },
-              ]}
-            />
-            
-            <h3 className="heading mt-3 mb-2">Expedition Sponsors</h3>
-            <h4 className="heading mt-3 mb-2 text-lg">Lead Sponsors <span className="text-xs">($5,000 and above)</span></h4>
-
-            <CheckList
-              items={[
-                { text: <>Joseph & Diane Frey </> },
-                { text: <>John Geiger</> },
-              ]}
-            />
-            <h4 className="heading mt-3 mb-2">Supporting Sponsors <span className="text-xs">($1,000–$4,999)</span></h4>
-
-            <CheckList
-              items={[
-                { text: <>Peter & Carmen Griffis</> }
-              ]}
-            />
-          </>
-        }
+  title={
+    <>
+      Presenting Partner{" "}
+      <span className="text-lg">(Exclusive – $40,000 and above)</span>
+    </>
+  }
+  description={
+    <>
+      <LogoGallery
+        className="w-140"
+        groups={[
+          {
+            title: "",
+            description: "",
+            items: [
+              {
+                image: "/images/kensington-logo.png",
+              },
+            ],
+          },
+        ]}
       />
+
+      <h3 className="heading mb-2">Kensington Cares</h3>
+
+      <p>
+        Kensington delivers the world’s most personal travel experiences. We
+        bring to life each client’s desire to travel in a way that’s tailored
+        specifically for them, in the company of local private guides who ensure
+        that they enjoy the authentic best of their destination. The result is a
+        unique journey rich in memories that last a lifetime. Through our social
+        impact initiative Kensington Cares, we support meaningful initiatives
+        are the world in the realms of education, environment, and exploration.
+      </p>
+
+      <h3 className="heading mt-5 mb-2">
+        Institutional Partners{" "}
+        <span className="text-lg">($5,000 and above)</span>
+      </h3>
+
+      <CheckList
+        items={[
+          {
+            text: <>Royal Canadian Geographical Society — Major Grant</>,
+          },
+          {
+            text: <>History & Heroes Alberta Foundation — Major Sponsor</>,
+          },
+        ]}
+      />
+
+      <LogoGallery
+        className="w-140"
+        groups={[
+          {
+            title: "",
+            description: "",
+            items: [
+              { image: "/images/RCGS-logo.jpg" },
+              { image: "/images/History-of-hero-logo.jpg" },
+            ],
+          },
+        ]}
+      />
+
+      <h3 className="heading mt-3 mb-2">Expedition Sponsors</h3>
+
+      <h4 className="heading mt-3 mb-2 text-lg">
+        Lead Sponsors{" "}
+        <span className="text-xs">($5,000 and above)</span>
+      </h4>
+
+      <CheckList
+        items={[
+          {
+            text: (
+              <>
+                Joseph &amp; Diane Frey <b>in memory of Sergeant Joseph Frey</b>
+              </>
+            ),
+          },
+          {
+            text: <>John Geiger</>,
+          },
+        ]}
+      />
+
+      <h4 className="heading mt-3 mb-2">
+        Supporting Sponsors{" "}
+        <span className="text-xs">($1,000–$4,999)</span>
+      </h4>
+
+      <CheckList
+        items={[
+          {
+            text: (
+              <>
+                Peter &amp; Carmen Griffis <b>in memory of Warrant Officer 2
+                Raymond St. John Griffis, CD, RCA</b>
+              </>
+            ),
+          },
+        ]}
+      />
+    </>
+  }
+/>
 
       <CarouselSection
         title="Major In-Kind Contributions"
