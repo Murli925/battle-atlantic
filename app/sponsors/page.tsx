@@ -96,13 +96,7 @@ export const metadata: Metadata = {
       <h3 className="heading mb-2">Kensington Cares</h3>
 
       <p>
-        Kensington delivers the world’s most personal travel experiences. We
-        bring to life each client’s desire to travel in a way that’s tailored
-        specifically for them, in the company of local private guides who ensure
-        that they enjoy the authentic best of their destination. The result is a
-        unique journey rich in memories that last a lifetime. Through our social
-        impact initiative Kensington Cares, we support meaningful initiatives
-        are the world in the realms of education, environment, and exploration.
+Kensington delivers the world’s most personal travel experiences. We bring each client’s travel aspirations to life through journeys tailored specifically to their interests, accompanied by knowledgeable local private guides who provide authentic, immersive experiences. The result is a unique journey filled with memories that last a lifetime. Through our social impact initiative, Kensington Cares, we support meaningful projects around the world in the fields of education, environmental stewardship, and exploration.
       </p>
 
       <h3 className="heading mt-5 mb-2">
