@@ -117,7 +117,7 @@ export default function Our_Team() {
       <TeamSection
         members={[
           {
-            name: "Joseph Frey",
+            name: "Joseph Frey, CD, FRCGS, FI’ 02",
             role: "Expedition Lead and Project Director",
             subtitle: "Historical and Scientific Integration",
             image: "",
@@ -187,6 +187,19 @@ export default function Our_Team() {
                   expedition planning, marine survey coordination, and the
                   integration of field operations with academic research and
                   technical documentation.
+                </p>
+              </>
+            ),
+          },
+
+          {
+            name: "Dr. James P. Delgado, Ph.D., FRCGS, FN’ 97",
+            role: "",
+            image: "",
+            bio: (
+              <>
+                <p>
+                  Dr. Delgado is among the world’s leading experts in maritime archaeology and cultural heritage. Currently serving as Senior Advisor for Cultural Heritage for the Oceans Foundation in Washington, D.C., Dr. Delgado’s career spans five decades and major projects across the globe, including some of the world’s most iconic shipwrecks. His career includes two decades in public service, including his tenure as Director of NOAA’s Maritime Heritage Program and of the National Park Service’s Maritime Preservation Program. He was the longest-serving (15 years) director of the Vancouver Maritime Museum, home to RCMP St. Roch. He is a Fellow of the Royal Canadian Geographical Society, the Royal Geographical Society and The Explorers Club. Author, co-author, or editor of forty books and hundreds of scholarly publications, he has worked on numerous projects including deep water work, including many focusing on warships and merchant vessels of the early to mid-20th century. He most recently was a project lead for the archaeological investigation of the aircraft carriers Akagi, Kaga and Yorktown at a 5000- meter depth in the Pacific Ocean.
                 </p>
               </>
             ),
@@ -298,7 +311,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Guy Shockey",
+            name: "Guy Shockey, MA, BA (Hons), FRCGS",
             role: "Dive Team Lead",
             subtitle: "Diving Operations",
             image: "",
@@ -333,7 +346,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Roger Lacasse",
+            name: "Roger Lacasse, Ph.D., M.Sc., FRCGS",
             role: "3D Photogrammetry Lead",
             subtitle: "Photogrammetry",
             image: "",

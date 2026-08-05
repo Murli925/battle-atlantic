@@ -141,12 +141,13 @@ Kensington delivers the world’s most personal travel experiences. We bring eac
           {
             text: (
               <>
-                Joseph &amp; Diane Frey <b>in memory of Sergeant Joseph Frey</b>
+                Joseph &amp; Diane Frey <b>in memory of Sergeant Joseph Frey</b> and Lieutenant-Commander
+William Mansfield LaNauze, CD, RCN
               </>
             ),
           },
           {
-            text: <>John Geiger</>,
+            text: <>John Geiger<b>in memory of Captain William McKenzie Gilchrist, RCE</b></>,
           },
         ]}
       />
@@ -251,6 +252,31 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                 <p>In alphabetical order:</p>
                 <h3 className="heading mt-2">Newfoundland and Labrador</h3>
 
+<h3 className="heading mt-6 mb-2">No. 2 Bell Island Mine Tour & Museum</h3>
+                <LogoGallery
+                  groups={[
+                    {
+                      title: "",
+                      items: [
+                        {
+                          image: "/images/No. 2 Bell Island Mine Tour & Museum(1).jpg",
+                          link: "https://bellislandminetour.com/",
+                        },
+                      ],
+                    },
+                  ]}
+                />
+                <p>No. 2 Bell Island Mine Tour & Museum: <a href="https://bellislandminetour.com/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://bellislandminetour.com/</a></p>
+                <Gallery
+                  items={[
+                    {
+                      src: "/images/Bell Island Museum U-boat attack drawing(1).jpg",
+                      alt: "Bell Island Museum U-boat attack drawing",
+                    }
+                  ]}
+                />
+
+
                 <LogoGallery
                   groups={[
                     {
@@ -264,6 +290,8 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     },
                   ]}
                 />
+
+                <p>The Crow’s Nest: <a href="https://crowsnestnl.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://crowsnestnl.ca/</a></p>
 
                 <Gallery
                   items={[
@@ -287,6 +315,8 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     allowFullScreen
                   />
                 </div>
+                
+
                 <h3 className="heading mt-6 mb-2">The Rooms</h3>
                 <LogoGallery
                   groups={[
@@ -301,6 +331,8 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     },
                   ]}
                 />
+                <p>The Rooms: <a href="https://therooms.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://therooms.ca/</a></p>
+                
                 <Gallery
                   items={[
                     {
@@ -315,7 +347,6 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                 />
 
                 <h3 className="heading mt-6 mb-2">Nova Scotia</h3>
-
                 <LogoGallery
                   groups={[
                     {
@@ -329,6 +360,8 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     },
                   ]}
                 />
+<p>Canadian Naval Memorial Trust: <a href="https://www.cnmt.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://www.cnmt.ca/</a></p>
+                
                 <div className="relative w-full aspect-video mt-3 overflow-hidden">
                   <iframe
                     className="absolute inset-0 w-full h-full"
@@ -364,7 +397,7 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     },
                   ]}
                 />
-
+<p>Maritime Museum of the Atlantic: <a href="https://www.cnmt.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://www.cnmt.ca/</a></p>
                 <Gallery
                   items={[
                     {
@@ -392,6 +425,8 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     },
                   ]}
                 />
+
+                <p>Shearwater Aviation Museum: <a href="https://shearwateraviationmuseum.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://shearwateraviationmuseum.ca/</a></p>
 
                 <Gallery
                   items={[
