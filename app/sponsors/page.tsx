@@ -141,8 +141,8 @@ Kensington delivers the world’s most personal travel experiences. We bring eac
           {
             text: (
               <>
-                Joseph &amp; Diane Frey <b>in memory of Sergeant Joseph Frey</b> and Lieutenant-Commander
-William Mansfield LaNauze, CD, RCN
+                Joseph &amp; Diane Frey <b>in memory of Sergeant Joseph Frey</b> and <b>Lieutenant-Commander
+William Mansfield LaNauze, CD, RCN</b>
               </>
             ),
           },
