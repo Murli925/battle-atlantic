@@ -397,7 +397,7 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     },
                   ]}
                 />
-<p>Maritime Museum of the Atlantic: <a href="https://www.cnmt.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://www.cnmt.ca/</a></p>
+<p>Maritime Museum of the Atlantic: <a href="https://maritimemuseum.novascotia.ca/" className="text-[var(--secondary-color)]" target="_blank" rel="noopener noreferrer">https://maritimemuseum.novascotia.ca/</a></p>
                 <Gallery
                   items={[
                     {
