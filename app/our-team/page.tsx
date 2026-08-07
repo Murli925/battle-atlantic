@@ -156,7 +156,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Kirk Regular",
+            name: "Kirk Regular, B.Sc.",
             role: "Marine Institute, Memorial University of Newfoundland",
             subtitle: "Expedition Operations and Marine Survey Integration",
             image: "",
@@ -194,7 +194,8 @@ export default function Our_Team() {
 
           {
             name: "Dr. James P. Delgado, Ph.D., FRCGS, FN’ 97",
-            role: "",
+            role: "Lead Maritime Archaeologist",
+            subtitle:"Wreck Analysis",
             image: "",
             bio: (
               <>
@@ -206,7 +207,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Neil Burgess",
+            name: "Neil Burgess, M. Sc.",
             role: "Shipwreck Preservation Society of Newfoundland and Labrador",
             subtitle: "Heritage and Regional Operations Support",
             image: "",
@@ -241,7 +242,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Brenden St. John",
+            name: "Brenden St. John, B. Eng.",
             role: "VOYIS",
             subtitle: "Underwater Imaging and Survey Technology",
             image: "",
@@ -276,7 +277,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Tim Joyce",
+            name: "Tim Joyce, B.A.",
             role: "Royal Canadian Geographical Society",
             subtitle: "Cartography and Educational Outreach",
             image: "",
@@ -346,7 +347,7 @@ export default function Our_Team() {
           },
 
           {
-            name: "Roger Lacasse, Ph.D., M.Sc., FRCGS",
+            name: "Dr. Roger Lacasse, Ph.D., M.Sc., FRCGS",
             role: "3D Photogrammetry Lead",
             subtitle: "Photogrammetry",
             image: "",

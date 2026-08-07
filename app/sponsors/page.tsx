@@ -272,9 +272,16 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                     {
                       src: "/images/Bell Island Museum U-boat attack drawing(1).jpg",
                       alt: "Bell Island Museum U-boat attack drawing",
+                    },
+
+                    {
+                      src: "/images/shovel-loading-iron-ore.jpg",
+                      alt: "shovel loading iron ore",
                     }
+
                   ]}
                 />
+                
 
 
                 <LogoGallery
