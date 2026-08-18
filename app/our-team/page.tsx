@@ -388,8 +388,8 @@ export default function Our_Team() {
           },
           {
             name: "Madigan Jane Cotterill, MJ, FRCGS, FI’26",
-            role: "Expedition Lead — Social Media",
-            //subtitle: "Photogrammetry",
+            role: "Expedition Lead",
+            subtitle: "Social Media",
             image: "",
             bio: (
               <>
