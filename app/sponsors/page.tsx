@@ -141,13 +141,12 @@ Kensington delivers the world’s most personal travel experiences. We bring eac
           {
             text: (
               <>
-                Joseph &amp; Diane Frey <b>in memory of Sergeant Joseph Frey</b> and <b>Lieutenant-Commander
-William Mansfield LaNauze, CD, RCN</b>
+                Joseph &amp; Diane Frey&nbsp;<b>in memory of Sergeant Josef Frey</b>&nbsp;and&nbsp;<b>Lieutenant-Commander William Mansfield LaNauze, CD, RCN </b>
               </>
             ),
           },
           {
-            text: <>John Geiger<b>in memory of Captain William McKenzie Gilchrist, RCE</b></>,
+            text: <>John Geiger<b> in memory of Captain William McKenzie Gilchrist, RCE</b></>,
           },
         ]}
       />
@@ -450,8 +449,7 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
 
                 <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
                 <p>
-                  Jill Heinerth, FRCGS, Honorary Vice-President, Royal Canadian
-                  Geographical Society
+                  Jill Heinerth, FRCGS, FI’10, Honorary Vice-President, Royal Canadian Geographical Society
                 </p>
               </>
             ),

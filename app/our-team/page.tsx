@@ -386,6 +386,27 @@ export default function Our_Team() {
               </>
             ),
           },
+          {
+            name: "Madigan Jane Cotterill, MJ, FRCGS, FI’26",
+            role: "Expedition Lead — Social Media",
+            //subtitle: "Photogrammetry",
+            image: "",
+            bio: (
+              <>
+                <p>
+                  Madigan Jane Cotterill is a Toronto-based journalist, photographer, editor, mountaineer and scuba diver focused on conservation and travel. She serves as Digital and Travel Editor at Canadian Geographic and Canadian Geographic Travel, whose print and digital publications reach four million readers monthly. As Social Media Editor for the Bell Island Expedition 2027, Madigan will communicate its ecological, archaeological and commemorative work to international audiences.
+                </p>
+
+                <p>
+                  Madigan holds a Master of Journalism from Toronto Metropolitan University and a Bachelor of Arts from the University of Guelph, specializing in photography. Since 2018, she has contributed to several leading Canadian publications. Her global assignments include ecological projects in Japan, Argentina, Kenya and Zimbabwe.
+                </p>
+
+                <p>
+                  In 2026, Madigan received two Travel Media Association of Canada honours: third place for Best Indigenous Tourism Experience in Canada for “Echoes in the Ice: Inuit Knowledge and the Changing Arctic,” and an honourable mention for Best Tourism for Positive Change Story for “Guiding Change: How Women Are Redefining Leadership on Kilimanjaro.” Drawing on her editorial judgement and visual storytelling experience, she will document the expedition’s progress, introduce its researchers and partners, and share the ecological, archaeological and historical stories preserved within Bell Island’s internationally significant Second World War underwater battlefield.
+                </p>
+              </>
+            ),
+          }
         ]}
       />
 
