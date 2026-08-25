@@ -225,6 +225,10 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                 },
               ]}
             />
+                            <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
+                <p>
+                  Jill Heinerth, FRCGS, FI’10, Honorary Vice-President, Royal Canadian Geographical Society
+                </p>
           </>
         }
         image="/images/flag-expediation.jpg"
@@ -447,10 +451,7 @@ The Bell Island Expedition 2027 has received the highest recognition from both t
                   ]}
                 />
 
-                <h3 className="heading mt-6 mb-2">Underwater Photography</h3>
-                <p>
-                  Jill Heinerth, FRCGS, FI’10, Honorary Vice-President, Royal Canadian Geographical Society
-                </p>
+
               </>
             ),
           },
