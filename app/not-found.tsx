@@ -18,7 +18,7 @@ export default function NotFound() {
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 -z-10 bg-black/55" />
+      <div className="absolute inset-0 -z-10 bg-black/25" />
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto text-center text-white">
