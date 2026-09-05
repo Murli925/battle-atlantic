@@ -164,10 +164,24 @@ Kensington delivers the world’s most personal travel experiences. We bring eac
                 Peter &amp; Carmen Griffis <b>in memory of Warrant Officer 2
                 Raymond St. John Griffis, CD, RCA</b>
               </>
-            ),
+            )
+          },
+                    {
+            text: (
+              <>
+Suzanne Ivey-Cook
+              </>
+            )
           },
         ]}
       />
+
+
+      <h4 className="heading mt-3 mb-2">
+        Supporting Sponsors{" "}
+        <span className="text-xs">($1,000–$4,999)</span>
+      </h4>
+
     </>
   }
 />
