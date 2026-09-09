@@ -175,13 +175,6 @@ Suzanne Ivey-Cook
           },
         ]}
       />
-
-
-      <h4 className="heading mt-3 mb-2">
-        Supporting Sponsors{" "}
-        <span className="text-xs">($1,000–$4,999)</span>
-      </h4>
-
     </>
   }
 />
