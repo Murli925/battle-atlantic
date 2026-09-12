@@ -169,7 +169,7 @@ Kensington delivers the world’s most personal travel experiences. We bring eac
                     {
             text: (
               <>
-Suzanne Ivey-Cook <b>in memory of Lieutenant-Colonel William Ivan Nurse</b>
+Suzanne Ivey-Cook <b>in memory of Lieutenant-Colonel William Ivan Nurs</b>
               </>
             )
           },
