@@ -155,42 +155,59 @@ export default function Our_Team() {
             ),
           },
 
-          {
-            name: "Kirk Regular, B.Sc.",
+          
+{
+            name: "Christopher Morrissey, B.Sc.",
             role: "Marine Institute, Memorial University of Newfoundland",
-            subtitle: "Expedition Operations and Marine Survey Integration",
+            subtitle:"Expedition Operations and Marine Survey Integration",
             image: "",
             bio: (
               <>
-                <p>
-                  Kirk Regular is associated with the Marine Institute of
-                  Memorial University of Newfoundland and supports the
-                  expedition through marine operations planning, survey
-                  integration, and coordination of applied ocean technology
-                  systems. His work contributes to the integration of marine
-                  science, vessel operations, and digital survey methodologies
-                  within the expedition framework.
-                </p>
-
-                <p>
-                  Through the Marine Institute, Regular supports the
-                  expedition’s operational planning, research-vessel
-                  coordination, and the integration of academic and technical
-                  field activities. His experience in marine operations and
-                  applied ocean technologies contributes to the development of
-                  the expedition’s integrated Digital Terrain Model (DTM)
-                  approach.
-                </p>
-
-                <p>
-                  For the Bell Island Expedition, Regular assists with
-                  expedition planning, marine survey coordination, and the
-                  integration of field operations with academic research and
-                  technical documentation.
-                </p>
+                <p>Christopher Morrissey is an experienced ROV Pilot and Technician with a background in underwater vehicle technology, oceanographic instrumentation, and marine operations. Throughout his career, he has supported a wide range of research expeditions, from Arctic exploration to deep-ocean sampling of hydrothermal vents in the Indian Ocean. His expertise includes the operation, maintenance, integration, and troubleshooting of complex subsea systems in challenging and remote environments.</p>
+<p>Through the Marine Institute of Memorial University, Christopher supports research vessel operations, expedition planning, instrumentation integration, system maintenance, and field repairs. He works closely with researchers, engineers, vessel crews, and technical teams to develop and deploy practical solutions for oceanographic research.</p>
+<p>His technical experience spans remotely operated vehicles, subsea positioning systems, acoustic and imaging equipment, and a variety of specialized oceanographic sensors and platforms. He is also involved in the development and testing of emerging marine technologies, including autonomous and remotely operated systems.</p>
+<p>Christopher brings a hands-on, field-focused approach to marine technology, with a particular interest in bridging the gap between technology development and reliable real-world operations. His work combines practical technical expertise with field experience to help ensure complex oceanographic systems perform reliably in demanding environments.</p>
               </>
             ),
           },
+
+
+          // {
+          //   name: "Kirk Regular, B.Sc.",
+          //   role: "Marine Institute, Memorial University of Newfoundland",
+          //   subtitle: "Expedition Operations and Marine Survey Integration",
+          //   image: "",
+          //   bio: (
+          //     <>
+          //       <p>
+          //         Kirk Regular is associated with the Marine Institute of
+          //         Memorial University of Newfoundland and supports the
+          //         expedition through marine operations planning, survey
+          //         integration, and coordination of applied ocean technology
+          //         systems. His work contributes to the integration of marine
+          //         science, vessel operations, and digital survey methodologies
+          //         within the expedition framework.
+          //       </p>
+
+          //       <p>
+          //         Through the Marine Institute, Regular supports the
+          //         expedition’s operational planning, research-vessel
+          //         coordination, and the integration of academic and technical
+          //         field activities. His experience in marine operations and
+          //         applied ocean technologies contributes to the development of
+          //         the expedition’s integrated Digital Terrain Model (DTM)
+          //         approach.
+          //       </p>
+
+          //       <p>
+          //         For the Bell Island Expedition, Regular assists with
+          //         expedition planning, marine survey coordination, and the
+          //         integration of field operations with academic research and
+          //         technical documentation.
+          //       </p>
+          //     </>
+          //   ),
+          // },
 
           {
             name: "Dr. James P. Delgado, Ph.D., FRCGS, FN’ 97",
