@@ -222,6 +222,19 @@ export default function Our_Team() {
               </>
             ),
           },
+          {
+            name: "Dr. Paul Snelgrove, Ph.D.",
+            role: "Lead Marine Biologist",
+            subtitle:"",
+            image: "",
+            bio: (
+              <>
+<p>Dr. Paul Snelgrove is a <em>University Research</em> <em>Professor</em> of Ocean Sciences and Biology at Memorial University of Newfoundland, with over 30 years of experience of research on seafloor ecosystems with a particular emphasis on deep-sea invertebrates spanning from fishes and corals to microbes.</p>
+                <p>From 2008-2021 he led the (NSERC) Canadian Healthy Oceans Network, a national research network that developed new tools and approaches to support sustainable oceans. He currently serves as Associate Scientific Director of the Ocean Frontier Institute, which gathers researchers in Atlantic Canada and beyond to advance safe and sustainable ocean objectives. From 2003-2013, Dr. Snelgrove held a Canada Research Chair in Boreal and Cold Ocean Systems, following from an NSERC Industrial Chair in Fisheries Conservation. He led the synthesis of the International <em>Census of Marine Life</em> program, and was a member of the program&rsquo;s Scientific Steering Committee. His TED Global talk on that program has almost 375,000 views.</p>
+<p>He frequently participates in workshops and conferences around the world as an invited speaker on marine biodiversity issues. In 2013, he was awarded the Timothy Parsons Medal for Excellence in Marine Sciences in Canada, and from 2020-2025 he served as Departmental Science Advisor to Fisheries and Oceans Canada. He has published ~150 journal articles, 30 book chapters and 2 books on his research on sustaining marine biodiversity and functioning in seafloor ecosystems in all three of Canada&rsquo;s oceans.</p>
+              </>
+            ),
+          },
 
           {
             name: "Neil Burgess, M. Sc.",
